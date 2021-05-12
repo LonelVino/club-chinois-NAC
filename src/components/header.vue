@@ -98,7 +98,7 @@
 			<a href="#/Aboutme">
                     <img :src="this.$store.state.themeObj.head_portrait?this.$store.state.themeObj.head_portrait:'static/img/avatar_1.jpg'" alt="">
                 </a>
-			<h2 class="h-description">
+			<h2 class="h-description" style="font-size: 35px">
                     <a href="#/Aboutme">
                         {{this.$store.state.themeObj.autograph?this.$store.state.themeObj.autograph:"Welcome to ClubChinois"}}
                     </a>
@@ -220,14 +220,14 @@ export default {
 			} else {
 				that.haslogin = false;
 			}
-			// ArtClassData(function(msg) { //文章分类
-			// 	// console.log(msg);
-			// 	that.classListObj = msg;
-			// })
-			// navMenList(function(msg) { //实验室项目列表获取
-			// 	// console.log('实验室',msg);
-			// 	that.projectList = msg;
-			// });
+			ArtClassData(function(msg) { //文章分类
+				// console.log(msg);
+				that.classListObj = msg;
+			})
+			navMenList(function(msg) { //实验室项目列表获取
+				// console.log('实验室',msg);
+				that.projectList = msg;
+			});
 			if ((this.$route.name == "Share" || this.$route.name == "Home") && this.$store.state.keywords) {
 				this.input = this.$store.state.keywords;
 			} else {
@@ -583,7 +583,7 @@ export default {
 
 .h-information {
 	text-align: center;
-	width: 70%;
+	width: 100%;
 	margin: auto;
 	position: relative;
 	top: 480px;

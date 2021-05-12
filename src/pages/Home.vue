@@ -4,6 +4,7 @@
         <wbc-nav></wbc-nav>
         <div class="container">
             <el-row  :gutter="30">
+                <Caroulse/>
                 <el-col :sm="24" :md="16" style="transition:all .5s ease-out;margin-bottom:30px;">
                     <sequential-entrance>
                         <div class="self-pres">
@@ -54,33 +55,36 @@ import LoginModal from '../components/OpenModal.vue'
 
 import Roller from "vue-roller";
 
-    export default {
-        name:'Home',
-        data() { //选项 / 数据
-            return {
-                src1: "static/img/Members/Chensheng.png",
-                src2: "static/img/Members/Xuwen.png",
-                src3: "static/img/Members/Kaiao.png",
-                src4_1: "static/img/Members/Haonan_1.png",
-                src4_2: "static/img/Members/Haonan_2.png",
-            }
-        },
-        methods: { //事件处理器
-            open:function () {
-                ModalWizard.open(LoginModal)
-            }
-        },
-        components: { //定义组件
-            'wbc-nav':header,
-            'wbc-sharelist':temSharelist,
-            'wbc-rightlist':temRightlist,
-            'wbc-footer':footer,
-            Roller
-        },
-        created() { //生命周期函数
+import Caroulse from '@/components/caroulse.vue'
 
+export default {
+    name:'Home',
+    data() { //选项 / 数据
+        return {
+            src1: "static/img/Members/Chensheng.png",
+            src2: "static/img/Members/Xuwen.png",
+            src3: "static/img/Members/Kaiao.png",
+            src4_1: "static/img/Members/Haonan_1.png",
+            src4_2: "static/img/Members/Haonan_2.png",
         }
+    },
+    methods: { //事件处理器
+        open:function () {
+            ModalWizard.open(LoginModal)
+        }
+    },
+    components: { //定义组件
+        'wbc-nav':header,
+        'wbc-sharelist':temSharelist,
+        'wbc-rightlist':temRightlist,
+        'wbc-footer':footer,
+        Roller,
+        Caroulse
+    },
+    created() { //生命周期函数
+
     }
+}
 </script>
 
 <style lang='scss' scoped>
