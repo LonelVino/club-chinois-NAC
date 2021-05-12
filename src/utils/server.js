@@ -7,24 +7,24 @@ let portUrl = "http://"+window.location.host+"/port/";
 //用户注册
 const getRegister = (username,password,email,callback) =>{
     let url = portUrl+'login/getRegister?username='+username+'&email='+email+'&password='+password;
-    axios.get(url).then(num => {
-            callback && callback(num.data)
-    })
+    // axios.get(url).then(num => {
+    //         callback && callback(num.data)
+    // })
 }
 
 //用户登录
 const UserLogin =  (email,password,callback) =>{
     let url = portUrl + 'login/UserLogin?email='+email+'&password='+password;
-    axios.get(url).then(num => {
-            callback && callback(num.data);
-    })
+    // axios.get(url).then(num => {
+            // callback && callback(num.data);
+    // })
 }
 //用户退出
 const LoginOut = (token,callback) =>{
     let url = portUrl + 'login/LoginOut?token='+token;
-    axios.get(url).then(num => {
-            callback && callback(num.data);
-    })
+    // axios.get(url).then(num => {
+    //         callback && callback(num.data);
+    // })
 }
 
 //文章分类查询
@@ -34,15 +34,15 @@ const ArtClassData = (callback) => {
         callback && callback(data)
     }else{
         let url = portUrl + 'article/ArtClassData';
-        axios.get(url).then(num => {
-            // console.log(num);
-            if(num.data.code==1001){
-                sessionStorage.setItem('classList',JSON.stringify(num.data.data));
-                callback && callback(num.data.data)
-            }else{
-                alert("查询失败")
-            }
-        })
+        // axios.get(url).then(num => {
+        //     // console.log(num);
+        //     if(num.data.code==1001){
+        //         sessionStorage.setItem('classList',JSON.stringify(num.data.data));
+        //         callback && callback(num.data.data)
+        //     }else{
+        //         alert("查询失败")
+        //     }
+        // })
     }
 }
 
@@ -53,15 +53,15 @@ const navMenList  = (callback) => {
         callback && callback(data)
     }else{
         let url = portUrl + 'nav/navMenList';
-        axios.get(url).then(num => {
-            // console.log(num);
-            if(num.data.code==1001){
-                sessionStorage.setItem('navMenList',JSON.stringify(num.data.data));
-                callback && callback(num.data.data)
-            }else{
-                alert("查询失败")
-            }
-        })
+        // axios.get(url).then(num => {
+        //     // console.log(num);
+        //     if(num.data.code==1001){
+        //         sessionStorage.setItem('navMenList',JSON.stringify(num.data.data));
+        //         callback && callback(num.data.data)
+        //     }else{
+        //         alert("查询失败")
+        //     }
+        // })
     }
 }
 
@@ -72,49 +72,49 @@ const ShowArticleAll = (artId,cateId,articleName,level,callback) =>{
     }else{
         var url = portUrl + 'article/ShowArticleAll?art_id='+artId+'&cate_id='+cateId+'&article_name='+articleName;
     }
-    axios.get(url).then(num => {
-            callback && callback(num.data);
-    })
+    // axios.get(url).then(num => {
+    //         callback && callback(num.data);
+    // })
 }
 
 //查询文章详情
 const getArticleInfo = (artId,userId,callback) =>{
     let url = portUrl + 'article/getArticleInfo?art_id='+artId+'&user_id='+userId;
-    axios.get(url).then(num => {
-        if(num.data.code==1001){
-            callback && callback(num.data.data);
-        }else{
-            alert("查询失败");
-        }
-    })
+    // axios.get(url).then(num => {
+    //     if(num.data.code==1001){
+    //         callback && callback(num.data.data);
+    //     }else{
+    //         alert("查询失败");
+    //     }
+    // })
 }
 
 //查询浏览量最多的10篇文章数据
 const ShowBrowseCount = (callback) =>{
     let url = portUrl + 'article/ShowBrowseCount';
-    axios.get(url).then(num => {
-        if(num.data.code==1001){
-            callback && callback(num.data.data);
-        }else if(num.data.code==1005){
-            return;
-        }else{
-            alert("查询失败");
-        }
-    })
+    // axios.get(url).then(num => {
+    //     if(num.data.code==1001){
+    //         callback && callback(num.data.data);
+    //     }else if(num.data.code==1005){
+    //         return;
+    //     }else{
+    //         alert("查询失败");
+    //     }
+    // })
 }
 
 //查询文章评论量最大的10篇文章
 const ShowArtCommentCount = (callback) =>{
     let url = portUrl + 'article/ShowArtCommentCount';
-    axios.get(url).then(num => {
-        if(num.data.code==1001){
-            callback && callback(num.data.data);
-        }else if(num.data.code==1005){
-            return;
-        }else{
-            alert("查询失败");
-        }
-    })
+    // axios.get(url).then(num => {
+    //     if(num.data.code==1001){
+    //         callback && callback(num.data.data);
+    //     }else if(num.data.code==1005){
+    //         return;
+    //     }else{
+    //         alert("查询失败");
+    //     }
+    // })
 }
 //查询文章评论数据
 const ArticleComment = (artId,commentId,callback) =>{
@@ -127,64 +127,64 @@ const ArticleComment = (artId,commentId,callback) =>{
 //查询其他评论数据
 const OtherComment = (leaveId,commentId,callback) =>{//分类类型ID（1：赞赏 2：友情链接 3：留言板 4：关于我）
     let url = portUrl + 'comment/OtherComment?leave_id='+leaveId+'&comment_id='+commentId;
-    axios.get(url).then(num => {
-        callback && callback(num.data);
-    })
+    // axios.get(url).then(num => {
+    //     callback && callback(num.data);
+    // })
 }
 
 //文章评论
 const setArticleComment = (content,user_id,article_id,leave_pid,pid,callback) =>{
     let url = portUrl + 'comment/setArticleComment?content='+content+'&user_id='+user_id+'&article_id='+article_id+'&leave_pid='+leave_pid+'&pid='+pid;
-    axios.get(url).then(num => {
-            callback && callback(num.data);
-    })
+    // axios.get(url).then(num => {
+    //         callback && callback(num.data);
+    // })
 }
 
 //其他评论
 const setOuthComment = (content,user_id,article_id,leave_id,leave_pid,pid,callback) =>{
     let url = portUrl + 'comment/setOuthComment?content='+content+'&user_id='+user_id+'&article_id='+article_id+'&leave_id='+leave_id+'&leave_pid='+leave_pid+'&pid='+pid;
-    axios.get(url).then(num => {
-            callback && callback(num.data);
-    })
+    // axios.get(url).then(num => {
+    //         callback && callback(num.data);
+    // })
 }
 
 //查询网址点赞总数
 const showLikeData = (callback) =>{
     let url = portUrl + 'outh/showLikeData';
-    axios.get(url).then(num => {
-        if(num.data.code==1001){
-            // console.log(num.data,parseInt(num.data));
-            callback && callback(num.data.data);
-        }else{
-            alert("查询失败");
-        }
-    })
+    // axios.get(url).then(num => {
+    //     if(num.data.code==1001){
+    //         // console.log(num.data,parseInt(num.data));
+    //         callback && callback(num.data.data);
+    //     }else{
+    //         alert("查询失败");
+    //     }
+    // })
 }
 
 //点赞功能修改
 const GetLike = (like_num,callback) =>{
     let url = portUrl + 'outh/GetLike?like_num='+like_num;
-    axios.get(url).then(num => {
-        if(num.data.code==1001){
-            callback && callback(num.data.msg);
-        }else{
-            alert("点赞失败");
-        }
-    })
+    // axios.get(url).then(num => {
+    //     if(num.data.code==1001){
+    //         callback && callback(num.data.msg);
+    //     }else{
+    //         alert("点赞失败");
+    //     }
+    // })
 }
 
 //查询友情链接数据
 const FriendUrlData = (callback) =>{
     let url = portUrl + 'outh/FriendUrlData';
-    axios.get(url).then(num => {
-        if(num.data.code==1001){
-            callback && callback(num.data.data);
-        }else if(num.data.code==1005){
-            return;
-        }else{
-            alert("查询失败");
-        }
-    })
+    // axios.get(url).then(num => {
+    //     if(num.data.code==1001){
+    //         callback && callback(num.data.data);
+    //     }else if(num.data.code==1005){
+    //         return;
+    //     }else{
+    //         alert("查询失败");
+    //     }
+    // })
 }
 
 //查询关于我
@@ -194,16 +194,16 @@ const AboutMeData = (callback) =>{
         callback && callback(data)
     }else{
         let url = portUrl + 'outh/AboutMeData';
-        axios.get(url).then(num => {
-            if(num.data.code==1001){
-                sessionStorage.setItem('AboutMeData',JSON.stringify(num.data.data));
-                callback && callback(num.data.data);
-            }else if(num.data.code==1005){
-                return;
-            }else{
-                alert("查询失败");
-            }
-        })
+        // axios.get(url).then(num => {
+        //     if(num.data.code==1001){
+        //         sessionStorage.setItem('AboutMeData',JSON.stringify(num.data.data));
+        //         callback && callback(num.data.data);
+        //     }else if(num.data.code==1005){
+        //         return;
+        //     }else{
+        //         alert("查询失败");
+        //     }
+        // })
     }
 }
 
@@ -316,14 +316,14 @@ const changeTheme = (callback) => {
         callback && callback(data)
     }else{
         let url = portUrl + 'outh/ThemeMy';
-        axios.get(url).then(num => {
-            if(num.data.code==1001){
-                sessionStorage.setItem('changeThemeObj',JSON.stringify(num.data.data))
-                callback && callback(num.data.data);
-            }else{
-                alert("查询失败");
-            }
-        })
+        // axios.get(url).then(num => {
+        //     if(num.data.code==1001){
+        //         sessionStorage.setItem('changeThemeObj',JSON.stringify(num.data.data))
+        //         callback && callback(num.data.data);
+        //     }else{
+        //         alert("查询失败");
+        //     }
+        // })
     }
 }
 

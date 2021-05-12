@@ -48,8 +48,8 @@
                     </div>
                 </el-col>
                 <el-col class="viewmore">
-                    <a v-show="hasMore" class="tcolors-bg" href="javascript:void(0);" @click="addMoreFun">点击加载更多</a>
-                    <a v-show="!hasMore" class="tcolors-bg" href="javascript:void(0);">暂无更多数据</a>
+                    <a v-show="hasMore" class="tcolors-bg" href="javascript:void(0);" @click="addMoreFun">Click for more</a>
+                    <a v-show="!hasMore" class="tcolors-bg" href="javascript:void(0);">No more now</a>
                 </el-col>
             </el-row>
         </div>

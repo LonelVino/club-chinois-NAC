@@ -220,14 +220,14 @@ export default {
 			} else {
 				that.haslogin = false;
 			}
-			ArtClassData(function(msg) { //文章分类
-				// console.log(msg);
-				that.classListObj = msg;
-			})
-			navMenList(function(msg) { //实验室项目列表获取
-				// console.log('实验室',msg);
-				that.projectList = msg;
-			});
+			// ArtClassData(function(msg) { //文章分类
+			// 	// console.log(msg);
+			// 	that.classListObj = msg;
+			// })
+			// navMenList(function(msg) { //实验室项目列表获取
+			// 	// console.log('实验室',msg);
+			// 	that.projectList = msg;
+			// });
 			if ((this.$route.name == "Share" || this.$route.name == "Home") && this.$store.state.keywords) {
 				this.input = this.$store.state.keywords;
 			} else {

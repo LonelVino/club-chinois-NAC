@@ -4,7 +4,7 @@
         <header>
             <h1>
                 <a href="#/DetailShare" target="_blank">
-                    关于我
+                    About us
                 </a>
             </h1>
         </header>

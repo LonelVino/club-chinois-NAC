@@ -51,8 +51,8 @@
             </div>
         </el-col>
         <el-col class="viewmore">
-            <a v-show="hasMore" class="tcolors-bg" href="javascript:void(0);" @click="addMoreFun">点击加载更多</a>
-            <a v-show="!hasMore" class="tcolors-bg" href="javascript:void(0);">暂无更多数据</a>
+            <a v-show="hasMore" class="tcolors-bg" href="javascript:void(0);" @click="addMoreFun">Click for more</a>
+            <a v-show="!hasMore" class="tcolors-bg" href="javascript:void(0);">No more</a>
         </el-col>
     </el-row>
 </template>
@@ -104,10 +104,10 @@ import {ShowArticleAll,ArtClassData,initDate} from '../utils/server.js'
                 that.sendId = that.classtwoId?that.classtwoId:that.classId;
                 that.level = that.keywords ? 0 : that.classtwoId?0:1;
                 // console.log(that.classId);
-                ArtClassData(function(msg){
-                    // console.log(msg);
-                    that.shareClass = msg;
-                })
+                // ArtClassData(function(msg){
+                //     // console.log(msg);
+                //     that.shareClass = msg;
+                // })
                 //判断当前显示的分类名称 以及子分类
                 for(var i=0;i<that.shareClass.length;i++){
                     if(that.classId==that.shareClass[i].class_id){

@@ -8,8 +8,18 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/style.less'
 import store from './store'
 
+import SequentialEntrance from 'vue-sequential-entrance'
+import 'vue-sequential-entrance/vue-sequential-entrance.css'
+
+import ModalWizard from 'vue-modal-wizard'
+
+import ImageShadow from 'vue-image-shadow'
+
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.use(SequentialEntrance);
+Vue.use(ModalWizard)
+Vue.component('image-shadow', ImageShadow)
 
 /* eslint-disable no-new */
 new Vue({
