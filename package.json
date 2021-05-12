@@ -14,8 +14,12 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "element-ui": "^2.15.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -35,7 +39,7 @@
     "chromedriver": "^2.27.2",
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^5.0.1",
-    "css-loader": "^0.28.0",
+    "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
@@ -58,7 +62,7 @@
     "url-loader": "^0.5.8",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
-    "vue-style-loader": "^3.0.1",
+    "vue-style-loader": "^3.1.2",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
@@ -69,16 +73,9 @@
     "node": "14.16.1",
     "npm": ">= 3.0.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
