@@ -28,7 +28,14 @@ SECRET_KEY = 'django-insecure-5mf(zpen3!12-3p-pnpz5($3q&n8*ms91)=0i)3120*lots-25
 DEBUG = True
 
 CORS_ORIGIN_ALLOW_ALL = False
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = [
+    'http://club-chinois.herokuapp.com/',
+    'https://club-chinois.herokuapp.com/',
+    'club-chinois.herokuapp.com',
+    'club-chinois.herokuapp.com/',
+    '127.0.0.1']
+    
 CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8080',   # Frontend on dev mode
     'http://127.0.0.1:8081',    # Frontend on dev mode
@@ -146,3 +153,4 @@ WSGI_APPLICATION = 'clubChinois.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

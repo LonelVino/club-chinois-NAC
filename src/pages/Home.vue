@@ -6,7 +6,30 @@
             <el-row  :gutter="30">
                 <el-col :sm="24" :md="16" style="transition:all .5s ease-out;margin-bottom:30px;">
                     <sequential-entrance>
-                        <image-shadow :width="200" :src="this.src1"></image-shadow>
+                        <div class="self-pres">
+                            <h2 class="title" >Members</h2>
+                            <div class="chensheng">
+                                <Roller class="roller" :charList="['C', 'h', 'e', 'u']" :transition="1" text="Chensheng Luo"/>
+                                <image-shadow :width="300" :src="this.src1">
+                                    <el-button @click="open()"/>
+                                </image-shadow>
+                            </div>
+                            <div class="xuwen">
+                                <Roller class="roller" :charList="['C', 'w', 'e', 'u']" :transition="1" text="Xuwen Chen"/>
+                                <image-shadow :width="300" :src="this.src2"></image-shadow>
+                            </div>
+                            <div class="kaiao">
+                                <Roller class="roller" :charList="['K', 'w', 'e', 'a']" :transition="1" text="Kaiao Wen"/>
+                                <image-shadow :width="300" :src="this.src3"></image-shadow>
+                            </div>
+                            <div class="align">
+                                <Roller class="roller" :charList="['L', 'h', 'n', 'a']" :transition="1" text="Haonan Lin"/>
+                                <div class="haonan-img">
+                                    <image-shadow :width="320" :src="this.src4_1"></image-shadow>
+                                    <image-shadow :width="180" :src="this.src4_2"></image-shadow>
+                                </div>
+                            </div>
+                        </div>
                     </sequential-entrance>
                     <wbc-sharelist>
                     </wbc-sharelist>
@@ -29,11 +52,17 @@ import temRightlist from '../components/temRightlist.vue'
 import ModalWizard from 'vue-modal-wizard'
 import LoginModal from '../components/OpenModal.vue'
 
+import Roller from "vue-roller";
+
     export default {
         name:'Home',
         data() { //选项 / 数据
             return {
-                src1: "static/img/avatar_1.jpg"
+                src1: "static/img/Members/Chensheng.png",
+                src2: "static/img/Members/Xuwen.png",
+                src3: "static/img/Members/Kaiao.png",
+                src4_1: "static/img/Members/Haonan_1.png",
+                src4_2: "static/img/Members/Haonan_2.png",
             }
         },
         methods: { //事件处理器
@@ -45,7 +74,8 @@ import LoginModal from '../components/OpenModal.vue'
             'wbc-nav':header,
             'wbc-sharelist':temSharelist,
             'wbc-rightlist':temRightlist,
-            'wbc-footer':footer
+            'wbc-footer':footer,
+            Roller
         },
         created() { //生命周期函数
 
@@ -53,7 +83,11 @@ import LoginModal from '../components/OpenModal.vue'
     }
 </script>
 
-<style>
+<style lang='scss' scoped>
+@font-face {
+  font-family: Serat;
+  src: url('../assets/font/SeratUltra-1GE24.ttf');
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -75,5 +109,33 @@ a {
   width: 100px;
   height: 100px;
   margin: 1rem;
+}
+
+
+.self-pres {
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.vue-image-shadow + .vue-image-shadow {
+  margin-left: 30px;
+}
+.align {
+    display: flex;
+    flex-direction: column;
+    .haonan-img {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.title {
+    font-family: Serat;
+    margin: 35px;
+    font-size: 50px;
+}
+.roller {
+    font-family: Serat;
+    margin: 10px 20px;
+    font-size: 30px;
 }
 </style>
