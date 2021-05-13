@@ -42,7 +42,7 @@ export default {
     top: 0;
     margin: auto;
     z-index: -100;
-    transform: scaleY(1.1);
+    transform: scaleY(1.2);
 }
 .waveWrapperInner {
     position: absolute;

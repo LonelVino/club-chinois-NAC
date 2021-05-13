@@ -7,7 +7,16 @@
         <wave/>
         <div class="container">
             <el-row :gutter="24" style="margin:0">
+              
                 <el-col :sm="15" :md="15" style="transition:all .5s ease-out;margin-bottom:30px;">
+                  <!-- <div class="titles">
+                    <div class="title">
+                      <Roller class="roller" :charList="['W', 'K', 'L', 'O', 'E', 'R']" :transition="1" text="WORLD WEEK"/>
+                    </div>
+                    <div class="sub-title">
+                        <Roller class="roller" :charList="['C', 'U', 'L', 'O', 'N', 'S']" :transition="1" text="-- Club Chinois"/>
+                    </div>
+                  </div> -->
                   <flip-book/>
                   
                 </el-col>
@@ -26,13 +35,13 @@ import temRightlist from '@/components/Modal/temRightlist.vue'
 
 import Wave from './components/Wave'
 import FlipBook from './components/FlipBook.vue'
-
+import Roller from "vue-roller";
 
 export default {
     name:'Home',
     data() { //选项 / 数据
       return {
-        
+
       }
     },
     components: { //定义组件
@@ -40,7 +49,8 @@ export default {
         'wbc-rightlist':temRightlist,
         'wbc-footer':footer,
         FlipBook,
-        Wave
+        Wave,
+        Roller,
     },
     mounted() {
       
@@ -82,6 +92,28 @@ a {
   transform: scaleY(0.95);
   margin-bottom: 100px;
 }
-
+.titles {
+  display: flex;
+  flex-direction: row;
+}
+.title .sub-title {
+  z-index: 100;
+}
+.roller {
+    font-family: Serat;
+    margin: 10px 20px;
+    color: #fff;
+    font-weight: bolder;
+  }
+.title {
+  .roller {
+    font-size: 40px;
+  }
+}
+.sub-title {
+  .roller {
+    font-size: 30px;
+  }
+}
 
 </style>
