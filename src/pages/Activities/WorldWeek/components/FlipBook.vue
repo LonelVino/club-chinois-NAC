@@ -17,13 +17,13 @@
             @click="flipbook.flipLeft"></i>
             <i class='el-icon-zoom-out btn plus' 
             :class="{ disabled: !flipbook.canZoomIn }"
-            @click="flipbook.zoomIn"></i>
+            @click="flipbook.zoomOut"></i>
             <span class="page-num">
                 Page {{ flipbook.page }} of {{ flipbook.numPages }}
             </span>
             <i class='el-icon-zoom-in btn minus' 
             :class="{ disabled: !flipbook.canZoomOut }"
-            @click="flipbook.zoomOut"></i>  
+            @click="flipbook.zoomIn"></i>  
             <i class="el-icon-caret-right btn right"
             :class="{ disabled: !flipbook.canFlipRight }"
             @click="flipbook.flipRight"></i>
