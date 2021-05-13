@@ -3,17 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
+
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/style.less'
-import store from './store'
 
 import SequentialEntrance from 'vue-sequential-entrance'
 import 'vue-sequential-entrance/vue-sequential-entrance.css'
-
 import ModalWizard from 'vue-modal-wizard'
-
 import ImageShadow from 'vue-image-shadow'
+
+import '@/assets/img/icons'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
@@ -25,7 +26,9 @@ Vue.component('image-shadow', ImageShadow)
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: { 
+    App,
+  },
   template: '<App/>',
   store
 })

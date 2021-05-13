@@ -5,7 +5,21 @@
 	<div class="container">
 		<el-row :gutter="30">
 			<el-col :sm="24" :md="16" style="transition:all .5s ease-out;margin-bottom:30px;">
-				<wbc-msg></wbc-msg>
+				<div class="tMSGbox tcommonBox">
+					<header>
+						<h1>
+							<a href="#/DetailShare" target="_blank">
+								留言板
+							</a>
+						</h1>
+					</header>
+					<section>
+						<h2>走过路过不要错过！交流、咨询、吐槽、感叹、勾搭都在这里，尽情畅谈！</h2>
+						<div class="">
+							<img src="static/img/timg.jpg" class="maxW"  alt="">
+						</div>
+					</section>
+				</div>
 				<wbc-message></wbc-message>
 			</el-col>
 			<el-col :sm="24" :md="8">
@@ -22,7 +36,6 @@ import header from '../components/header.vue'
 import footer from '../components/footer.vue'
 import temRightlist from '../components/temRightlist.vue'
 import temMessage from '../components/temMessage.vue'
-import temMSG from '../components/temMSG.vue'
 
 export default {
 	name: 'Message',
@@ -37,7 +50,6 @@ export default {
 	components: { //定义组件
 		'wbc-nav': header,
 		'wbc-message': temMessage,
-		'wbc-msg': temMSG,
 		'wbc-rightlist': temRightlist,
 		'wbc-footer': footer
 	},
@@ -48,5 +60,11 @@ export default {
 </script>
 
 <style>
-
+.tMSGbox section h2{
+	font-weight: bold;
+	line-height: 24px;
+}
+.tMSGbox section div{
+	margin:15px 0;
+}
 </style>

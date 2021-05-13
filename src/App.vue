@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+      
       <keep-alive :include="['Aboutme', 'Message', 'FriendsLink', 'Reward']">
           <router-view></router-view>
       </keep-alive>
@@ -8,7 +9,9 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+  }
 }
 </script>
 
@@ -112,7 +115,14 @@ input[type="text"], input[type="button"], input[type="submit"], input[type="sear
   -webkit-overflow-x: hidden;
   color: #444;
 }
-
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
 h1, h2 {
   font-weight: normal;
 }

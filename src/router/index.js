@@ -60,14 +60,6 @@ export default new Router({
 			name: 'Reward'
 		}, //赞赏
 		{
-			path: '/FriendsLink',
-			component: resolve => require(['../pages/FriendsLink.vue'], resolve),
-			meta: {
-				auth: true
-			},
-			name: 'FriendsLink'
-		}, //伙伴
-		{
 			path: '/Message',
 			component: resolve => require(['../pages/Message.vue'], resolve),
 			meta: {

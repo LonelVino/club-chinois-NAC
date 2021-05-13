@@ -3,35 +3,41 @@
     <div class="rightlistBox">
         <section >
             <div class="r1-head">
+                <!-- <svg-icon icon-class="github" /> -->
                 <img :src="this.$store.state.themeObj.center_smailimg?this.$store.state.themeObj.center_smailimg:'static/img/avatar_2.jpg'" alt="">
                 <h1 v-if="this.$store.state.themeObj.user_start!=0">
                     <span>Club </span> Chinois
                 </h1>
             </div>
             <div class="r1-body">
-                <p>Catch me here....</p>
                 <div class="catch-me" >
                     <div class="">
                         <el-tooltip  class="item"  content="Github" placement="top" >
-                            <a  :href="catchMeObj[isAimee].git" target="_blank" ><i class="fa fa-fw fa-github"></i></a>
+                            <a :href="catchMeObj[isAimee].git" target="_blank" >
+                                
+                                <i class="fa fa-fw fa-github"><github/></i>
+                            </a>
                         </el-tooltip>
-                        <!-- <el-tooltip class="item" effect="dark" content="QQ" placement="top">
-                            <a  :href="catchMeObj[isAimee].qq" target="_blank"><i class="fa fa-fw fa-qq"></i></a>
+                        <el-tooltip class="item" effect="dark" content="Facebook" placement="top">
+                            <a  :href="catchMeObj[isAimee].facebook" target="_blank">
+                                <i class="fa fa-fw fa-qq"></i>
+                            </a>
                         </el-tooltip>
-                        <el-tooltip class="item" effect="dark" content="微博" placement="top">
-                            <a :href="catchMeObj[isAimee].sina" target="_blank"><i class="fa fa-fw fa-weibo"></i></a>
+                        <el-tooltip class="item" effect="dark" content="Ins" placement="top">
+                            <a :href="catchMeObj[isAimee].ins" target="_blank"><i class="fa fa-fw fa-wechat"></i></a>
                         </el-tooltip>
                     </div>
                     <div class="">
-                        <el-tooltip class="item" effect="dark" content="微信" placement="top">
-                            <a :href="catchMeObj[isAimee].wechat" target="_blank"><i class="fa fa-fw fa-wechat"></i></a>
+                        <el-tooltip class="item" effect="dark" content="Bilibili" placement="top">
+                            <a :href="catchMeObj[isAimee].bilbili" target="_blank">
+                                <i class=""></i>
+                            </a>
                         </el-tooltip>
-                        <el-tooltip class="item" effect="dark" content="CSDN" placement="top">
-                            <a :href="catchMeObj[isAimee].csdn" target="_blank"><i class="">C</i></a>
+                        <el-tooltip class="item" effect="dark" content="LinkCS" placement="top">
+                            <a  :href="catchMeObj[isAimee].linkCS" target="_blank">
+                                <i class="fa fa-fw fa-qq"></i>
+                            </a>
                         </el-tooltip>
-                        <el-tooltip class="item" effect="dark" content="简历" placement="top">
-                            <a :href="catchMeObj[isAimee].job" target="_blank"><i class="fa fa-fw fa-file-word-o"></i></a>
-                        </el-tooltip> -->
                         <el-tooltip class="item" effect="dark" content="更多" placement="top">
                             <a href="#/Aboutme" ><i class="el-icon-more"></i></a>
                         </el-tooltip>
@@ -48,7 +54,6 @@
                 <span>{{likeNum}}</span>
             </div>
         </section>
-        <section></section>
         <section class="rs3" >
             <h2 class="ui label">
                 located in Centrale Supelec
@@ -67,21 +72,11 @@
                 </li>
             </ul>
         </section>
-        <section class="rs4">
-            <h2 class="ui label">
-                Love and live
-            </h2>
-            <ul>
-                <li v-for="(item,index) in browseList" :key="'browseList'+index">
-                    <a :href="'#/DetailShare?aid='+item.id" target="_blank">{{item.title}}</a> —— {{item.browse_count}} 次围观
-                </li>
-            </ul>
-        </section>
         <!-- 右侧上滑小图片 -->
         <div  v-if="this.$store.state.themeObj.user_start!=0" :class="gotoTop?'toTop hidden':'toTop goTop hidden'" @click="toTopfun">
             <img :src="this.$store.state.themeObj.right_img?this.$store.state.themeObj.right_img:'static/img/scroll.png'" alt="">
         </div>
-        <div v-else :class="gotoTop?'toTophui hidden':'toTophui goTophui hidden'" @click="toTopfun">
+        <div v-else :class="gotoTop?'back2Top hidden':'back2Top goTophui hidden'" @click="toTopfun">
             <img :src="this.$store.state.themeObj.right_img?this.$store.state.themeObj.right_img:'static/img/scroll.png'" alt="">
         </div>
     </div>
@@ -90,99 +85,103 @@
 
 <script>
 import {ShowBrowseCount,ShowArtCommentCount,showLikeData,GetLike} from '../utils/server.js'
-    export default {
-        data() { //选项 / 数据
-            return {
-                fixDo:false,
-                loveme:false,
-                gotoTop:false,//返回顶部
-                going:false,//是否正在执行上滑动作
-                browseList:'',//浏览量最多
-                artCommentList:'',//评论量最多
-                likeNum:0,//do you like me 点击量
-                initLikeNum:0,//初始化喜欢数量
-                catchMeObj:{//抓住我 个人信息
-                    Qinlh:{
-                        git:'https://github.com/LonelVino/Club-chinois.git',
-                    },
-                    Aimee:{
-                        git: 'https://github.com/LonelVino/Club-chinois.git',
-                    }
-                },
-                isAimee:this.$store.state.themeObj.user_start!=0?"Aimee":"Qinlh"//判断是哪个的博客
-            }
-        },
-        methods: { //事件处理器
-            //do you love me  点击
-            lovemeFun:function(){
-                var that = this;
-                if(!this.loveme){
-                    that.likeNum+=1;
-                    GetLike(1,function(){
-                    })
-                }
-                this.loveme = true;
-                var timer = setTimeout(function(){
-                    that.loveme = false;
-                    clearTimeout(timer);
-                },3000)
-            },
-            toTopfun:function(e){
-                var that = this;
-                this.gotoTop = false;
-                this.going = true;
-                var timer = setInterval(function(){
-                      //获取滚动条距离顶部高度
-                      var osTop = document.documentElement.scrollTop || document.body.scrollTop;
-                      var ispeed = Math.floor(-osTop / 7);
-                      document.documentElement.scrollTop = document.body.scrollTop = osTop+ispeed;
-                      //到达顶部，清除定时器
-                      if (osTop == 0) {
-                          that.going = false;
-                        clearInterval(timer);
-                        timer = null;
-                      };
-                },30);
-            },
-        },
-        components: { //定义组件
 
-        },
-        created() { //生命周期函数
+
+export default {
+    data() { //选项 / 数据
+        return {
+            fixDo:false,
+            loveme:false,
+            gotoTop:false,//返回顶部
+            going:false,//是否正在执行上滑动作
+            browseList:'',//浏览量最多
+            artCommentList:'',//评论量最多
+            likeNum:0,//do you like me 点击量
+            initLikeNum:0,//初始化喜欢数量
+            catchMeObj:{// 个人信息
+                Aimee:{
+                    git: 'https://github.com/LonelVino/Club-chinois.git',
+                    facebook: 'https://www.facebook.com/ClubChinois',
+                    ins: 'https://www.instagram.com/club_chinois_centralesupelec/',
+                    bilibili: 'https://space.bilibili.com/1229755888/',
+                    linkCS: "https://linkcs.fr/association/club-chinois-61"
+                }
+            },
+            isAimee:this.$store.state.themeObj.user_start!=0?"Aimee":"Aimee"//判断是哪个的博客
+        }
+    },
+    components: {
+    },
+    methods: { //事件处理器
+        //do you love me  点击
+        lovemeFun:function(){
             var that = this;
-            window.onscroll = function(){
-                 var t = document.documentElement.scrollTop || document.body.scrollTop;
-                // console.log(t);
-                if(!that.going){
-                    if(t>600){
-                        that.gotoTop = true;
-                    }else{
-                        that.gotoTop = false;
-                    }
-                }
-                if(t>1200){
-                    that.fixDo = true;
-                }else{
-                    that.fixDo = false;
-                }
-
+            if(!this.loveme){
+                that.likeNum+=1;
+                GetLike(1,function(){})
             }
-            //查询浏览量最多的10篇文章数据
-            ShowBrowseCount(function(data){
-                // console.log('浏览最多10文章数据',data);
-                that.browseList = data;
-            });
-            //查询文章评论量最大的10篇文章
-            ShowArtCommentCount(function(data){
-                // console.log('评论最多10文章数据',data);
-                that.artCommentList = data;
-            })
-            showLikeData(function(data){
-                that.likeNum = that.initLikeNum = data;
-            })
+            this.loveme = true;
+            var timer = setTimeout(function(){
+                that.loveme = false;
+                clearTimeout(timer);
+            },3000)
+        },
+        toTopfun:function(e){
+            var that = this;
+            this.gotoTop = false;
+            this.going = true;
+            var timer = setInterval(function(){
+                    //获取滚动条距离顶部高度
+                    var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+                    var ispeed = Math.floor(-osTop / 7);
+                    document.documentElement.scrollTop = document.body.scrollTop = osTop+ispeed;
+                    //到达顶部，清除定时器
+                    if (osTop == 0) {
+                        that.going = false;
+                    clearInterval(timer);
+                    timer = null;
+                    };
+            },30);
+        },
+    },
+    components: { //定义组件
+
+    },
+    created() { //生命周期函数
+        var that = this;
+        window.onscroll = function(){
+                var t = document.documentElement.scrollTop || document.body.scrollTop;
+            // console.log(t);
+            if(!that.going){
+                if(t>600){
+                    that.gotoTop = true;
+                }else{
+                    that.gotoTop = false;
+                }
+            }
+            if(t>1200){
+                that.fixDo = true;
+            }else{
+                that.fixDo = false;
+            }
 
         }
+        //查询浏览量最多的10篇文章数据
+        ShowBrowseCount(function(data){
+            // console.log('浏览最多10文章数据',data);
+            that.browseList = data;
+        });
+        //查询文章评论量最大的10篇文章
+        ShowArtCommentCount(function(data){
+            // console.log('评论最多10文章数据',data);
+            that.artCommentList = data;
+        })
+        showLikeData(function(data){
+            that.likeNum = that.initLikeNum = data;
+        })
+
     }
+}
 </script>
 
 <style lang="less">
@@ -388,11 +387,11 @@ import {ShowBrowseCount,ShowArtCommentCount,showLikeData,GetLike} from '../utils
 .goTop{
     top:-950px;
 }
-.toTop img,.toTophui img{
+.toTop img,.back2Top img{
     width:100%;
     height:auto;
 }
-.toTophui{
+.back2Top{
     position: fixed;
     right:10px;
     bottom:80px;
