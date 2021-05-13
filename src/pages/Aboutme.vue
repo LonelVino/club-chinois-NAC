@@ -18,9 +18,9 @@
 </template>
 
 <script>
-import header from '../components/header.vue'
-import footer from '../components/footer.vue'
-import temRightlist from '../components/temRightlist.vue'
+import header from '../components/Modal/header.vue'
+import footer from '../components/Modal/footer.vue'
+import temRightlist from '../components/Modal/temRightlist.vue'
 import temAbout from '../components/temAbout.vue'
 import temMessage from '../components/temMessage.vue'
     export default {

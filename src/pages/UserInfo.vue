@@ -165,8 +165,8 @@
 </template>
 
 <script>
-import header from '../components/header.vue'
-import footer from '../components/footer.vue'
+import header from '../components/Modal/header.vue'
+import footer from '../components/Modal/footer.vue'
 import {getUserInfo,UserInfoSave} from '../utils/server.js'//获取用户信息，保存用户信息
     export default {
         name: 'UserInfo',

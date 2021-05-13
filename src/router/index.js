@@ -22,82 +22,51 @@ export default new Router({
 	routes: [{
 			path: '/',
 			component: resolve => require(['../pages/Home.vue'], resolve),
-			meta: {
-				auth: true
-			},
+			meta: {auth: true},
 			name: 'Home'
 		}, //首页
 		{
 			path: '/Home',
 			component: resolve => require(['../pages/Home.vue'], resolve),
-			meta: {
-				auth: true
-			},
+			meta: {auth: true},
 			name: 'Home'
 		}, //首页
 		{
-			path: '/Share',
-			component: resolve => require(['../pages/Share.vue'], resolve),
-			meta: {
-				auth: true
-			},
-			name: 'Share'
-		}, //分类
-		{
-			path: '/DetailShare',
-			component: resolve => require(['../pages/DetailShare.vue'], resolve),
-			meta: {
-				auth: true
-			},
-			name: 'DetailShare'
-		}, //分享详情
+			path: '/world-week',
+			component: resolve => require(['../pages/Activities/WorldWeek/index.vue'], resolve),
+			meta: {auth: true},
+			name: 'WorldWeek'
+		},
 		{
 			path: '/Reward',
 			component: resolve => require(['../pages/Reward.vue'], resolve),
-			meta: {
-				auth: true
-			},
+			meta: {auth: true},
 			name: 'Reward'
 		}, //赞赏
 		{
 			path: '/Message',
 			component: resolve => require(['../pages/Message.vue'], resolve),
-			meta: {
-				auth: true
-			},
+			meta: {auth: true},
 			name: 'Message'
 		}, //留言板
 		{
 			path: '/Aboutme',
 			component: resolve => require(['../pages/Aboutme.vue'], resolve),
-			meta: {
-				auth: true
-			},
+			meta: {auth: true},
 			name: 'Aboutme'
 		}, //关于
 		{
 			path: '/Login',
 			component: resolve => require(['../pages/Login.vue'], resolve),
-			meta: {
-				auth: false
-			},
+			meta: {auth: false},
 			name: 'Login'
 		}, //注册登录
 		{
 			path: '/UserInfo',
 			component: resolve => require(['../pages/UserInfo.vue'], resolve),
-			meta: {
-				auth: true
-			},
+			meta: {auth: true},
 			name: 'UserInfo'
 		}, //用户个人中心
-		{
-			path: '/LikeCollect',
-			component: resolve => require(['../pages/LikeCollect.vue'], resolve),
-			meta: {
-				auth: true
-			},
-			name: 'LikeCollect'
-		} //用户个人中心
+		
 	]
 })

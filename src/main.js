@@ -9,6 +9,8 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/style.less'
 
+import '@/styles/index.scss' // global css
+
 import SequentialEntrance from 'vue-sequential-entrance'
 import 'vue-sequential-entrance/vue-sequential-entrance.css'
 import ModalWizard from 'vue-modal-wizard'

@@ -1,0 +1,8 @@
+1.Change the structure
+  - Add layout (there are too many dupliacted components)
+    Delete the useless components
+2.Use the SVG
+3.delete the useless route in router.js
+4.modify README.md
+5.add the World Week contents
+6.add instgram ui

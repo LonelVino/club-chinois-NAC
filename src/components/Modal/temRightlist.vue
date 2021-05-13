@@ -15,7 +15,7 @@
                         <el-tooltip  class="item"  content="Github" placement="top" >
                             <a :href="catchMeObj[isAimee].git" target="_blank" >
                                 
-                                <i class="fa fa-fw fa-github"><github/></i>
+                                <i class="fa fa-fw fa-github"></i>
                             </a>
                         </el-tooltip>
                         <el-tooltip class="item" effect="dark" content="Facebook" placement="top">
@@ -84,7 +84,7 @@
 
 
 <script>
-import {ShowBrowseCount,ShowArtCommentCount,showLikeData,GetLike} from '../utils/server.js'
+import {ShowBrowseCount,ShowArtCommentCount,showLikeData,GetLike} from '@/utils/server.js'
 
 
 export default {
@@ -300,7 +300,7 @@ export default {
      height: 100px;
      margin-left: -20px;
      margin-top:-5px;
-     background: url(../../static/img/heart.png) no-repeat;
+     background: url(../../../static/img/heart.png) no-repeat;
      background-position: 0 0;
       cursor: pointer;
       -webkit-transition: background-position 1s steps(28);

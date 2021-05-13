@@ -9,8 +9,6 @@
                     <sequential-entrance>
                         <presentation/>
                     </sequential-entrance>
-                    <wbc-sharelist>
-                    </wbc-sharelist>
                 </el-col>
                 <el-col :sm="24"  :md="6" >
                     <wbc-rightlist></wbc-rightlist>
@@ -22,12 +20,11 @@
 </template>
 
 <script>
-import header from '@/components/header.vue'
-import footer from '@/components/footer.vue'
-import temSharelist from '@/components/temSharelist.vue'
-import temRightlist from '@/components/temRightlist.vue'
+import header from '@/components/Modal/header.vue'
+import footer from '@/components/Modal/footer.vue'
+import Caroulse from '@/components/Modal/caroulse.vue'
+import temRightlist from '@/components/Modal/temRightlist.vue'
 import Presentation from '@/components/presentation.vue'
-import Caroulse from '@/components/caroulse.vue'
 
 export default {
     name:'Home',
@@ -43,7 +40,6 @@ export default {
     },
     components: { //定义组件
         'wbc-nav':header,
-        'wbc-sharelist':temSharelist,
         'wbc-rightlist':temRightlist,
         'wbc-footer':footer,
         Caroulse,

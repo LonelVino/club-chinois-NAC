@@ -8,17 +8,15 @@
 				<div class="headBox">
 					<el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
 						<el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> 首页</el-menu-item>
-						<!-- <el-submenu index="/Share"> -->
-							<!-- <template slot="title"><i class="fa fa-wa fa-archive"></i> 分类</template> -->
-							<!-- <el-menu-item v-for="(item,index) in classListObj" :key="'class1'+index" :index="'/Share?classId='+item.class_id">{{item.cate_name}}</el-menu-item> -->
-						<!-- </el-submenu> -->
-						<!-- <el-submenu index="/Aboutme"> -->
-							<!-- <template slot="title"><i class="fa fa-wa fa-flask"></i> 实验室</template> -->
-							<!-- <el-menu-item v-for="(item,index) in projectList" :key="'class2'+index" index=""><a :href="item.nav_url" target="_blank">{{item.nav_name}}</a></el-menu-item> -->
-						<!-- </el-submenu> -->
+						<el-submenu index="2-4">
+							<template slot="title">活动</template>
+							<el-menu-item index="world-week">World Week</el-menu-item>
+							<el-menu-item index="farewell" disabled>欢送会</el-menu-item>
+							<el-menu-item index="welcome" disabled>迎新会</el-menu-item>
+						</el-submenu>
 						<el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item>
 						<el-menu-item index="/Message"><i class="fa fa-wa fa-pencil"></i> 留言板</el-menu-item>
-						<!-- <el-menu-item index="/Aboutme"><i class="fa fa-wa fa-vcard"></i> 关于</el-menu-item> -->
+						<el-menu-item index="/Aboutme"><i class="fa fa-wa fa-vcard"></i> 关于</el-menu-item>
 						<div index="" class="pcsearchbox">
 							<i class="el-icon-search pcsearchicon"></i>
 							<div class="pcsearchinput" :class="input?'hasSearched':''">
@@ -36,12 +34,6 @@
 									<li>
 										<a href="#/UserInfo">Profile</a>
 									</li>
-									<!-- <li>
-										<a href="#/LikeCollect?like=1">喜欢列表</a>
-									</li>
-									<li>
-										<a href="#/LikeCollect?like=2">收藏列表</a>
-									</li> -->
 									<li>
 										<a href="javascript:void(0);" @click="userlogout">Logout</a>
 									</li>
@@ -57,14 +49,6 @@
 						<el-collapse-transition>
 							<el-menu :default-active="activeIndex" class="mlistmenu" v-show="!pMenu" theme="dark" @open="handleOpen" @close="handleClose" :unique-opened="true" :router="true">
 								<el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> 首页</el-menu-item>
-								<!-- <el-submenu index="/Share"> -->
-									<!-- <template slot="title"><i class="fa fa-wa fa-archive"></i> 分类</template> -->
-									<!-- <el-menu-item v-for="(item,index) in classListObj" :key="'class1'+index" :index="'/Share?classId='+item.class_id">{{item.cate_name}}</el-menu-item> -->
-								<!-- </el-submenu> -->
-								<!-- <el-submenu index="2"> -->
-									<!-- <template slot="title"><i class="fa fa-wa fa-flask"></i> 实验室</template> -->
-									<!-- <el-menu-item v-for="(item,index) in projectList" :key="'class2'+index" index=""><a :href="item.nav_url" target="_blank">{{item.nav_name}}</a></el-menu-item> -->
-								<!-- </el-submenu> -->
 								<el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item>
 								<!-- <el-menu-item index="/Friendslink"><i class="fa fa-wa fa-users"></i> 伙伴</el-menu-item> -->
 								<el-menu-item index="/Message"><i class="fa fa-wa fa-pencil"></i> 留言板</el-menu-item>
@@ -74,8 +58,6 @@
 								<el-submenu v-show="haslogin" index="3">
 									<template slot="title"><i class="fa fa-wa fa-user-circle-o"></i> 我的</template>
 									<el-menu-item index="/UserInfo">个人中心</el-menu-item>
-									<!-- <el-menu-item index="/LikeCollect?like=1">喜欢的文章</el-menu-item> -->
-									<!-- <el-menu-item index="/LikeCollect?like=2">收藏的文章</el-menu-item> -->
 									<el-menu-item index="" @click="userlogout">退出登录</el-menu-item>
 								</el-submenu>
 							</el-menu>
@@ -89,13 +71,14 @@
 			</el-col>
 		</el-row>
 	</div>
+
 	<div class="headImgBox" :style="{backgroundImage:this.$store.state.themeObj.top_image?'url('+this.$store.state.themeObj.top_image+')':'url(static/img/Beach.jpg)'}">
 		<div class="scene">
 			<div><span id="luke"></span></div>
 		</div>
 		<div class="h-information">
 			<a href="#/Aboutme">
-				<img :src="this.$store.state.themeObj.head_portrait?this.$store.state.themeObj.head_portrait:'static/img/avatar_1.jpg'" alt="">
+				<img :src="this.$store.state.themeObj.head_portrait ? this.$store.state.themeObj.head_portrait : 'static/img/avatar_1.jpg'" alt="">
             </a>
 			<h2 class="h-description" style="font-size: 35px">
 				<ul class= 'check-texts'>
@@ -161,10 +144,10 @@ import {
 	navMenList,
 	changeTheme,
 	AboutMeData
-} from '../utils/server.js'
+} from '@/utils/server.js'
 import {
 	Typeit
-} from '../utils/plug.js'
+} from '@/utils/plug.js'
 export default {
 	data() { //选项 / 数据
 		return {
@@ -731,7 +714,7 @@ input[type="checkbox"]:checked ~ .sub-header {
 	align-content: center;
 	align-items: center;
 }
-@-webkit-keyframes b {
+/* @-webkit-keyframes b {
 	0% {
 		-webkit-transform: translateY(90px);
 		transform: translateY(90px);
@@ -748,6 +731,15 @@ input[type="checkbox"]:checked ~ .sub-header {
 		-webkit-transform: translateY(0);
 		transform: translateY(0)
 	}
+} */
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 @keyframes b {
@@ -773,14 +765,14 @@ input[type="checkbox"]:checked ~ .sub-header {
 	width: 100px;
 	height: 100px;
 	border-radius: 100%;
-	transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
 	object-fit: cover;
+	animation: rotation 5s infinite ease-in-out;
 }
 
 .h-information img:hover {
-	transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
+	/* transform: translateY(20); */
 }
 
 .h-information h2 {

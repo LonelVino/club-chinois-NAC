@@ -1,8 +1,6 @@
 <!-- 底部公用 -->
 <template>
     <div v-if="this.$store.state.themeObj.user_start!=0" class="footBack footBackQian">
-        <div class="footer-img" >
-        </div>
         <div class="fcontainer">
             <p>
                 ClubChinois has already been around for <span v-html='longTime'>{{longTime}}</span><span class="timeJump">(●'◡'●)ﾉ♥</span>

@@ -131,7 +131,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url('../../static/img/Beach.jpg');
+      background-image: url('../../../static/img/Beach.jpg');
       background-size: cover;
     }
   }

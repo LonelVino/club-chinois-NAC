@@ -1,6 +1,6 @@
 // 全局引入 svgIcon 组件
 import Vue from 'vue'
-import SvgIcon from '@/components/SvgIcon.vue'
+import SvgIcon from '@/components/Modal/SvgIcon.vue'
 
 Vue.component('svg-icon', SvgIcon)
 

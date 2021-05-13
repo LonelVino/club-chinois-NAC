@@ -15,7 +15,7 @@
                     <el-card class="box-card">
                     <div slot="header" class="clearfix">
                         <span class='card-header-txt'>President</span>
-                        <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                        <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                     </div>
                     <div class="card-content">
                         <p>大家好！我是罗宸晟。老家四川，来自北航。喜欢火车，热爱定向（越野），较为喜欢户外，可约布依格后小树林散/跑步或萨克雷周边骑行，作为烹饪新手偶尔也喜欢探索各种美食做法。</p>
@@ -41,7 +41,7 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Événement</span>
-                            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                         </div>
                         <div class="card-content">
                             <p>我是陈旭文，爱吃辣的湖南人一枚；平时喜欢听音乐，爱好唱歌和运动（羽毛球和定向越野），钢琴、吉他偶尔能露一手。另外对各种桌游都感兴趣，欢迎随时约局！</p>
@@ -68,7 +68,7 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Trésorier</span>
-                            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                         </div>
                         <div class="card-content">
                             <p>大家好！我是温凯奥，今年将作为club chinois 财务部分的负责人与大家相识。</p>
@@ -95,7 +95,7 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Comm Interne</span>
-                            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                         </div>
                         <div class="card-content">
                             <p>可颂十级爱好者。</p>
@@ -123,7 +123,7 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Comm Externe</span>
-                            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                         </div>
                         <div class="card-content">
                             <p>大家好</p>
@@ -156,7 +156,7 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Logstique</span>
-                            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                         </div>
                         <div class="card-content haonan-content">
                             <p>👷林浩南，😆➡️©️©️🇨🇳，👷🏃🥟➕🛒🛍️，</p>
@@ -179,7 +179,7 @@
 <script>
 
 import ModalWizard from 'vue-modal-wizard'
-import LoginModal from '../components/OpenModal.vue'
+import LoginModal from '../components/Modal/OpenModal.vue'
 
 import Roller from "vue-roller";
 export default {
@@ -292,6 +292,9 @@ line-height: 1.2em;
     font-size: 30px;
 }
 @media screen and (max-width: 800px) { 
+    .card-header-txt {
+        font-size: 4vw;
+    }
     .pre-main {
         flex-direction: column;
         align-content: center;
@@ -302,7 +305,7 @@ line-height: 1.2em;
         align-items: center;
     }
     .title {
-        font-size: 6vw;
+        font-size: 6.5vw;
         margin-left: 10px;
     }
     .self-pres {
