@@ -117,6 +117,11 @@ export default {
    margin-top: 0vw;
   }
 }
+@media screen and (max-width: 440px) {
+  .flipbook .viewport {
+   margin-top: -10vw;
+  }
+}
 </style>
 
 <style lang="scss" scoped>
@@ -173,5 +178,10 @@ export default {
   font-size: 2vw !important;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bolder;
+}
+@media screen and (max-width: 440px) {
+  .action-bar {
+    margin-top: -10vw;
+  }
 }
 </style>

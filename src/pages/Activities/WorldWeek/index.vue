@@ -9,12 +9,12 @@
             <el-row :gutter="24" style="margin:0; display:flex; flex-direction: column; align-item: center;">
                 <div class="titles">
                   <div class="title">
-                    <Roller class="roller" :charList="['W', 'K', 'L', 'O', 'E', 'R']" :transition="1" text="WORLD"/>
-                    <Roller class="roller" :charList="['W', 'K', 'L', 'O', 'E', 'R']" :transition="1" text="WEEK"/>
+                    <Roller :wordWrap="20" class="roller" :charList="['W', 'K', 'L', 'O', 'E', 'R']" :transition="1" text="WORLD"/>
+                    <Roller :wordWrap="20" class="roller" :charList="['W', 'K', 'L', 'O', 'E', 'R']" :transition="1" text="WEEK"/>
                   </div>
                   <div class="sub-title">
-                      <Roller class="roller" :charList="['C', 'U', 'L', 'O', 'N', 'S']" :transition="1" text="-- Club"/>
-                      <Roller class="roller" :charList="['C', 'U', 'L', 'O', 'N', 'S']" :transition="1" text="   Chinois"/>
+                      <Roller :wordWrap="20" class="roller" :charList="['C', 'U', 'L', 'O', 'N', 'S']" :transition="1" text="-- Club"/>
+                      <Roller :wordWrap="20" class="roller" :charList="['C', 'U', 'L', 'O', 'N', 'S']" :transition="1" text="   Chinois"/>
                   </div>
                 </div>
                 <el-col :sm="15" :md="15" style="transition:all .5s ease-out;margin-bottom:30px;">
@@ -111,15 +111,52 @@ a {
     font-weight: bolder;
   }
 .title {
+  display: flex;
   .roller {
     font-size: 4.5vw;
   }
 }
 .sub-title {
+  display: flex;
   margin-top: 1.5vw;
   .roller {
     font-size: 2.5vw;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .titles {flex-direction: column;}
+  .title {
+    flex-direction: row;
+    .roller {
+      font-size: 6.5vw;
+    }
+  }
+  .sub-title {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5vw;
+    .roller {
+      font-size: 3.5vw;
+    }
+  }  
+}
+
+@media screen and (max-width: 550px) {
+
+
+.title {
+  .roller {
+    font-size: 8.5vw;
+  }
+}
+.sub-title {
+  margin-top: 1.5vw;
+  .roller {
+    margin: 0;
+    font-size: 4.5vw ;
+  }
+}  
 }
 
 </style>

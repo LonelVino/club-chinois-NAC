@@ -106,4 +106,14 @@ export default {
         transform: scaleY(1.45)
     }
 }
+@media screen and (max-width: 600px) {
+    .waveWrapper {
+        transform: scaleY(1.45)
+    }
+}
+@media screen and (max-width: 375px) {
+    .waveWrapper {
+        transform: scaleY(1.55)
+    }
+}
 </style>
