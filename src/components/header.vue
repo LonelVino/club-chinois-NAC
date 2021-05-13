@@ -17,7 +17,6 @@
 							<!-- <el-menu-item v-for="(item,index) in projectList" :key="'class2'+index" index=""><a :href="item.nav_url" target="_blank">{{item.nav_name}}</a></el-menu-item> -->
 						<!-- </el-submenu> -->
 						<el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item>
-						<!-- <el-menu-item index="/Friendslink"><i class="fa fa-wa fa-users"></i> 伙伴</el-menu-item> -->
 						<el-menu-item index="/Message"><i class="fa fa-wa fa-pencil"></i> 留言板</el-menu-item>
 						<!-- <el-menu-item index="/Aboutme"><i class="fa fa-wa fa-vcard"></i> 关于</el-menu-item> -->
 						<div index="" class="pcsearchbox">
@@ -96,13 +95,61 @@
 		</div>
 		<div class="h-information">
 			<a href="#/Aboutme">
-                    <img :src="this.$store.state.themeObj.head_portrait?this.$store.state.themeObj.head_portrait:'static/img/avatar_1.jpg'" alt="">
-                </a>
+				<img :src="this.$store.state.themeObj.head_portrait?this.$store.state.themeObj.head_portrait:'static/img/avatar_1.jpg'" alt="">
+            </a>
 			<h2 class="h-description" style="font-size: 35px">
+				<ul class= 'check-texts'>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>C</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>L</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>U</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>B</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>C</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>H</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>I</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>N</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>O</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>I</div>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<div class='sub-header'>S</div>
+					</li>
+				</ul>
+				</h2>
+				<!-- <h2 class="h-description" style="font-size: 35px">
                     <a href="#/Aboutme">
                         {{this.$store.state.themeObj.autograph?this.$store.state.themeObj.autograph:"Welcome to ClubChinois"}}
                     </a>
-                </h2>
+                </h2> -->
 		</div>
 	</div>
 </div>
@@ -292,7 +339,85 @@ export default {
 }
 </script>
 
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+/******** The header texts *********/
+
+.check-texts {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.check-texts  li {
+  list-style: none;
+}
+
+label {
+  position: relative;
+}
+
+.check-texts  input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  z-index: 100;
+}
+
+.sub-header {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background: #18191f;
+  color: #555;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  cursor: pointer;
+  margin: 0 4px;
+  border-radius: 20px;
+  box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+    4px 4px 6px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+    inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* div:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 75px;
+  height: 38px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+} */
+
+input[type="checkbox"]:checked ~ .sub-header {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+</style>
+
 <style>
+
 /*********头部导航栏********/
 
 /*头部导航栏盒子*/
@@ -582,6 +707,8 @@ export default {
 }
 
 .h-information {
+	align-content: center;
+	align-items: center;
 	text-align: center;
 	width: 100%;
 	margin: auto;
@@ -597,6 +724,13 @@ export default {
 	-webkit-animation: b 1s ease-out;
 }
 
+.h-description {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
 @-webkit-keyframes b {
 	0% {
 		-webkit-transform: translateY(90px);

@@ -82,7 +82,62 @@
                 </div>
             </div>
         </div>
+                <div class="pre-card" id="xiwen">
+            <div class="name">
+                <Roller class="roller" :charList="['C', 'w', 'i', 'x']" :transition="1" text="Xiwen Cui 崔曦文"/>
+            </div>
+            <div class="pre-main">
+                <div class="img-pre">
+                    <image-shadow :width="300" :src="this.src5"></image-shadow>
+                </div>                                
+                <div class="pre-txt">
+                    <sequential-entrance>
+                        <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span class='card-header-txt'>Comm Interne</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                        </div>
+                        <div class="card-content">
+                            <p>可颂十级爱好者。</p>
+                            <p>但是最爱中餐。</p>
+                            <p>孤独的巴黎热心游客。擅长做旅行攻略。</p>
+                            <p>但是因为疫情被迫成为长在césal的蘑菇。</p>
+                            <p>今天也好想出去玩。</p>
+                            <p>宣传小白但是在社团负责宣传部。</p>
+                            <p>从今天开始就是后台小编了。</p>
+                            <p>未完待续</p>
+                        </div>
+                        </el-card>
+                    </sequential-entrance>
+                </div>
+            </div>
+        </div>
 
+        <div class="pre-card" id="roberta">
+            <div class="name">
+                <Roller class="roller" :charList="['L', 'a', 'R', 'b']" :transition="1" text="Roberta Liu"/>
+            </div>
+            <div class="pre-main">
+                <div class="pre-txt">
+                    <sequential-entrance>
+                        <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span class='card-header-txt'>Comm Externe</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                        </div>
+                        <div class="card-content">
+                            <p>大家好</p>
+                            <p>我是刘 Roberta;</p>
+                            <p>平时喜欢和朋友聚餐和散步。</p>
+                            <p>在 CS 打排球，所以也喜欢去沙滩排球场打球。</p>
+                            <p>希望可以让中国学生更加融入 CS 的国际环境。</p>
+                        </div>
+                        </el-card>
+                    </sequential-entrance>
+                </div>
+            </div>
+        </div>
+        
         <div class="pre-card" id='haonan'>
             <div class="name">
                 <Roller class="roller" :charList="['L', 'h', 'n', 'a']" :transition="1" text="Haonan Lin 林浩南"/>
@@ -117,61 +172,7 @@
             </div>
         </div>
 
-        <div class="pre-card" id="xiwen">
-            <div class="name">
-                <Roller class="roller" :charList="['C', 'w', 'i', 'x']" :transition="1" text="Xiwen Cui 崔曦文"/>
-            </div>
-            <div class="pre-main">
-                <div class="img-pre">
-                    <image-shadow :width="300" :src="this.src5"></image-shadow>
-                </div>                                
-                <div class="pre-txt">
-                    <sequential-entrance>
-                        <el-card class="box-card">
-                        <div slot="header" class="clearfix">
-                            <span class='card-header-txt'>Comm Interne</span>
-                            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
-                        </div>
-                        <div class="card-content">
-                            <p>可颂十级爱好者。</p>
-                            <p>但是最爱中餐。</p>
-                            <p>孤独的巴黎热心游客。擅长做旅行攻略。</p>
-                            <p>但是因为疫情被迫成为长在césal的蘑菇。</p>
-                            <p>今天也好想出去玩。</p>
-                            <p>宣传小白但是在社团负责宣传部。</p>
-                            <p>从今天开始就是后台小编了。</p>
-                            <p>未完待续</p>
-                        </div>
-                        </el-card>
-                    </sequential-entrance>
-                </div>
-            </div>
-        </div>
 
-        <div class="pre-card" id="xiwen">
-            <div class="name">
-                <Roller class="roller" :charList="['L', 'a', 'R', 'b']" :transition="1" text="Roberta Liu"/>
-            </div>
-            <div class="pre-main">
-                <div class="pre-txt">
-                    <sequential-entrance>
-                        <el-card class="box-card">
-                        <div slot="header" class="clearfix">
-                            <span class='card-header-txt'>Comm Externe</span>
-                            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
-                        </div>
-                        <div class="card-content">
-                            <p>大家好</p>
-                            <p>我是刘 Roberta;</p>
-                            <p>平时喜欢和朋友聚餐和散步。</p>
-                            <p>在 CS 打排球，所以也喜欢去沙滩排球场打球。</p>
-                            <p>希望可以让中国学生更加融入 CS 的国际环境。</p>
-                        </div>
-                        </el-card>
-                    </sequential-entrance>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
