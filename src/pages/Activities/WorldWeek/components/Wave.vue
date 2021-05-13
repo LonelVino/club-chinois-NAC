@@ -42,7 +42,7 @@ export default {
     top: 0;
     margin: auto;
     z-index: -100;
-    transform: scaleY(1.2);
+    transform: scaleY(1.8);
 }
 .waveWrapperInner {
     position: absolute;
@@ -94,5 +94,16 @@ export default {
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
+}
+
+@media screen and (max-width: 1250px) {
+    .waveWrapper {
+        transform: scaleY(1.55)
+    }
+}
+@media screen and (max-width: 800px) {
+    .waveWrapper {
+        transform: scaleY(1.45)
+    }
 }
 </style>

@@ -3,20 +3,21 @@
     <div id='ww-app' class="stripe"
     :class="{ 'has-mouse': hasMouse }"
     @touchstart="hasMouse = false">
-        <!-- <wbc-nav></wbc-nav> -->
+        <wbc-nav class='ww-nav'/>
         <wave/>
         <div class="container">
-            <el-row :gutter="24" style="margin:0">
-              
+            <el-row :gutter="24" style="margin:0; display:flex; flex-direction: column; align-item: center;">
+                <div class="titles">
+                  <div class="title">
+                    <Roller class="roller" :charList="['W', 'K', 'L', 'O', 'E', 'R']" :transition="1" text="WORLD"/>
+                    <Roller class="roller" :charList="['W', 'K', 'L', 'O', 'E', 'R']" :transition="1" text="WEEK"/>
+                  </div>
+                  <div class="sub-title">
+                      <Roller class="roller" :charList="['C', 'U', 'L', 'O', 'N', 'S']" :transition="1" text="-- Club"/>
+                      <Roller class="roller" :charList="['C', 'U', 'L', 'O', 'N', 'S']" :transition="1" text="   Chinois"/>
+                  </div>
+                </div>
                 <el-col :sm="15" :md="15" style="transition:all .5s ease-out;margin-bottom:30px;">
-                  <!-- <div class="titles">
-                    <div class="title">
-                      <Roller class="roller" :charList="['W', 'K', 'L', 'O', 'E', 'R']" :transition="1" text="WORLD WEEK"/>
-                    </div>
-                    <div class="sub-title">
-                        <Roller class="roller" :charList="['C', 'U', 'L', 'O', 'N', 'S']" :transition="1" text="-- Club Chinois"/>
-                    </div>
-                  </div> -->
                   <flip-book/>
                   
                 </el-col>
@@ -32,6 +33,7 @@
 import header from '@/components/Modal/header.vue'
 import footer from '@/components/Modal/footer.vue'
 import temRightlist from '@/components/Modal/temRightlist.vue'
+import headerNav from '@/components/Modal/headerWidgets/headerNav.vue'
 
 import Wave from './components/Wave'
 import FlipBook from './components/FlipBook.vue'
@@ -45,9 +47,9 @@ export default {
       }
     },
     components: { //定义组件
-        'wbc-nav':header,
-        'wbc-rightlist':temRightlist,
+        'wbc-nav': headerNav,
         'wbc-footer':footer,
+
         FlipBook,
         Wave,
         Roller,
@@ -77,7 +79,9 @@ export default {
   color: #192a3b;
   margin-top: 30px;
 }
-
+.ww-nav {
+  margin-top: -2vw;
+}
 a {
   color: coral;
 }
@@ -95,6 +99,7 @@ a {
 .titles {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
 }
 .title .sub-title {
   z-index: 100;
@@ -107,12 +112,13 @@ a {
   }
 .title {
   .roller {
-    font-size: 40px;
+    font-size: 4.5vw;
   }
 }
 .sub-title {
+  margin-top: 1.5vw;
   .roller {
-    font-size: 30px;
+    font-size: 2.5vw;
   }
 }
 

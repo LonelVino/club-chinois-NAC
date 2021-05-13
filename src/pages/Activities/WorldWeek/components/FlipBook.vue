@@ -105,14 +105,27 @@ export default {
 .flipbook .viewport {
   width: 90vw;
   height: calc(100vh - 50px - 40px);
+  margin-top: 0.5vw;
 }
 
 .flipbook .bounding-box {
   box-shadow: 0 0 20px #000;
 }
+
+@media screen and (max-width: 940px) {
+  .flipbook .viewport {
+   margin-top: 0vw;
+  }
+}
 </style>
 
 <style lang="scss" scoped>
+.flipbook {
+  width: 90vw;
+  height: 90vh;
+  margin-top: 50px;
+}
+
 .action-bar {
   width: 100%;
   height: 30px;
@@ -154,10 +167,11 @@ export default {
   font-size: 12px;
   margin-left: 10px;
 }
-.flipbook {
-  width: 90vw;
-  height: 90vh;
-  margin-top: 50px;
 
+.page-num {
+  color: wheat;
+  font-size: 2vw !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
 }
 </style>
