@@ -202,7 +202,14 @@ export default {
 				this.input = '';
 				this.$store.state.keywords = '';
 			}
-		}
+		},
+		handleOpen() {
+		},
+		handleSelect() {
+		},
+		handleClose() {
+		},
+		
 	},
     
 }

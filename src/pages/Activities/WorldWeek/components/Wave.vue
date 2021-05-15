@@ -75,7 +75,7 @@ export default {
     transform-origin: center bottom;
 }
 .waveTop {
-    background-size: 50% 100px;
+    background-size: 50% 12vw;
 }
 .waveAnimation .waveTop {
   animation: move-wave 3s;
@@ -84,13 +84,13 @@ export default {
    animation-delay: 1s;
 }
 .waveMiddle {
-    background-size: 50% 120px;
+    background-size: 50% 13vw;
 }
 .waveAnimation .waveMiddle {
     animation: move_wave 10s linear infinite;
 }
 .waveBottom {
-    background-size: 50% 100px;
+    background-size: 50% 20vw;
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;

@@ -1,37 +1,87 @@
 <template>
   <div class="login-modal">
-    <div class="box-left">
-      <div class="content">
-        <p class="title">SIGN IN</p>
-        <div class="form">
-          <input type="text" placeholder="User name">
-          <input type="password" placeholder="Password">
-          <button class="green">Sign in</button>
-        </div>
-        <p class="title">CREATE ACCOUNT</p>
-        <div class="form">
-          <p>A new free account
-            <br><br>
-            It's free to join and easy to use. Continue on to create your Steam account and get Steam, the leading digital solution for PC and Mac gamers.</p>
-          <button class="gray">Join Steam</button>
-        </div>
-      </div>
-    </div>
-    <div class="box-right"></div>
+    <ConversationalForm @submit="submit" id="vcf">
+      <fieldset>
+        <label for="name" >What's your name?</label>
+        <input required data-question="Hi there! What's your name? " type="text" name="name" id="name">
+      </fieldset>
+
+      <fieldset>
+        <label for="isAne">isAne</label>
+        <select data-question='Great to meet you, {name}! Have you played "Ane Rouge"?' name="isAne" id="isAne" >
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="isVol">isVol</label>
+        <select data-question='Got it! And have you played "Volant Volant"?' name="isVol" id="isVol" >
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="isPitch">isPitch</label>
+        <select data-question='Ok ! Have you played "Pitch pot"?' name="isPitch" id="isPitch" >
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </fieldset>
+
+      <!-- <fieldset>
+        <label for="score">score</label>
+        <input data-question="{name}, nice! What's your score now?" type="text" name="score" id="score">
+      </fieldset> -->
+
+      <fieldset>
+        <label for="telephone">What's your telephone number?</label>
+        <input data-question="{name}, nice! Could you please give us ur telephone number?" type="text" name="telephone" id="telephone">
+      </fieldset>
+
+      <fieldset>
+        <label for="email">Email</label>
+        <input pattern=".+\@.+\..+" data-invalid="E-mail not correct" data-question="Please give me your email."
+          type="email" name="email" id="your-email">
+      </fieldset>
+
+      <fieldset>
+        <label for="loc">loc</label>
+        <input data-question="Could you please tell us where u live?"
+          type="text" name="loc" id="your-location">
+      </fieldset>
+
+      <fieldset>
+        <label for="thats-all">Are you ready to submit the form?</label>
+        <button data-question="Are you ready to submit the form?" data-success="Submited! Yay! 😄" name="submit" type="submit" data-cancel="Nope" @click="submit">Yup</button>
+      </fieldset>
+
+      <fieldset>
+        <label for="thats-all">Want to start over?</label>
+        <button data-question="Want to start over?" name="reset" type="reset" data-cancel="No">Yes, let's go again</button>
+      </fieldset>
+    </ConversationalForm>
   </div>
 </template>
 
 <script>
+import ConversationalForm from '@/components/ConversationForm/ConversationalForm.vue'
+
   export default {
     name: "LoginModal",
-
+    data() {
+      return {
+      }
+    },
+    mounted() {
+    },
+    components: {
+      ConversationalForm,
+    },
     methods: {
-      _modalStyle () {
-        return {
-          lightboxColor: 'rgba(20, 20, 20, 0.95)',
-          transition: 'pop-out',
-          fadeDuration: '0.4s'
-        }
+      submit (o) {
+        console.log('Submit:')
       }
     }
   }
@@ -45,105 +95,17 @@
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 8px 100px -4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10vw;
 
-    .box-left {
-      width: 50%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      .content {
-        padding: 0 30px;
-
-        .title {
-          color: #666;
-          margin: 0;
-          padding: 25px 0 10px 0;
-          font-size: 1.2em;
-          text-align: left;
-        }
-
-        .form {
-          text-align: left;
-
-          input[type=text],
-          input[type=password]{
-            color: #666;
-            display: block;
-            box-sizing: border-box;
-            margin-bottom: 6px;
-            width: 100%;
-            font-size: 0.8em;
-            line-height: 2;
-            border: 0;
-            padding: 4px 8px;
-            transition: all .5s;
-            outline: none;
-            background: #333;
-            border-radius: 3px;
-          }
-
-          button {
-            display: block;
-            box-sizing: border-box;
-            margin-bottom: 6px;
-            font-size: 0.8em;
-            line-height: 2;
-            border: 0;
-            padding: 4px 15px;
-            transition: all .5s;
-            outline: none;
-            border-radius: 3px;
-            cursor: pointer;
-
-            &.green {
-              color: #ffffff;
-              background: #006166;
-            }
-
-            &.gray {
-              color: #666;
-              background-color: #333;
-            }
-          }
-
-          p {
-            color: #666;
-            font-size: 0.8em;
-            margin: 0 0 8px 0;
-          }
-        }
-
-        .buttons {
-          margin-top: 10px;
-          text-align: left;
-
-
-        }
-      }
+        
+    fieldset {
+      background: #fff;
     }
-
-    .box-right {
-      color: rgba(55, 30, 72, 0.51);
-      width: 50%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url('../../../static/img/Beach.jpg');
-      background-size: cover;
+    #vcf .vcf-container,
+    form {
+      box-shadow: 0 4px 5px -1px rgba(0, 0, 0, .1), 0 7px 8px 0 rgba(0, 0, 0, .07), 0 1px 18px 0 rgba(0, 0, 0, .06);
+      border-radius: 5px;
+      overflow: hidden;
     }
-  }
-
-  .pop-out-enter,
-  .pop-out-leave-to {
-    transform: translateY(20px);
-  }
-
-  .pop-out-enter-active,
-  .pop-out-leave-active {
-    /*do not use 'all' for transition, as positioning of modal will be animated*/
-    transition: transform 0.4s;
   }
 </style>

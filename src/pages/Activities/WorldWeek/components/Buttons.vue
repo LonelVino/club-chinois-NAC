@@ -1,25 +1,25 @@
 <template>
     <div class="grid">
         <div class='txt-btn' v-for="(v, i) of config" :key="i" :class="getCls(i)">
-            <button
-            class='btn'
-            v-if="!v.visible && !v.animating"
-            @click="toggle(i)"
-            style="position: absolute; top: 1em; right: 1em; background: rgb(50, 186, 250); color: rgb(255, 255, 255); border: 0px; border-radius: 4px; font-size: 1em; padding: 0.7em 1.2em; cursor: pointer; outline: none;"
-        >
-        Reset
-        </button>
+          <el-button
+          class='btn'
+          v-if="!v.visible && !v.animating"
+          @click="toggle(i)"
+          >
+          Reset
+          </el-button>
         <Test
             class='txt-btn-2'
             :animating.sync="config[i].animating"
             :visible.sync="config[i].visible"
             :ref="getRef(i)"
             :options="v"
+            @v-model="openDialog()"
         >
-            <span>{{ v.label }}</span>
+            <span @click="openDialog()">{{ v.label }}</span>
         </Test>
         </div>
-
+        
     </div>
 </template>
 
@@ -30,7 +30,7 @@ import ParticleEffectButton from "vue-particle-effect-buttons"
 import demoArr_1 from '@/utils/btns.js'
 const demoArr = [
     {
-      label: "WORLD WEEK"
+      label: "Join IN"
     }
 ]
 export default {
@@ -38,7 +38,7 @@ export default {
     data() {
         return {
             config: [],
-             btnOps: {
+            btnOps: {
                 type: "triangle",
                 easing: "easeOutQuart",
                 size: 6,
@@ -74,11 +74,16 @@ export default {
     });
     },
     methods: {
-    toggle(index) {
+      toggle(index) {
+        console.log
         this.$set(this.config, index, {
           ...this.config[index],
           visible: !this.config[index].visible
         });
+      },
+      openDialog() {
+        console.log('Event has been emitted!')
+        this.$emit('buttonOpen', true);    
       },
       getCls(i) {
         const name = `theme-${i + 1}`;
@@ -104,11 +109,16 @@ export default {
   align-content: center;
   align-items: center;
   margin: 0 auto;
+  .btn {
+    width: 13vw;
+    font-size: 25px;
+    font-weight: bolder;
+  }
   .txt-btn-2 {
     width: 1350px;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bolder;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 }
 </style>

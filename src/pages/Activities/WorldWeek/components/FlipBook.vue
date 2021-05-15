@@ -38,7 +38,6 @@ export default {
     data() {
         return {
             pages: [],
-            hasMouse: true,
             pageNum: null,
             cur_page: 0,
         }
