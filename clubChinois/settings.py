@@ -27,14 +27,18 @@ SECRET_KEY = 'django-insecure-5mf(zpen3!12-3p-pnpz5($3q&n8*ms91)=0i)3120*lots-25
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 
-ALLOWED_HOSTS = [
-    'http://club-chinois.herokuapp.com/',
-    'https://club-chinois.herokuapp.com/',
-    'club-chinois.herokuapp.com',
-    'club-chinois.herokuapp.com/',
-    '127.0.0.1']
+# ALLOWED_HOSTS = [
+#     'http://club-chinois.herokuapp.com/',
+#     'https://club-chinois.herokuapp.com/',
+#     'club-chinois.herokuapp.com',
+#     'club-chinois.herokuapp.com/',
+#     'http://world-week-test.herokuapp.com',
+#     'http://world-week-test.herokuapp.com/',
+#     'https://world-week-test.herokuapp.com',
+#     'https://world-week-test.herokuapp.com/',
+#     '127.0.0.1']
     
 CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8080',   # Frontend on dev mode
@@ -43,6 +47,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081', # Frontend on dev mode
     'http://127.0.0.1:8000',   # Backend        
     'http://localhost:8000',   # Backend   
+    'http://world-week-test.herokuapp.com'
 )
 
 # Application definition

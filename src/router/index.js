@@ -56,6 +56,18 @@ export default new Router({
 			name: 'Aboutme'
 		}, //关于
 		{
+			path: '/Congulations1',
+			component: resolve => require(['../pages/Congulations/Congulations.vue'], resolve),
+			meta: {auth: true},
+			name: 'Congulations'
+		}, //Congulations
+		{
+			path: '/Congulations2',
+			component: resolve => require(['../pages/Congulations/Congulations_2.vue'], resolve),
+			meta: {auth: true},
+			name: 'Congulations2'
+		}, //Congulations
+		{
 			path: '/Login',
 			component: resolve => require(['../pages/Login.vue'], resolve),
 			meta: {auth: false},
