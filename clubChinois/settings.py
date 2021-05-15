@@ -27,7 +27,32 @@ SECRET_KEY = 'django-insecure-5mf(zpen3!12-3p-pnpz5($3q&n8*ms91)=0i)3120*lots-25
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+    'VIEW',
+)
+
+CORS_ALLOW_HEADERS = (
+    'XMLHttpRequest',
+    'X_FILENAME',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'Pragma',
+)
 
 # ALLOWED_HOSTS = [
 #     'http://club-chinois.herokuapp.com/',
@@ -39,16 +64,17 @@ CORS_ORIGIN_ALLOW_ALL = True
 #     'https://world-week-test.herokuapp.com',
 #     'https://world-week-test.herokuapp.com/',
 #     '127.0.0.1']
+
     
-CORS_ORIGIN_WHITELIST = (
-    'http://127.0.0.1:8080',   # Frontend on dev mode
-    'http://127.0.0.1:8081',    # Frontend on dev mode
-    'http://localhost:8080', # Frontend on dev mode
-    'http://localhost:8081', # Frontend on dev mode
-    'http://127.0.0.1:8000',   # Backend        
-    'http://localhost:8000',   # Backend   
-    'http://world-week-test.herokuapp.com'
-)
+# CORS_ORIGIN_WHITELIST = (
+#     'http://127.0.0.1:8080',   # Frontend on dev mode
+#     'http://127.0.0.1:8081',    # Frontend on dev mode
+#     'http://localhost:8080', # Frontend on dev mode
+#     'http://localhost:8081', # Frontend on dev mode
+#     'http://127.0.0.1:8000',   # Backend        
+#     'http://localhost:8000',   # Backend   
+#     'http://world-week-test.herokuapp.com'
+# )
 
 # Application definition
 
@@ -66,12 +92,13 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware', # 注意顺序，必须放在这儿
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
