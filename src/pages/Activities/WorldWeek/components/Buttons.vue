@@ -8,6 +8,7 @@
           >
           Reset
           </el-button>
+          <p  v-if="!v.visible && !v.animating" class='hint'>If the join Dialog box doesn't show up successfully, please click the RESET button and add join again.</p>
         <Test
             class='txt-btn-2'
             :animating.sync="config[i].animating"
@@ -119,6 +120,14 @@ export default {
     font-size: 25px;
     font-weight: bolder;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .hint {
+    margin: 0 auto;
+    margin-top: 0.5vw;
+    font-size: 1.5vw;
+    color: beige;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
 </style>

@@ -1,6 +1,4 @@
-1.Change the structure
-  - Add layout (there are too many dupliacted components)
-    Delete the useless components
+1.SEND ADD INFO REQUEST, can't add successfully online (ADD successfully locally, but data online doesn't change )
 2.Use the SVG
 3.delete the useless route in router.js
 4.modify README.md
