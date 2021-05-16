@@ -5,7 +5,7 @@
         <div class="container">
             <el-row  :gutter="30">
                 <el-col :sm="24" :md="16" style="transition:all .5s ease-out;margin-bottom:30px;">
-                    <wbc-about></wbc-about>
+                    <Presentation/>
                     <wbc-message></wbc-message>
                 </el-col>
                 <el-col :sm="24"  :md="8" >
@@ -23,6 +23,8 @@ import footer from '../components/Modal/footer.vue'
 import temRightlist from '../components/Modal/temRightlist.vue'
 import temAbout from '../components/temAbout.vue'
 import temMessage from '../components/temMessage.vue'
+import Presentation from '@/components/presentation.vue'
+
     export default {
         name: 'Aboutme',
         data() { //选项 / 数据
@@ -38,7 +40,8 @@ import temMessage from '../components/temMessage.vue'
             'wbc-message':temMessage,
             'wbc-about':temAbout,
             'wbc-rightlist':temRightlist,
-            'wbc-footer':footer
+            'wbc-footer':footer,
+            Presentation,
         },
         created() { //生命周期函数
 

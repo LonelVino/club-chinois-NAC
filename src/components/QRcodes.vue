@@ -2,7 +2,7 @@
     <div class="qr-codes">
         <sequential-entrance>
             <div class="qr-code">
-                <div class='title'> World week </div>
+                <div class='title'> World week Sign up</div>
                 <vue-qrcode value="http://club-chinois.herokuapp.com/#/world-week"></vue-qrcode>
             </div>
         </sequential-entrance>
@@ -42,7 +42,7 @@ export default {
     justify-content: space-around;
 }
 .title {
-    font-size: 2vw;
+    font-size: 1.3vw;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

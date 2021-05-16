@@ -7,7 +7,7 @@
                 <Caroulse class="caroulse"/>
                 <el-col :sm="24" :md="18" style="transition:all .5s ease-out;margin-bottom:30px;">
                     <sequential-entrance>
-                        <presentation/>
+                        <articles/>
                     </sequential-entrance>
                 </el-col>
                 <el-col :sm="24"  :md="6" >
@@ -27,6 +27,7 @@ import Caroulse from '@/components/Modal/caroulse.vue'
 import temRightlist from '@/components/Modal/temRightlist.vue'
 import Presentation from '@/components/presentation.vue'
 import QrCodes from '@/components/QRcodes.vue'
+import Articles from '@/components/Articles/index.vue'
 
 export default {
     name:'Home',
@@ -47,6 +48,7 @@ export default {
         Caroulse,
         Presentation,
         'qr-codes': QrCodes,
+        Articles
     },
     created() { //生命周期函数
 
