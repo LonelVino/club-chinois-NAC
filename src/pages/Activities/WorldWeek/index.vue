@@ -116,7 +116,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:0 auto
+  margin: 0 auto;
 }
 .titles {
   display: flex;
@@ -139,6 +139,9 @@ a {
   .roller {
     font-size: 4.5vw;
   }
+}
+.buttons {
+  margin-top: 3vw;
 }
 .sub-title {
   display: flex;

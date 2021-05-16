@@ -9,9 +9,9 @@ export default new Router({
 		} else {
             var top;
             if (window.innerWidth >= 700) {
-                 top = 676
+                 top = 0
             } else {
-                 top = 267
+                 top = 0
             }
 			return {
 				x: 0,

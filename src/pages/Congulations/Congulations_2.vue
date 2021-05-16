@@ -13,9 +13,16 @@
             <li class="content__container__list__item">竟是我自己 !</li>
             </ul>
         </div>
+        
         </div>
     </div>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
 
 <style lang="scss" scoped>
 body .congulations{

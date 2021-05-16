@@ -141,7 +141,6 @@
 </template>
 
 <script>
-import {getRegister,UserLogin} from '../utils/server.js'
     export default {
         name: 'Login',
         data() { //选项 / 数据

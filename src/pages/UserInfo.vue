@@ -167,136 +167,125 @@
 <script>
 import header from '../components/Modal/header.vue'
 import footer from '../components/Modal/footer.vue'
-import {getUserInfo,UserInfoSave} from '../utils/server.js'//获取用户信息，保存用户信息
-    export default {
-        name: 'UserInfo',
-        data() { //选项 / 数据
-            return {
-                isEdit: false,
-                userInfo:'',//本地存储的用户信
-                userInfoObj:'',//用户的信息
-                state:true, //是否展示友链开关
-                usertabChosed:'天然呆',
-                usertab:[//用户标签
-                    "天然呆",
-                    "小萌新",
-                    "学霸",
-                    "萌萌哒",
-                    "技术宅",
-                    "忠实粉"
-                ],
-                wwwHost:"http://"+window.location.host,//图片域名
-            }
-        },
-        methods: { //事件处理器
-            handleAvatarSuccess(res, file) {//上传头像
-                // console.log('用户头像',res.image_name,file);
-                // console.log(URL.createObjectURL(file.raw));
-                if(res.code==1001){//存储
-                    this.userInfoObj.avatar = res.image_name;
-                    this.userInfoObj.head_start = 1;
-                }else{
-                    this.$message.error('上传图片失败');
-                }
-
-            },
-            beforeAvatarUpload(file) {//判断头像大小
-                const isJPG = file.type == 'image/png'||file.type=='image/jpg'||file.type=='image/jpeg';
-                const isLt2M = file.size / 1024 / 1024 < 1;
-                // console.log(file);
-                if (!isJPG) {
-                  this.$message.error('上传头像图片只能是 JPG/JPEG/PNG 格式!');
-                }
-                if (!isLt2M) {
-                  this.$message.error('上传头像图片大小不能超过 1MB!');
-                }
-                return isJPG && isLt2M;
-            },
-            handleLogoSuccess(res, file) { //上传网站logo
-                if(res.code==1001){//存储
-                    this.userInfoObj.image = res.image_name;
-                    this.userInfoObj.logo_start = 1;
-                }else{
-                    this.$message.error('上传图片失败');
-                }
-            },
-            beforeLogoUpload(file) { //控制网站logo图片大小
-                const isJPG = file.type == 'image/png'||file.type=='image/jpg'||file.type=='image/jpeg';
-                const isLt2M = file.size / 1024 / 1024 < 1;
-
-                if (!isJPG) {
-                  this.$message.error('上传头像图片只能是 JPG/JPEG/PNG 格式!');
-                }
-                if (!isLt2M) {
-                  this.$message.error('上传头像图片大小不能超过 1MB!');
-                }
-                return isJPG && isLt2M;
-            },
-            saveInfoFun: function(){//保存编辑的用户信息
-                var that = this;
-
-                if(!that.userInfoObj.username){ //昵称为必填
-                     that.$message.error('昵称为必填项，请填写昵称');
-                     return;
-                }
-                if(that.state){
-                    var pattern = /(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&:/~\+#]*[\w\-\@?^=%&/~\+#])?/;
-                    // console.log(pattern.test(that.userInfoObj.url));
-                    if(!that.userInfoObj.url ||!pattern.test(that.userInfoObj.url)){//如果展示友链 网址为必填项
-                         that.$message.error('请正确填写网址，如http://www.xxx.com');
-                         return;
-                    }
-                    if(!that.userInfoObj.name){//如果展示友链 网址为必填项
-                         that.$message.error('请填写网站名称');
-                         return;
-                    }
-                    if(!that.userInfoObj.description){//如果展示友链 网址为必填项
-                         that.$message.error('请填写网站简介');
-                         return;
-                    }
-
-                }
-                that.userInfoObj.state = Number(that.state);
-                UserInfoSave(that.userInfoObj,function(result){//保存信息接口，返回展示页
-                    that.$message.success( '保存成功！');
-                    that.isEdit = false;
-                    that.routeChange() ;
-                })
-
-            },
-            routeChange: function(){//展示页面信息
-                var that = this;
-                // console.log(this.$router,this.$route);
-                if(localStorage.getItem('userInfo')){
-                    that.haslogin = true;
-                    that.userInfo = JSON.parse(localStorage.getItem('userInfo'));
-                    that.userId = that.userInfo.userId;
-                    getUserInfo(that.userId,function(msg){
-                        // console.log('用户中心',msg.data);
-                        that.userInfoObj = msg.data;
-                        that.userInfoObj.head_start = 0;
-                        that.userInfoObj.logo_start = 0;
-                        that.state = msg.data.state==1?true:false;
-                    })
-                    // console.log(that.userInfo);
-                }else{
-                    that.haslogin = false;
-                }
-
-            }
-        },
-        components: { //定义组件
-            'wbc-nav':header,
-            'wbc-footer':footer
-        },
-        watch: {
-           // 如果路由有变化，会再次执行该方法
-           '$route':'routeChange'
-         },
-        created() { //生命周期函数
-            this.routeChange();
+export default {
+    name: 'UserInfo',
+    data() { //选项 / 数据
+        return {
+            isEdit: false,
+            userInfo:'',//本地存储的用户信
+            userInfoObj:'',//用户的信息
+            state:true, //是否展示友链开关
+            usertabChosed:'天然呆',
+            usertab:[//用户标签
+                "天然呆",
+                "小萌新",
+                "学霸",
+                "萌萌哒",
+                "技术宅",
+                "忠实粉"
+            ],
+            wwwHost:"http://"+window.location.host,//图片域名
         }
+    },
+    methods: { //事件处理器
+        handleAvatarSuccess(res, file) {//上传头像
+            // console.log('用户头像',res.image_name,file);
+            // console.log(URL.createObjectURL(file.raw));
+            if(res.code==1001){//存储
+                this.userInfoObj.avatar = res.image_name;
+                this.userInfoObj.head_start = 1;
+            }else{
+                this.$message.error('上传图片失败');
+            }
+
+        },
+        beforeAvatarUpload(file) {//判断头像大小
+            const isJPG = file.type == 'image/png'||file.type=='image/jpg'||file.type=='image/jpeg';
+            const isLt2M = file.size / 1024 / 1024 < 1;
+            // console.log(file);
+            if (!isJPG) {
+                this.$message.error('上传头像图片只能是 JPG/JPEG/PNG 格式!');
+            }
+            if (!isLt2M) {
+                this.$message.error('上传头像图片大小不能超过 1MB!');
+            }
+            return isJPG && isLt2M;
+        },
+        handleLogoSuccess(res, file) { //上传网站logo
+            if(res.code==1001){//存储
+                this.userInfoObj.image = res.image_name;
+                this.userInfoObj.logo_start = 1;
+            }else{
+                this.$message.error('上传图片失败');
+            }
+        },
+        beforeLogoUpload(file) { //控制网站logo图片大小
+            const isJPG = file.type == 'image/png'||file.type=='image/jpg'||file.type=='image/jpeg';
+            const isLt2M = file.size / 1024 / 1024 < 1;
+
+            if (!isJPG) {
+                this.$message.error('上传头像图片只能是 JPG/JPEG/PNG 格式!');
+            }
+            if (!isLt2M) {
+                this.$message.error('上传头像图片大小不能超过 1MB!');
+            }
+            return isJPG && isLt2M;
+        },
+        saveInfoFun: function(){//保存编辑的用户信息
+            var that = this;
+
+            if(!that.userInfoObj.username){ //昵称为必填
+                    that.$message.error('昵称为必填项，请填写昵称');
+                    return;
+            }
+            if(that.state){
+                var pattern = /(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&:/~\+#]*[\w\-\@?^=%&/~\+#])?/;
+                // console.log(pattern.test(that.userInfoObj.url));
+                if(!that.userInfoObj.url ||!pattern.test(that.userInfoObj.url)){//如果展示友链 网址为必填项
+                        that.$message.error('请正确填写网址，如http://www.xxx.com');
+                        return;
+                }
+                if(!that.userInfoObj.name){//如果展示友链 网址为必填项
+                        that.$message.error('请填写网站名称');
+                        return;
+                }
+                if(!that.userInfoObj.description){//如果展示友链 网址为必填项
+                        that.$message.error('请填写网站简介');
+                        return;
+                }
+
+            }
+            that.userInfoObj.state = Number(that.state);
+            console.log('Save userinfo here')
+
+        },
+        routeChange: function(){//展示页面信息
+            var that = this;
+            // console.log(this.$router,this.$route);
+            if(localStorage.getItem('userInfo')){
+                that.haslogin = true;
+                that.userInfo = JSON.parse(localStorage.getItem('userInfo'));
+                that.userId = that.userInfo.userId;
+                console.log('Get userinfo here')
+                // console.log(that.userInfo);
+            }else{
+                that.haslogin = false;
+            }
+
+        }
+    },
+    components: { //定义组件
+        'wbc-nav':header,
+        'wbc-footer':footer
+    },
+    watch: {
+        // 如果路由有变化，会再次执行该方法
+        '$route':'routeChange'
+        },
+    created() { //生命周期函数
+        this.routeChange();
     }
+}
 </script>
 
 <style>

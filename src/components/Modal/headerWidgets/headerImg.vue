@@ -1,8 +1,9 @@
 <template>
-    <div class="headImgBox" :style="{backgroundImage:this.$store.state.themeObj.top_image?'url('+this.$store.state.themeObj.top_image+')':'url(static/img/Beach.jpg)'}">
+    <div class="headImgBox">
 		<div class="scene">
 			<div><span id="luke"></span></div>
 		</div>
+		<candle class='candle'/>
 		<div class="h-information">
 			<a href="#/Aboutme">
 				<img :src="this.$store.state.themeObj.head_portrait ? this.$store.state.themeObj.head_portrait : 'static/img/avatar_1.jpg'" alt="">
@@ -55,18 +56,17 @@
 					</li>
 				</ul>
 			</h2>
-				<!-- <h2 class="h-description" style="font-size: 35px">
-                    <a href="#/Aboutme">
-                        {{this.$store.state.themeObj.autograph?this.$store.state.themeObj.autograph:"Welcome to ClubChinois"}}
-                    </a>
-                </h2> -->
 		</div>
 	</div>
 </template>
 
 <script>
+import Candle from '@/components/Modal/headerWidgets/candle.vue'
 export default {
-    
+    name: 'headerImg',
+	components: {
+		Candle
+	}
 }
 </script>
 
@@ -152,16 +152,35 @@ input[type="checkbox"]:checked ~ .sub-header {
 <style lang="scss" scoped>
 
 /*头部背景图*/
-
+$lightsOnBg: #FEF4AD;
+$lightsOutBg: #F8AE39;
 .headImgBox {
 	height: 650px;
 	position: relative;
 	width: 100%;
-	background-size: cover;
-	background-position: center 50%;
-	background-repeat: no-repeat;
+	background-color:$lightsOnBg;
+  	animation:change-background 3s infinite linear;
 	margin-bottom: 90px;
+	.scene {
+		width: 100%;
+		/*height:300px;*/
+		text-align: center;
+		font-size: 100px;
+		font-weight: 200;
+		color: #fff;
+		position: absolute;
+		left: 0;
+		top: 160px;
+		font-family: 'Sigmar One', Arial;
+		text-shadow: 0 2px 2px #47456d;
+	}
+	.scene span {
+		transform: matrix(1, 0, 0, 1, 0, 0);
+		-webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+		text-shadow: 1px 1px 0 #ff3f1a, -1px -1px 0 #00a7e0;
+	}
 }
+
 
 .h-information {
 	align-content: center;
@@ -260,26 +279,6 @@ input[type="checkbox"]:checked ~ .sub-header {
 	-webkit-background-clip: text;
 	color: transparent;
 }
-.headImgBox .scene {
-	width: 100%;
-	/*height:300px;*/
-	text-align: center;
-	font-size: 100px;
-	font-weight: 200;
-	color: #fff;
-	position: absolute;
-	left: 0;
-	top: 160px;
-	font-family: 'Sigmar One', Arial;
-	text-shadow: 0 2px 2px #47456d;
-
-}
-
-.headImgBox .scene span {
-	transform: matrix(1, 0, 0, 1, 0, 0);
-	-webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-	text-shadow: 1px 1px 0 #ff3f1a, -1px -1px 0 #00a7e0;
-}
 
 .saying:after {
 	content: "|";
@@ -301,5 +300,16 @@ input[type="checkbox"]:checked ~ .sub-header {
 	50% {
 		opacity: 0;
 	}
+}
+@keyframes change-background
+{
+  0%,59%,98%,100%{
+    background:$lightsOnBg;
+  }
+  61%,97%
+  {
+    background:$lightsOutBg;
+  }
+ 
 }
 </style>

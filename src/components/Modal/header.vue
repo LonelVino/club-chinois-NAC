@@ -12,7 +12,6 @@
 </div>
 </template>
 <script>
-import { LoginOut } from '@/utils/server.js'
 import { Typeit } from '@/utils/plug.js'
 
 import HeaderNav from './headerWidgets/headerNav'
@@ -26,7 +25,7 @@ export default {
 	},
 	components: { //定义组件
 		HeaderImg,
-		HeaderNav
+		HeaderNav,
 	},
 	watch: {
 

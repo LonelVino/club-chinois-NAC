@@ -59,6 +59,11 @@
                         <el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item>
                         <el-menu-item index="/Message"><i class="fa fa-wa fa-pencil"></i> 留言板</el-menu-item>
                         <el-menu-item index="/Aboutme"><i class="fa fa-wa fa-vcard"></i> 关于</el-menu-item>
+						<el-submenu index="5-4">
+							<template slot="title">给考试上香</template>
+							<el-menu-item index="congulations1">考神附体</el-menu-item>
+							<el-menu-item index="congulations2">考神在我身边</el-menu-item>
+						</el-submenu>
                         <el-menu-item v-show="!haslogin" index="" @click="logoinFun(1)">登录</el-menu-item>
                         <el-menu-item v-show="!haslogin" index="" @click="logoinFun(0)">注册</el-menu-item>
                         <el-submenu v-show="haslogin" index="3">
@@ -78,7 +83,6 @@
 </template>
 
 <script>
-import { LoginOut } from '@/utils/server.js'
 import { Typeit } from '@/utils/plug.js'
 
 export default {
@@ -111,9 +115,9 @@ export default {
 		var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
 		var onVisibilityChange = function() {
 			if (document[hiddenProperty]) { //被隐藏
-				document.title = '藏好啦(つд⊂)';
+				document.title = 'Club Chinois';
 			} else {
-				document.title = '被发现啦(*´∇｀*)'; //当前窗口打开
+				document.title = 'Welcome to Clubu Chinois'; //当前窗口打开
 				if (that.$route.path != '/DetailShare') {
 					if (localStorage.getItem('userInfo')) {
 						that.haslogin = true;
@@ -170,22 +174,19 @@ export default {
 				type: 'warning'
 			}).then(() => {
 				// console.log(that.$route.path);
-				LoginOut(localStorage.getItem('accessToken'), function(result) {
-					//    console.log(result);
-					if (localStorage.getItem('userInfo')) {
-						localStorage.removeItem('userInfo');
-						that.haslogin = false;
-						//    that.$router.replace({path:that.$route.fullPath});
-						window.location.reload();
-						that.$message({
-							type: 'success',
-							message: '退出成功!'
-						});
-					}
-					if (that.$route.path == '/UserInfo') {
-						that.$router.push({ path: '/' });
-					}
-				})
+				if (localStorage.getItem('userInfo')) {
+					localStorage.removeItem('userInfo');
+					that.haslogin = false;
+					//    that.$router.replace({path:that.$route.fullPath});
+					window.location.reload();
+					that.$message({
+						type: 'success',
+						message: '退出成功!'
+					});
+				}
+				if (that.$route.path == '/UserInfo') {
+					that.$router.push({ path: '/' });
+				}
 			}).catch(() => {
 				//
 			});

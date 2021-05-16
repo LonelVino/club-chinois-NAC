@@ -13,6 +13,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@chenfengyuan/vue-qrcode": "^1.0.2",
     "@kouts/vue-modal": "^2.0.10",
     "animejs": "^3.2.1",
     "axios": "^0.21.1",
@@ -23,8 +24,9 @@
     "less-loader": "^4.0.5",
     "npm": "^7.12.1",
     "nrm": "^1.2.1",
+    "qrcode": "^1.4.4",
     "sass-loader": "^7.3.1",
-    "vue": "^2.5.2",
+    "vue": "^2.6.12",
     "vue-conversational-form": "^1.0.1",
     "vue-image-shadow": "^1.0.0",
     "vue-modal-wizard": "^1.0.6",

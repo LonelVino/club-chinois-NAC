@@ -94,7 +94,6 @@
 </template>
 
 <script>
-    import {ArticleComment,OtherComment,setArticleComment,setOuthComment} from '../utils/server.js'
     export default {
         data() { //选项 / 数据
             return {
@@ -220,25 +219,10 @@
               if(that.textarea){
                   that.sendTip = '咻~~';
                   if(that.leaveId==0){
-                    //   console.log(that.textarea,that.userId,that.aid,that.leavePid,that.pid);
-                      setArticleComment(that.textarea,that.userId,that.aid,that.leavePid,that.pid,function(msg){
-                        //   console.log(msg);
-                          that.textarea = '';
-                          that.routeChange();
-                          that.removeRespond();
-                          var timer02 = setTimeout(function(){
-                              that.sendTip = '发送~';
-                              clearTimeout(timer02);
-                          },1000)
-                      })
+                    console,log('Send message')
                   }else{
                       //其他模块留言回复
-                      setOuthComment(that.textarea,that.userId,that.aid,that.leaveId,that.leavePid,that.pid,function(msg){
-                        //   console.log(msg);
-                          that.textarea = '';
-                          that.removeRespond();
-                        that.routeChange();
-                      })
+                      console.log('Set comments here..')
                   }
               }else{
                   that.sendTip = 'Empty Content'
@@ -309,9 +293,7 @@
               }
               if(that.$route.name=='DetailShare'){//文章列表的评论
                   that.leaveId = 0;
-                  ArticleComment(that.aid,that.pageId,function(result){//查询列表
-                        setData(result);
-                  })
+                  console.log("Set data here")
               }else{//其他评论
                   if(that.$route.name == 'Reward'){//（1：赞赏 2：友情链接 3：留言板 4：关于我）
                       that.leaveId = 1
@@ -322,9 +304,7 @@
                   }else if(that.$route.name == 'Aboutme'){
                       that.leaveId = 4
                   }
-                  OtherComment(that.leaveId,that.pageId,function(result){
-                      setData(result);
-                  })
+                  console.log('Loading the other comments')
 
               }
           },

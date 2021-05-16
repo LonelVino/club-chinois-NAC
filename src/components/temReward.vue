@@ -39,7 +39,7 @@
 </template>
 
 <script>
-    import {AdmireData,initDate} from '../utils/server.js'
+    import {initDate} from '../utils/index.js'
     export default {
         data() { //选项 / 数据
             return {
@@ -61,11 +61,8 @@
         },
         created() { //生命周期函数
             var that = this;
-            AdmireData(function(msg){//获取用户赞赏数据
-                // console.log(msg);
-                that.tableData = msg.data;
-                that.rewardData = msg.admire_code;
-            })
+            console.log('Get the admire of users, and set the data of table data and admire code')
+            
         }
     }
 </script>

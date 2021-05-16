@@ -15,6 +15,7 @@
                 </el-col>
             </el-row>
         </div>
+        <qr-codes class="qr-codes"></qr-codes>
         <wbc-footer></wbc-footer>
     </div>
 </template>
@@ -25,6 +26,7 @@ import footer from '@/components/Modal/footer.vue'
 import Caroulse from '@/components/Modal/caroulse.vue'
 import temRightlist from '@/components/Modal/temRightlist.vue'
 import Presentation from '@/components/presentation.vue'
+import QrCodes from '@/components/QRcodes.vue'
 
 export default {
     name:'Home',
@@ -44,6 +46,7 @@ export default {
         'wbc-footer':footer,
         Caroulse,
         Presentation,
+        'qr-codes': QrCodes,
     },
     created() { //生命周期函数
 
