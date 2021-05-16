@@ -54,16 +54,16 @@ CORS_ALLOW_HEADERS = (
     'Pragma',
 )
 
-# ALLOWED_HOSTS = [
-#     'http://club-chinois.herokuapp.com/',
-#     'https://club-chinois.herokuapp.com/',
-#     'club-chinois.herokuapp.com',
-#     'club-chinois.herokuapp.com/',
-#     'http://world-week-test.herokuapp.com',
-#     'http://world-week-test.herokuapp.com/',
-#     'https://world-week-test.herokuapp.com',
-#     'https://world-week-test.herokuapp.com/',
-#     '127.0.0.1']
+ALLOWED_HOSTS = [
+    'http://club-chinois.herokuapp.com/',
+    'https://club-chinois.herokuapp.com/',
+    'club-chinois.herokuapp.com',
+    'club-chinois.herokuapp.com/',
+    'http://world-week-test.herokuapp.com',
+    'http://world-week-test.herokuapp.com/',
+    'https://world-week-test.herokuapp.com',
+    'https://world-week-test.herokuapp.com/',
+    '127.0.0.1']
 
     
 # CORS_ORIGIN_WHITELIST = (
