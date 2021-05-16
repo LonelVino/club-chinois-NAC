@@ -14,7 +14,6 @@
                     <div class="">
                         <el-tooltip  class="item"  content="Github" placement="top" >
                             <a :href="catchMeObj[isAimee].git" target="_blank" >
-                                
                                 <i class="fa fa-fw fa-github"></i>
                             </a>
                         </el-tooltip>
@@ -45,7 +44,7 @@
                 </div>
             </div>
         </section>
-        <section :class="fixDo?'rs2 fixed':'rs2'" @click="lovemeFun">
+        <!-- <section :class="fixDo?'rs2 fixed':'rs2'" @click="lovemeFun">
             <p>
                 Like
             </p>
@@ -71,7 +70,7 @@
                     </a>
                 </li>
             </ul>
-        </section>
+        </section> -->
         <!-- 右侧上滑小图片 -->
         <div  v-if="this.$store.state.themeObj.user_start!=0" :class="gotoTop?'toTop hidden':'toTop goTop hidden'" @click="toTopfun">
             <img :src="this.$store.state.themeObj.right_img?this.$store.state.themeObj.right_img:'static/img/scroll.png'" alt="">
