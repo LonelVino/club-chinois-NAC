@@ -645,4 +645,10 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 800px) {
+    .tmsgBox {
+        transition: 3s;
+        transform: scale(0.9);
+    }
+}
 </style>

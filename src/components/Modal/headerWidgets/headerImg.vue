@@ -312,4 +312,9 @@ $lightsOutBg: #F8AE39;
   }
  
 }
+@media screen and (max-width: 600px) {
+	.h-information {
+		margin-top: -20vw;
+	}
+}
 </style>

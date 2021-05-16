@@ -4,7 +4,7 @@
         <wbc-nav></wbc-nav>
         <div class="container">
             <el-row  :gutter="30">
-                <Caroulse/>
+                <Caroulse class="caroulse"/>
                 <el-col :sm="24" :md="18" style="transition:all .5s ease-out;margin-bottom:30px;">
                     <sequential-entrance>
                         <presentation/>
@@ -80,5 +80,10 @@ a {
   height: 100px;
   margin: 1rem;
 }
-
+@media screen and (max-width:800px) {
+  .caroulse {
+    display: none;
+  }
+  
+}
 </style>

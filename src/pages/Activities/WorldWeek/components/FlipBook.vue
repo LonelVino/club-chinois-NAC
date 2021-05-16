@@ -180,7 +180,7 @@ export default {
 }
 @media screen and (max-width: 440px) {
   .action-bar {
-    margin-top: -10vw;
+    margin-top: -15vw;
   }
 }
 </style>

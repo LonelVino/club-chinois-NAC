@@ -23,7 +23,7 @@
             </div>  
             <el-row :gutter="24" style="margin:0; display:flex; flex-direction: column; align-item: center;">
               <el-col :sm="15" :md="15" style="transition:all .5s ease-out;margin-bottom:30px;">
-                <flip-book/>
+                <flip-book class="flip-book"/>
               </el-col>
             </el-row>
             
@@ -151,8 +151,35 @@ a {
     font-size: 2.5vw;
   }
 }
-  
+
 @media screen and (max-width: 800px) {
+  .container {
+    transition: 3s;
+    transform: scale(0.93);
+    margin-left: -7vw;
+  }
+  .titles {flex-direction: column;}
+  .title {
+    flex-direction: row;
+    .roller {
+      font-size: 6.5vw;
+    }
+  }
+  .sub-title {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5vw;
+    .roller {
+      font-size: 3.5vw;
+    }
+  }  
+}
+  
+@media screen and (max-width: 600px) {
+  .container {
+    transform: scale(0.91);
+    margin-left: -5vw;
+  }
   .titles {flex-direction: column;}
   .title {
     flex-direction: row;
@@ -171,8 +198,13 @@ a {
 }
 
 @media screen and (max-width: 550px) {
-
-
+.container {
+  transform: scale(0.88);
+  margin-left: -4vw;
+}
+.flip-book {
+  margin-top: -20vw;
+}
 .title {
   .roller {
     font-size: 8.5vw;

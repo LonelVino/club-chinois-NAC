@@ -108,12 +108,17 @@ export default {
 }
 @media screen and (max-width: 600px) {
     .waveWrapper {
-        transform: scaleY(1.45)
+        transform: scaleY(1.75)
     }
 }
 @media screen and (max-width: 375px) {
     .waveWrapper {
-        transform: scaleY(1.55)
+        transform: scaleY(1.85)
+    }
+}
+@media screen and (max-width: 322px) {
+    .waveWrapper {
+        transform: scaleY(1.95)
     }
 }
 </style>

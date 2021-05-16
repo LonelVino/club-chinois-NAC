@@ -15,7 +15,6 @@
                     <el-card class="box-card">
                     <div slot="header" class="clearfix">
                         <span class='card-header-txt'>President</span>
-                        <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                     </div>
                     <div class="card-content">
                         <p>大家好！我是罗宸晟。老家四川，来自北航。喜欢火车，热爱定向（越野），较为喜欢户外，可约布依格后小树林散/跑步或萨克雷周边骑行，作为烹饪新手偶尔也喜欢探索各种美食做法。</p>
@@ -41,7 +40,6 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Événement</span>
-                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                         </div>
                         <div class="card-content">
                             <p>我是陈旭文，爱吃辣的湖南人一枚；平时喜欢听音乐，爱好唱歌和运动（羽毛球和定向越野），钢琴、吉他偶尔能露一手。另外对各种桌游都感兴趣，欢迎随时约局！</p>
@@ -68,7 +66,6 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Trésorier</span>
-                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                         </div>
                         <div class="card-content">
                             <p>大家好！我是温凯奥，今年将作为club chinois 财务部分的负责人与大家相识。</p>
@@ -95,7 +92,6 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Comm Interne</span>
-                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                         </div>
                         <div class="card-content">
                             <p>可颂十级爱好者。</p>
@@ -123,8 +119,7 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Comm Externe</span>
-                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
-                        </div>
+=                        </div>
                         <div class="card-content">
                             <p>大家好</p>
                             <p>我是刘 Roberta;</p>
@@ -146,8 +141,8 @@
                 <div class="img-pre">
                     <div class="align">
                     <div class="haonan-img">
-                        <image-shadow :width="320" :src="this.src4_1"></image-shadow>
-                        <image-shadow :width="180" :src="this.src4_2"></image-shadow>
+                        <image-shadow class="haonan-img-1" :width="320" :src="this.src4_1"></image-shadow>
+                        <image-shadow class="haonan-img-2" :width="180" :src="this.src4_2"></image-shadow>
                     </div>
                     </div>
                 </div>                                
@@ -156,7 +151,6 @@
                         <el-card class="box-card">
                         <div slot="header" class="clearfix">
                             <span class='card-header-txt'>Logstique</span>
-                            <el-button style="float: right; padding: 3px 0" type="text" @click="open()">More</el-button>
                         </div>
                         <div class="card-content haonan-content">
                             <p>👷林浩南，😆➡️©️©️🇨🇳，👷🏃🥟➕🛒🛍️，</p>
@@ -313,6 +307,9 @@ line-height: 1.2em;
     }
     .roller {
         font-size: 4vw;
+    }
+    .haonan-img-1 {
+        display: none;
     }
 }
 </style>

@@ -9,12 +9,12 @@
                     <el-menu-item index="farewell" disabled>欢送会</el-menu-item>
                     <el-menu-item index="welcome" disabled>迎新会</el-menu-item>
                 </el-submenu>
-                <el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item>
+                <!-- <el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item> -->
                 <el-menu-item index="/Message"><i class="fa fa-wa fa-pencil"></i> 留言板</el-menu-item>
                 <el-menu-item index="/Aboutme"><i class="fa fa-wa fa-vcard"></i> 关于</el-menu-item>
 				<el-submenu index="5-4">
 					<template slot="title">给考试上香</template>
-					<el-menu-item index="congulations1">考神附体</el-menu-item>
+					<el-menu-item index="congulations1" disabled>考神附体</el-menu-item>
 					<el-menu-item index="congulations2">考神在我身边</el-menu-item>
 				</el-submenu>
                 <el-menu-item index="/Congulations"><i class="fa fa-wa fa-vcard"></i> </el-menu-item>
@@ -56,12 +56,12 @@
                             <el-menu-item index="farewell" disabled>欢送会</el-menu-item>
                             <el-menu-item index="welcome" disabled>迎新会</el-menu-item>
                         </el-submenu>
-                        <el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item>
+                        <!-- <el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item> -->
                         <el-menu-item index="/Message"><i class="fa fa-wa fa-pencil"></i> 留言板</el-menu-item>
                         <el-menu-item index="/Aboutme"><i class="fa fa-wa fa-vcard"></i> 关于</el-menu-item>
 						<el-submenu index="5-4">
 							<template slot="title">给考试上香</template>
-							<el-menu-item index="congulations1">考神附体</el-menu-item>
+							<el-menu-item index="congulations1" disabled>考神附体</el-menu-item>
 							<el-menu-item index="congulations2">考神在我身边</el-menu-item>
 						</el-submenu>
                         <el-menu-item v-show="!haslogin" index="" @click="logoinFun(1)">登录</el-menu-item>

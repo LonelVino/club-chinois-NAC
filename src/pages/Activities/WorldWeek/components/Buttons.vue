@@ -8,7 +8,10 @@
           >
           Reset
           </el-button>
-          <p  v-if="!v.visible && !v.animating" class='hint'>If the join Dialog box doesn't show up successfully, please click the RESET button and add join again.</p>
+          <div class="p-container">
+            <p  v-if="!v.visible && !v.animating" class='hint'>If the join Dialog box doesn't show up successfully</p>
+            <p  v-if="!v.visible && !v.animating" class='hint'>please click the RESET button and add join again.</p>
+          </div>
         <Test
             class='txt-btn-2'
             :animating.sync="config[i].animating"
@@ -102,6 +105,12 @@ export default {
 </script>
 
 
+<style>
+.vue-particle-effect-button .particles-button {
+  
+}
+</style>
+
 <style lang="scss" scoped>
 
 .grid {
@@ -110,6 +119,10 @@ export default {
   align-content: center;
   align-items: center;
   margin: 0 auto;
+  .p-container {
+    display: flex;
+    flex-direction: row;
+  }
   .btn {
     width: 13vw;
     font-size: 25px;
@@ -128,6 +141,30 @@ export default {
     color: beige;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid {
+    .p-container {
+      flex-direction: column;
+    }
+    .btn {
+      width: 30vw;
+    }
+    .txt-btn-2, .btn{
+      transition: 3s;
+      transform: scale(0.8);
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .grid {
+    .btn {
+      width: 35vw;
+    }
+    .txt-btn-2, .btn {
+      transform: scale(0.7);
+    }
   }
 }
 </style>

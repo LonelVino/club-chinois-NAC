@@ -8,13 +8,11 @@
 				<div class="tMSGbox tcommonBox">
 					<header>
 						<h1>
-							<a href="#/DetailShare" target="_blank">
-								留言板
-							</a>
+							<a href="#/DetailShare" target="_blank">留言板</a>
 						</h1>
 					</header>
 					<section>
-						<h2>走过路过不要错过！交流、咨询、吐槽、感叹、勾搭都在这里，尽情畅谈！</h2>
+						<h2>交流、咨询、吐槽、感叹、勾搭都在这里，尽情畅谈！</h2>
 						<div class="">
 							<img src="static/img/timg.jpg" class="maxW"  alt="">
 						</div>
@@ -60,11 +58,35 @@ export default {
 </script>
 
 <style>
+.tcommonBox header section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .tMSGbox section h2{
 	font-weight: bold;
 	line-height: 24px;
 }
 .tMSGbox section div{
 	margin:15px 0;
+}
+@media screen and (max-width: 800px) {
+	.tMSGbox {
+		transition: 3s;
+		transform: scale(0.9);
+	}
+	.container{
+		margin-left: -5vw;
+	}
+}
+@media screen and (max-width: 600px) {
+	.tMSGbox {
+		transition: 3s;
+		transform: scale(0.9);
+	}
+	.container{
+		margin-left: 4vw;
+	}
 }
 </style>

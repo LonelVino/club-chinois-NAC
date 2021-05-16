@@ -2,15 +2,13 @@
     <div class="congulation">
         <div class="content">
         <div class="content__container">
-            <p class="content__container__text">
-            考神
-            </p>
+            <p class="content__container__text">考神</p>
             
             <ul class="content__container__list">
-            <li class="content__container__list__item">保佑 !</li>
-            <li class="content__container__list__item">附体 !</li>
-            <li class="content__container__list__item">在我身边 !</li>
-            <li class="content__container__list__item">竟是我自己 !</li>
+              <li class="content__container__list__item">保佑 !</li>
+              <li class="content__container__list__item">附体 !</li>
+              <li class="content__container__list__item">在我身边 !</li>
+              <li class="content__container__list__item">竟是我自己 !</li>
             </ul>
         </div>
         
@@ -44,7 +42,9 @@ body .congulations{
   font-size: 35px;
   line-height: 40px;
   color: #03191f;
-  
+  .content__container__list__item {
+    transition-duration: 3s;
+  }
   &__container {
     font-weight: 600;
     overflow: hidden;
@@ -178,4 +178,31 @@ body .congulations{
 // x = 12.66 -> Time spent on a line
 
 // You can define a value and calculate the other if you want change speed or the number of lines
+@media screen and (max-width: 800px) {
+  .content__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content__container__list__item {
+    width: 200px;
+  }
+  @keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,-25%,0);}
+    16.66%, 29.32% {transform:translate3d(0,-50%,0);}
+    33.32%,45.98% {transform:translate3d(0,-75%,0);}
+    49.98%,62.64% {transform:translate3d(0,-100%,0);}
+    66.64%,79.3% {transform:translate3d(0,-75%,0);}
+    83.3%,95.96% {transform:translate3d(0,-50%,0);}
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .content { 
+    font-size: 25px;
+  }
+  .content__container__list__item {
+    width: 150px;
+  }
+
+}
 </style>

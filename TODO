@@ -1,4 +1,5 @@
-1. Compress the storage, load too slowly
+0.modify the phone adapation 
+1.Compress the storage, load too slowly
 2.Use the SVG
 3.delete the useless route in router.js
 4.modify README.md
