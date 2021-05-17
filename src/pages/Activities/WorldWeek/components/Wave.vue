@@ -42,7 +42,7 @@ export default {
     top: 0;
     margin: auto;
     z-index: -100;
-    transform: scaleY(1.8);
+    transform: scaleY(2.5);
 }
 .waveWrapperInner {
     position: absolute;
@@ -98,17 +98,18 @@ export default {
 
 @media screen and (max-width: 1250px) {
     .waveWrapper {
-        transform: scaleY(1.55)
+        transition: 3s;
+        transform: scaleY(2.2)
     }
 }
 @media screen and (max-width: 800px) {
     .waveWrapper {
-        transform: scaleY(1.45)
+        transform: scaleY(2.2)
     }
 }
 @media screen and (max-width: 600px) {
     .waveWrapper {
-        transform: scaleY(1.75)
+        transform: scaleY(2)
     }
 }
 @media screen and (max-width: 375px) {

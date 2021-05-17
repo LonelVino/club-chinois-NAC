@@ -25,7 +25,6 @@ import header from '@/components/Modal/header.vue'
 import footer from '@/components/Modal/footer.vue'
 import Caroulse from '@/components/Modal/caroulse.vue'
 import temRightlist from '@/components/Modal/temRightlist.vue'
-import Presentation from '@/components/presentation.vue'
 import QrCodes from '@/components/QRcodes.vue'
 import Articles from '@/components/Articles/index.vue'
 
@@ -46,7 +45,6 @@ export default {
         'wbc-rightlist':temRightlist,
         'wbc-footer':footer,
         Caroulse,
-        Presentation,
         'qr-codes': QrCodes,
         Articles
     },

@@ -47,7 +47,7 @@
 import VueScrollTo from 'vue-scrollto'
 import axios from 'axios'
 
-var dict_keys = ['name', 'isAne', 'isVol', 'isPitch', 'score', 'telephone', 'email', 'loc']
+var dict_keys = ['name', 'isAne', 'isVol', 'isPitch', 'score', 'email', 'pays']
 
 export default {
   name: 'ConversationalForm',
@@ -180,11 +180,14 @@ export default {
         this.doStep()
       }
     },
+
     register(payload) {
       payload['score'] = 0
-      payload['isAne'] = (payload['isAne'] == 'No') ? 0 : 1
-      payload['isVol'] = (payload['isVol'] == 'No') ? 0 : 1
-      payload['isPitch'] = (payload['isPitch'] == 'No') ? 0 : 1
+      payload['isAne'] = 0 
+      payload['isVol'] = 0 
+      payload['isPitch'] = 0 
+      payload['telephone'] = 'None' 
+      payload['loc'] = 'None'
       axios({
         method: "post",
         url: "http://world-week-test.herokuapp.com/django_api/user/add_info", // 接口地址
@@ -192,9 +195,14 @@ export default {
       })
       .then(response => {
         console.log(response, "success");   // 成功的返回      
+        this.$message({
+          message: 'Register successfully !!!',
+          type: 'success'
+        })
       })
       .catch(error => console.log(error, "error")); // 失败的返回
     },
+
     send () {
       if (this.finished) {this.sumAllRes();return;}
       if (['select', 'submit'].includes(this.currentStepType)) return
@@ -213,6 +221,7 @@ export default {
       // console.log('ANSWER OF INPUT: ', this.q, this.step, this.screenplay[this.step].name, this.screenplay)
       this.doStep()
     },
+
     sumAllRes() {
       var resDict = {}
       for (var i=0; i < this.screenplay.length; i++) {
