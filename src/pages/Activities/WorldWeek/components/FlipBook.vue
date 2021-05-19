@@ -61,8 +61,6 @@ export default {
         });
         setTimeout(() => {
             this.pages = [null, '../../../static/img/filpImg/WW_Wallpaper.jpg',
-            '../../../static/img/filpImg/Volant.jpg', 
-            '../../../static/img/filpImg/AneRouge.jpg', 
             '../../../static/img/filpImg/WW_Wallpaper.jpg'];
         }, 1);
         window.addEventListener('hashchange', this.setPageFromHash);
