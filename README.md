@@ -1,6 +1,6 @@
 # Club Chinois Home
 
-[![TeamCity CodeBetter](https://img.shields.io/teamcity/codebetter/bt428.svg)![npm](https://img.shields.io/npm/dw/localeval.svg)]() [![npm](https://img.shields.io/npm/v/npm.svg)]() [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/nimelepbpejjlbmoobocpfnjhihnpked.svg)]()
+[![npm](https://img.shields.io/npm/dw/localeval.svg)]() [![npm](https://img.shields.io/npm/v/npm.svg)]() [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/nimelepbpejjlbmoobocpfnjhihnpked.svg)]()
 
 This project is the Home of Club Chinois, it’s mainly the reqyest time, ..
 
