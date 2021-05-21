@@ -1,0 +1,422 @@
+.
+├── api_v2
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-38.pyc
+│   │   ├── urls.cpython-38.pyc
+│   │   └── views.cpython-38.pyc
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── build
+│   ├── build.js
+│   ├── check-versions.js
+│   ├── logo.png
+│   ├── utils.js
+│   ├── vue-loader.conf.js
+│   ├── webpack.base.conf.js
+│   ├── webpack.dev.conf.js
+│   └── webpack.prod.conf.js
+├── clubChinois
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-38.pyc
+│   │   ├── settings.cpython-38.pyc
+│   │   ├── urls.cpython-38.pyc
+│   │   └── wsgi.cpython-38.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── config
+│   ├── dev.env.js
+│   ├── index.js
+│   ├── prod.env.js
+│   └── test.env.js
+├── db.sqlite3
+├── dist
+│   ├── index.html
+│   └── static
+│       ├── css
+│       │   ├── app.29ec678680a0a32ff6029f4780154c96.css
+│       │   └── app.29ec678680a0a32ff6029f4780154c96.css.map
+│       ├── fonts
+│       │   ├── element-icons.535877f.woff
+│       │   ├── element-icons.732389d.ttf
+│       │   └── SeratUltra-1GE24.f937de7.ttf
+│       ├── img
+│       │   ├── avatar_1.jpg
+│       │   ├── avatar_2.jpg
+│       │   ├── caroulse
+│       │   │   ├── Home_2018_2.jpg
+│       │   │   ├── Home_2018.jpg
+│       │   │   ├── Home_2019.jpg
+│       │   │   └── Home_2021.jpg
+│       │   ├── emot
+│       │   │   └── image
+│       │   │       ├── aini.gif
+│       │   │       ├── baibai.gif
+│       │   │       ├── baiyan.gif
+│       │   │       ├── baobao.gif
+│       │   │       ├── beishang.gif
+│       │   │       ├── bishi.gif
+│       │   │       ├── bizui.gif
+│       │   │       ├── caonima.gif
+│       │   │       ├── chanzui.gif
+│       │   │       ├── chijing.gif
+│       │   │       ├── dangao.gif
+│       │   │       ├── fahongbao.gif
+│       │   │       ├── fennu.gif
+│       │   │       ├── fuyun.gif
+│       │   │       ├── ganmao.gif
+│       │   │       ├── geili.gif
+│       │   │       ├── good.gif
+│       │   │       ├── guzhang.gif
+│       │   │       ├── haha.gif
+│       │   │       ├── haixiu.gif
+│       │   │       ├── han.gif
+│       │   │       ├── haqian.gif
+│       │   │       ├── heixian.gif
+│       │   │       ├── heng.gif
+│       │   │       ├── huatong.gif
+│       │   │       ├── hufen.gif
+│       │   │       ├── jiong.gif
+│       │   │       ├── jiyan.gif
+│       │   │       ├── keai.gif
+│       │   │       ├── kelian.gif
+│       │   │       ├── ku.gif
+│       │   │       ├── kun.gif
+│       │   │       ├── lai.gif
+│       │   │       ├── lazhu.gif
+│       │   │       ├── lei.gif
+│       │   │       ├── no.gif
+│       │   │       ├── nu.gif
+│       │   │       ├── numa.gif
+│       │   │       ├── ok.gif
+│       │   │       ├── qian.gif
+│       │   │       ├── qinqin.gif
+│       │   │       ├── ruo.gif
+│       │   │       ├── se.gif
+│       │   │       ├── shangxin.gif
+│       │   │       ├── shengbing.gif
+│       │   │       ├── shenma.gif
+│       │   │       ├── shiwang.gif
+│       │   │       ├── shuai.gif
+│       │   │       ├── shudaizi.gif
+│       │   │       ├── shui.gif
+│       │   │       ├── sikao.gif
+│       │   │       ├── taikaixin.gif
+│       │   │       ├── touxiao.gif
+│       │   │       ├── tu.gif
+│       │   │       ├── tuzi.gif
+│       │   │       ├── wabi.gif
+│       │   │       ├── weiguan.gif
+│       │   │       ├── weiqu.gif
+│       │   │       ├── weiwu.gif
+│       │   │       ├── weixiao.gif
+│       │   │       ├── xin.gif
+│       │   │       ├── xiongmao.gif
+│       │   │       ├── xixi.gif
+│       │   │       ├── xu.gif
+│       │   │       ├── ye.gif
+│       │   │       ├── yinxian.gif
+│       │   │       ├── yiwen.gif
+│       │   │       ├── youhengheng.gif
+│       │   │       ├── yun.gif
+│       │   │       ├── zan.gif
+│       │   │       ├── zhuakuang.gif
+│       │   │       ├── zhu.gif
+│       │   │       └── zuohengheng.gif
+│       │   ├── favicon.ico
+│       │   ├── filpImg
+│       │   │   └── WW_Wallpaper.jpg
+│       │   ├── heart02.png
+│       │   ├── heart.f787127.png
+│       │   ├── heart.png
+│       │   ├── maoto.png
+│       │   ├── Members
+│       │   │   ├── Chensheng.png
+│       │   │   ├── Haonan_1.png
+│       │   │   ├── Haonan_2.png
+│       │   │   ├── Kaiao.png
+│       │   │   ├── Xiwen.png
+│       │   │   └── Xuwen.png
+│       │   ├── qr-code
+│       │   │   └── ww-wechat.jpg
+│       │   ├── scroll.png
+│       │   ├── timg.jpg
+│       │   └── tou.jpg
+│       └── js
+│           ├── 0.32a20f1485b1a59b79e9.js
+│           ├── 0.32a20f1485b1a59b79e9.js.map
+│           ├── 1.d73fa4b5f1be5bfd6fb5.js
+│           ├── 1.d73fa4b5f1be5bfd6fb5.js.map
+│           ├── 2.3721f92c95f38be3f69d.js
+│           ├── 2.3721f92c95f38be3f69d.js.map
+│           ├── 3.e0e638ac34816ba3afbf.js
+│           ├── 3.e0e638ac34816ba3afbf.js.map
+│           ├── 4.279d6f74184df0ed75fc.js
+│           ├── 4.279d6f74184df0ed75fc.js.map
+│           ├── 5.8f14a13ca8bb80e0898d.js
+│           ├── 5.8f14a13ca8bb80e0898d.js.map
+│           ├── 6.5326c422fbd603588e90.js
+│           ├── 6.5326c422fbd603588e90.js.map
+│           ├── 7.dd6b28261f4ab7d5f8ce.js
+│           ├── 7.dd6b28261f4ab7d5f8ce.js.map
+│           ├── 8.eee170af656ae0c97b18.js
+│           ├── 8.eee170af656ae0c97b18.js.map
+│           ├── 9.b86c661bbfb9296e22a6.js
+│           ├── 9.b86c661bbfb9296e22a6.js.map
+│           ├── app.7d5f279e9966b96549c9.js
+│           ├── app.7d5f279e9966b96549c9.js.map
+│           ├── manifest.e1dad2ecf05c97bfb2ae.js
+│           ├── manifest.e1dad2ecf05c97bfb2ae.js.map
+│           ├── shCore.js
+│           ├── vendor.de5bc157c335ae8f88c6.js
+│           └── vendor.de5bc157c335ae8f88c6.js.map
+├── index.html
+├── manage.py
+├── package.json
+├── package-lock.json
+├── Procfile
+├── README.md
+├── requirements.txt
+├── src
+│   ├── api
+│   │   ├── article.js
+│   │   ├── cas.js
+│   │   ├── comment.js
+│   │   └── user.js
+│   ├── App.vue
+│   ├── assets
+│   │   ├── css
+│   │   │   ├── shCoreDefault.css
+│   │   │   ├── sigmar.css
+│   │   │   ├── style.css
+│   │   │   └── style.less
+│   │   ├── font
+│   │   │   ├── FZLT.ttf
+│   │   │   ├── SeratUltra-1GE24.ttf
+│   │   │   └── zihun2.ttf
+│   │   ├── img
+│   │   │   ├── icons
+│   │   │   │   ├── index.js
+│   │   │   │   ├── linkcs.png
+│   │   │   │   └── svg
+│   │   │   │       ├── bilibili.svg
+│   │   │   │       ├── facebook-circular.svg
+│   │   │   │       ├── github.svg
+│   │   │   │       └── instagram.svg
+│   │   │   └── img
+│   │   │       ├── background.png
+│   │   │       └── inputBorder.png
+│   │   └── logo.png
+│   ├── components
+│   │   ├── Articles
+│   │   │   └── index.vue
+│   │   ├── ConversationForm
+│   │   │   ├── ConversationalForm.vue
+│   │   │   └── style
+│   │   │       ├── back.svg
+│   │   │       ├── _main.scss
+│   │   │       └── send.svg
+│   │   ├── Modal
+│   │   │   ├── caroulse.vue
+│   │   │   ├── footer.vue
+│   │   │   ├── header.vue
+│   │   │   ├── headerWidgets
+│   │   │   │   ├── candle.vue
+│   │   │   │   ├── headerImg.vue
+│   │   │   │   └── headerNav.vue
+│   │   │   ├── OpenModal.vue
+│   │   │   ├── SvgIcon.vue
+│   │   │   └── temRightlist.vue
+│   │   ├── presentation.vue
+│   │   ├── QRcodes.vue
+│   │   ├── temAbout.vue
+│   │   ├── temMessage.vue
+│   │   └── temReward.vue
+│   ├── main.js
+│   ├── pages
+│   │   ├── Aboutme.vue
+│   │   ├── Activities
+│   │   │   └── WorldWeek
+│   │   │       ├── components
+│   │   │       │   ├── Buttons.vue
+│   │   │       │   ├── FlipBook.vue
+│   │   │       │   └── Wave.vue
+│   │   │       └── index.vue
+│   │   ├── Congulations
+│   │   │   ├── Congulations_2.vue
+│   │   │   └── Congulations.vue
+│   │   ├── Home.vue
+│   │   ├── Login.vue
+│   │   ├── Message.vue
+│   │   ├── Reward.vue
+│   │   └── UserInfo.vue
+│   ├── router
+│   │   └── index.js
+│   ├── store
+│   │   └── index.js
+│   ├── styles
+│   │   ├── btn.scss
+│   │   ├── element-ui.scss
+│   │   ├── element-variables.scss
+│   │   ├── index.scss
+│   │   ├── mixin.scss
+│   │   ├── sidebar.scss
+│   │   ├── transition.scss
+│   │   └── variables.scss
+│   └── utils
+│       ├── btns.js
+│       ├── index.js
+│       ├── plug.js
+│       └── theater.js
+├── static
+│   ├── img
+│   │   ├── avatar_1.jpg
+│   │   ├── avatar_2.jpg
+│   │   ├── caroulse
+│   │   │   ├── Home_2018_2.jpg
+│   │   │   ├── Home_2018.jpg
+│   │   │   ├── Home_2019.jpg
+│   │   │   └── Home_2021.jpg
+│   │   ├── emot
+│   │   │   └── image
+│   │   │       ├── aini.gif
+│   │   │       ├── baibai.gif
+│   │   │       ├── baiyan.gif
+│   │   │       ├── baobao.gif
+│   │   │       ├── beishang.gif
+│   │   │       ├── bishi.gif
+│   │   │       ├── bizui.gif
+│   │   │       ├── caonima.gif
+│   │   │       ├── chanzui.gif
+│   │   │       ├── chijing.gif
+│   │   │       ├── dangao.gif
+│   │   │       ├── fahongbao.gif
+│   │   │       ├── fennu.gif
+│   │   │       ├── fuyun.gif
+│   │   │       ├── ganmao.gif
+│   │   │       ├── geili.gif
+│   │   │       ├── good.gif
+│   │   │       ├── guzhang.gif
+│   │   │       ├── haha.gif
+│   │   │       ├── haixiu.gif
+│   │   │       ├── han.gif
+│   │   │       ├── haqian.gif
+│   │   │       ├── heixian.gif
+│   │   │       ├── heng.gif
+│   │   │       ├── huatong.gif
+│   │   │       ├── hufen.gif
+│   │   │       ├── jiong.gif
+│   │   │       ├── jiyan.gif
+│   │   │       ├── keai.gif
+│   │   │       ├── kelian.gif
+│   │   │       ├── ku.gif
+│   │   │       ├── kun.gif
+│   │   │       ├── lai.gif
+│   │   │       ├── lazhu.gif
+│   │   │       ├── lei.gif
+│   │   │       ├── no.gif
+│   │   │       ├── nu.gif
+│   │   │       ├── numa.gif
+│   │   │       ├── ok.gif
+│   │   │       ├── qian.gif
+│   │   │       ├── qinqin.gif
+│   │   │       ├── ruo.gif
+│   │   │       ├── se.gif
+│   │   │       ├── shangxin.gif
+│   │   │       ├── shengbing.gif
+│   │   │       ├── shenma.gif
+│   │   │       ├── shiwang.gif
+│   │   │       ├── shuai.gif
+│   │   │       ├── shudaizi.gif
+│   │   │       ├── shui.gif
+│   │   │       ├── sikao.gif
+│   │   │       ├── taikaixin.gif
+│   │   │       ├── touxiao.gif
+│   │   │       ├── tu.gif
+│   │   │       ├── tuzi.gif
+│   │   │       ├── wabi.gif
+│   │   │       ├── weiguan.gif
+│   │   │       ├── weiqu.gif
+│   │   │       ├── weiwu.gif
+│   │   │       ├── weixiao.gif
+│   │   │       ├── xin.gif
+│   │   │       ├── xiongmao.gif
+│   │   │       ├── xixi.gif
+│   │   │       ├── xu.gif
+│   │   │       ├── ye.gif
+│   │   │       ├── yinxian.gif
+│   │   │       ├── yiwen.gif
+│   │   │       ├── youhengheng.gif
+│   │   │       ├── yun.gif
+│   │   │       ├── zan.gif
+│   │   │       ├── zhuakuang.gif
+│   │   │       ├── zhu.gif
+│   │   │       └── zuohengheng.gif
+│   │   ├── favicon.ico
+│   │   ├── filpImg
+│   │   │   └── WW_Wallpaper.jpg
+│   │   ├── heart02.png
+│   │   ├── heart.png
+│   │   ├── maoto.png
+│   │   ├── Members
+│   │   │   ├── Chensheng.png
+│   │   │   ├── Haonan_1.png
+│   │   │   ├── Haonan_2.png
+│   │   │   ├── Kaiao.png
+│   │   │   ├── Xiwen.png
+│   │   │   └── Xuwen.png
+│   │   ├── qr-code
+│   │   │   └── ww-wechat.jpg
+│   │   ├── scroll.png
+│   │   ├── timg.jpg
+│   │   └── tou.jpg
+│   └── js
+│       └── shCore.js
+├── test
+│   ├── e2e
+│   │   ├── custom-assertions
+│   │   │   └── elementCount.js
+│   │   ├── nightwatch.conf.js
+│   │   ├── runner.js
+│   │   └── specs
+│   │       └── test.js
+│   └── unit
+│       ├── jest.conf.js
+│       ├── setup.js
+│       └── specs
+│           └── HelloWorld.spec.js
+├── TestModel
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── 0001_initial.cpython-38.pyc
+│   │       └── __init__.cpython-38.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-38.pyc
+│   │   ├── apps.cpython-38.pyc
+│   │   ├── __init__.cpython-38.pyc
+│   │   ├── models.cpython-38.pyc
+│   │   ├── urls.cpython-38.pyc
+│   │   └── views.cpython-38.pyc
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── TODO
+├── tree.text
+└── vue.config.js
+
+62 directories, 357 files
