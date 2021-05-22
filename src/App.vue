@@ -28,7 +28,8 @@ filter: grayscale(100%) !important;
 filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) !important; 
 filter:gray !important; /*ie9- */
 }
-// 原博客主提色
+
+
 @tcolors:#791b2b;//按钮和标签颜色
 @tcolorm:#e20b3a;//分类的选中的颜色
 @tcolord:#e4be6d;//按钮hover 的颜色
