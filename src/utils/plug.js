@@ -399,9 +399,9 @@ const Typeit = (isAimee,emId) =>{
             speech：所有的speech。
          ***/
          if(isAimee!=0){
-             var world = "ClubChinois";
+             var world = "愿天堂一路平安";
          }else{
-             var world = "ClubChinois";
+             var world = "愿天堂一路平安";
          }
         theater.describe("Luke", .9, emId);
         // conosle.log()
@@ -418,9 +418,9 @@ const Typeit = (isAimee,emId) =>{
                 });
 
         theater
-                .write("Luke:Hello!",1000)
+                .write("Luke:缅怀袁隆平院士!",1000)
 //                .write("Vader:I am your father.", toggleClass)
-                .write("Luke:Hi,"+world, 500)
+                .write("Luke:袁公千古,"+world, 500)
                 .write({ name: "call", args: [kill, true] })
                 .write(function () { theater.play(true); });
         function kill () {

@@ -1,16 +1,21 @@
 <template>
     <div class="congulation">
         <div class="content">
-        <div class="content__container">
-            <p class="content__container__text">考神</p>
-            
+          <div class="content__container">
+            <!-- <p class="content__container__text">考神</p> -->
+            <ul class="content__container__text">
+              <li class="content__container__text__item"><img src="static/img/avatar/Einstein_1.jpeg" width="40" height="35"><p>Einstein</p></li>
+              <li class="content__container__text__item"><img src="static/img/avatar/Bohr.jpeg" width="40" height="35"><p>Bohr</p></li>
+              <li class="content__container__text__item"><img src="static/img/avatar/Young_Plank.jpeg" width="30" height="35"><p class='txt-zh_cn'>年轻普朗克</p></li>
+              <li class="content__container__text__item"><img src="static/img/avatar/Old_Plank.jpeg" width="28" height="35"><p class='txt-zh_cn'> 老年普朗克</p></li>
+            </ul>
             <ul class="content__container__list">
-              <li class="content__container__list__item">保佑 !</li>
+              <li class="content__container__list__item">爱你哟！</li>
               <li class="content__container__list__item">附体 !</li>
-              <li class="content__container__list__item">在我身边 !</li>
+              <li class="content__container__list__item">竟在我身边 !</li>
               <li class="content__container__list__item">竟是我自己 !</li>
             </ul>
-        </div>
+          </div>
         
         </div>
     </div>
@@ -42,6 +47,16 @@ body .congulations{
   font-size: 35px;
   line-height: 40px;
   color: #03191f;
+  .content__container__text__item {
+    display: flex;
+    flex-direction: row;
+    p {
+      font-size: 30px;
+    }
+    .txt-zh_cn {
+      font-size: 25px;
+    }
+  }
   .content__container__list__item {
     transition-duration: 3s;
   }
@@ -49,7 +64,7 @@ body .congulations{
     font-weight: 600;
     overflow: hidden;
     height: 40px;
-    padding: 0 40px;
+    padding: 0 80px;
 
     &:before {
       content: '[';
@@ -82,11 +97,18 @@ body .congulations{
       display: inline;
       float: left;
       margin: 0;
+      -webkit-animation-name: change;
+      -webkit-animation-duration: 10s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: change;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
     }
 
     &__list {
       margin-top: 0;
-      padding-left: 110px;
+      padding-left: 130px;
+      margin-left: 40px;
       text-align: left;
       list-style: none;
       
