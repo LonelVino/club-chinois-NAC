@@ -201,26 +201,50 @@ body .congulations{
 
 // You can define a value and calculate the other if you want change speed or the number of lines
 @media screen and (max-width: 800px) {
+  .content { 
+    font-size: 20px;
+  }
   .content__container {
     display: flex;
-    flex-direction: column;
+    .content__container__text__item {
+      display: flex;
+      flex-direction: row;
+      p {
+        font-size: 25px;
+      }
+      .txt-zh_cn {
+        font-size: 15px;
+      }
+    }
   }
+  
   .content__container__list__item {
-    width: 200px;
+    width: 100px;
+    font-size: 18px;
+    &__container {
+      font-weight: 600;
+      overflow: hidden;
+      height: 40px;
+      padding: 0 50px;
+    }
+    &__list {
+      padding-left: 60px;
+      margin-left: 00px;
+    }
   }
   @keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,-25%,0);}
-    16.66%, 29.32% {transform:translate3d(0,-50%,0);}
-    33.32%,45.98% {transform:translate3d(0,-75%,0);}
-    49.98%,62.64% {transform:translate3d(0,-100%,0);}
-    66.64%,79.3% {transform:translate3d(0,-75%,0);}
-    83.3%,95.96% {transform:translate3d(0,-50%,0);}
+    0%, 12.66%, 100% {transform:translate3d(0,-0%,0);}
+    16.66%, 29.32% {transform:translate3d(0,-80%,0);}
+    33.32%,45.98% {transform:translate3d(0,-175%,0);}
+    49.98%,62.64% {transform:translate3d(0,-280%,0);}
+    66.64%,79.3% {transform:translate3d(0,-175%,0);}
+    83.3%,95.96% {transform:translate3d(0,-80%,0);}
   }
 
 }
 @media screen and (max-width: 400px) {
   .content { 
-    font-size: 25px;
+    font-size: 20px;
   }
   .content__container__list__item {
     width: 150px;
