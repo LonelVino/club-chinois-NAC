@@ -12,10 +12,6 @@ export default {
     data() {
         return {
             img_src: [
-                'static/img/caroulse/Home_2018.jpg',
-                'static/img/caroulse/Home_2018_2.jpg',
-                'static/img/caroulse/Home_2019.jpg',
-                'static/img/caroulse/Home_2021.jpg'
             ]    
         }
     },

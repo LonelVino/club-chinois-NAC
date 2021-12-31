@@ -41,7 +41,7 @@
 
 <style lang="scss" scoped>
 // colors
-$lightsOnBg: #FEF4AD;
+$lightsOnBg: #fecbad;
 $lightsOutBg: #F8AE39;
 $candleColor:#FFFFFD;
 $candleShadow:#673C63;

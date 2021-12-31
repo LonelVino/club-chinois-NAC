@@ -2,45 +2,14 @@
     <header>
         <div class="headBox">
             <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
-                <el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> 首页</el-menu-item>
+                <el-menu-item index="/Home"><img class='nav-logo' src="static/img/avatar_1.jpg" alt="logo"></el-menu-item>
+				<el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> 首页</el-menu-item>
                 <el-submenu index="2-4">
                     <template slot="title">活动</template>
-                    <el-menu-item index="world-week">World Week</el-menu-item>
-                    <el-menu-item index="farewell" disabled>欢送会</el-menu-item>
-                    <el-menu-item index="welcome" disabled>迎新会</el-menu-item>
+                            <el-menu-item index="Activity-1" disabled>Activity 1</el-menu-item>
+                            <el-menu-item index="Activity-2" disabled>Activity 2</el-menu-item>
+                            <el-menu-item index="Activity-3" disabled>Activity 3</el-menu-item>
                 </el-submenu>
-                <!-- <el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item> -->
-                <el-menu-item index="/Message"><i class="fa fa-wa fa-pencil"></i> 留言板</el-menu-item>
-                <el-menu-item index="/Aboutme"><i class="fa fa-wa fa-vcard"></i> 关于</el-menu-item>
-				<el-submenu index="5-4">
-					<template slot="title">给考试上香</template>
-					<el-menu-item index="congulations1" disabled>考神附体</el-menu-item>
-					<el-menu-item index="congulations2">考神在我身边</el-menu-item>
-				</el-submenu>
-                <el-menu-item index="/Congulations"><i class="fa fa-wa fa-vcard"></i> </el-menu-item>
-                <div index="" class="pcsearchbox">
-                    <i class="el-icon-search pcsearchicon"></i>
-                    <div class="pcsearchinput" :class="input?'hasSearched':''">
-                        <el-input placeholder="搜索" icon="search" v-model="input" :on-icon-click="searchEnterFun" @keyup.enter.native="searchEnterFun" @change="searchChangeFun">
-                        </el-input>
-                    </div>
-                </div>
-                <div class="userInfo">
-                    <div v-show="!haslogin" class="nologin">
-                        <a href="javascript:void(0);" @click="logoinFun(1)">Login&nbsp;</a>|<a href="javascript:void(0);" @click="logoinFun(0)">&nbsp;Register</a>
-                    </div>
-                    <div v-show="haslogin" class="haslogin">
-                        <i class="fa fa-fw fa-user-circle userImg"></i>
-                        <ul class="haslogin-info">
-                            <li>
-                                <a href="#/UserInfo">Profile</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" @click="userlogout">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </el-menu>
         </div>
         <!-- 移动端导航 -->
@@ -49,34 +18,16 @@
                 <i @click="pMenu=!pMenu" class="el-icon-menu"></i>
                 <el-collapse-transition>
                     <el-menu :default-active="activeIndex" class="mlistmenu" v-show="!pMenu" theme="dark" @open="handleOpen" @close="handleClose" :unique-opened="true" :router="true">
-                        <el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> 首页</el-menu-item>
+                        <el-menu-item index="/Home"><img class='nav-logo' src="static/img/avatar_1.jpg" alt="logo"></el-menu-item>
+						<el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> 首页</el-menu-item>
                         <el-submenu index="2-4">
                             <template slot="title">活动</template>
-                            <el-menu-item index="world-week">World Week</el-menu-item>
-                            <el-menu-item index="farewell" disabled>欢送会</el-menu-item>
-                            <el-menu-item index="welcome" disabled>迎新会</el-menu-item>
-                        </el-submenu>
-                        <!-- <el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item> -->
-                        <el-menu-item index="/Message"><i class="fa fa-wa fa-pencil"></i> 留言板</el-menu-item>
-                        <el-menu-item index="/Aboutme"><i class="fa fa-wa fa-vcard"></i> 关于</el-menu-item>
-						<el-submenu index="5-4">
-							<template slot="title">给考试上香</template>
-							<el-menu-item index="congulations1" disabled>考神附体</el-menu-item>
-							<el-menu-item index="congulations2">考神在我身边</el-menu-item>
-						</el-submenu>
-                        <el-menu-item v-show="!haslogin" index="" @click="logoinFun(1)">登录</el-menu-item>
-                        <el-menu-item v-show="!haslogin" index="" @click="logoinFun(0)">注册</el-menu-item>
-                        <el-submenu v-show="haslogin" index="3">
-                            <template slot="title"><i class="fa fa-wa fa-user-circle-o"></i> 我的</template>
-                            <el-menu-item index="/UserInfo">个人中心</el-menu-item>
-                            <el-menu-item index="" @click="userlogout">退出登录</el-menu-item>
+                            <el-menu-item index="Activity-1" disabled>Activity 1</el-menu-item>
+                            <el-menu-item index="Activity-2" disabled>Activity 2</el-menu-item>
+                            <el-menu-item index="Activity-3" disabled>Activity 3</el-menu-item>
                         </el-submenu>
                     </el-menu>
                 </el-collapse-transition>
-                <div class="searchBox">
-                    <el-input placeholder="" icon="search" v-model="input" @keyup.enter.native="searchEnterFun" :on-icon-click="searchEnterFun" @change="searchChangeFun">
-                    </el-input>
-                </div>
             </div>
         </div>
     </header>
@@ -244,8 +195,12 @@ export default {
 .headBox .el-submenu li.el-menu-item {
 	height: 38px;
 	line-height: 38px;
+	
 }
-
+.nav-logo {
+	height: 30px;
+	line-height: 30px;
+}
 .headBox li .fa-wa {
 	vertical-align: baseline;
 }

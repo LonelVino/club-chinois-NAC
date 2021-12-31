@@ -1,7 +1,7 @@
 <template>
     <div class="articles">
         <el-collapse v-model="activeNames" @change="handleChange">
-            <header class='title'>5月中下旬活动一览</header>
+            <header class='title'>Activities</header>
             <el-collapse-item title="World Week!" name="1">
                 <div>Salut !🤩🌎❤️</div>
                 <div>大家好，明天开始就是我们CentraleSupelec的WorldWeek了，除了我们社团周四举行的活动之外</div>

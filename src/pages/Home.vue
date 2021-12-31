@@ -4,10 +4,10 @@
         <wbc-nav></wbc-nav>
         <div class="container">
             <el-row  :gutter="30">
-                <Caroulse class="caroulse"/>
                 <el-col :sm="24" :md="18" style="transition:all .5s ease-out;margin-bottom:30px;">
                     <sequential-entrance>
-                        <articles/>
+                        <!-- <articles/> -->
+                        <Activities/>
                     </sequential-entrance>
                 </el-col>
                 <el-col :sm="24"  :md="6" >
@@ -15,7 +15,6 @@
                 </el-col>
             </el-row>
         </div>
-        <qr-codes class="qr-codes"></qr-codes>
         <wbc-footer></wbc-footer>
     </div>
 </template>
@@ -23,10 +22,8 @@
 <script>
 import header from '@/components/Modal/header.vue'
 import footer from '@/components/Modal/footer.vue'
-import Caroulse from '@/components/Modal/caroulse.vue'
 import temRightlist from '@/components/Modal/temRightlist.vue'
-import QrCodes from '@/components/QRcodes.vue'
-import Articles from '@/components/Articles/index.vue'
+import temCard from '@/components/temCard.vue'
 
 export default {
     name:'Home',
@@ -44,9 +41,7 @@ export default {
         'wbc-nav':header,
         'wbc-rightlist':temRightlist,
         'wbc-footer':footer,
-        Caroulse,
-        'qr-codes': QrCodes,
-        Articles
+        'Activities': temCard
     },
     created() { //生命周期函数
 

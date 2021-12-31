@@ -11,12 +11,6 @@
 							<a href="#/DetailShare" target="_blank">留言板</a>
 						</h1>
 					</header>
-					<section>
-						<h2>交流、咨询、吐槽、感叹、勾搭都在这里，尽情畅谈！</h2>
-						<div class="">
-							<img src="static/img/timg.jpg" class="maxW"  alt="">
-						</div>
-					</section>
 				</div>
 				<wbc-message></wbc-message>
 			</el-col>

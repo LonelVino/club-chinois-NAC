@@ -3,7 +3,7 @@
     <div v-if="this.$store.state.themeObj.user_start!=0" class="footBack footBackQian">
         <div class="fcontainer">
             <p>
-                ClubChinois has already been around for <span v-html='longTime'>{{longTime}}</span><span class="timeJump">(●'◡'●)ﾉ♥</span>
+                This website has already been around for <span v-html='longTime'>{{longTime}}</span><span class="timeJump">(●'◡'●)ﾉ♥</span>
             </p>
             <p>
                 Hosted on <a href="https://github.com/LonelVino/Club-chinois" target="_blank">GitHub</a>. 
@@ -13,7 +13,7 @@
                 © 2021 <a href="#">Club Chinois</a>.powered by  <a href="https://cn.vuejs.org/" target="_blank">Vue</a> 
             </p>
             <p>
-                <span>Made with</span> <img class="fheart" src="static/img/heart02.png"/>  <span>by Club Chinois</span>
+                <span>Made by Club Chinois</span>
             </p>
         </div>
     </div>
@@ -31,7 +31,7 @@
         methods: { //事件处理器
             runTime:function(){//运行倒计时
                 var that = this;
-                var oldTime =new Date('2016/06/01 00:00:00');
+                var oldTime =new Date('2021/12/21 00:00:00');
                 var timer = setInterval(function(){
                     var nowTime = new Date();
                     var longTime = nowTime - oldTime;

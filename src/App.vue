@@ -18,22 +18,9 @@ export default {
 </script>
 
 <style lang="less">
-html,
-body{
--webkit-filter: grayscale(100%) !important; /* webkit */
--moz-filter: grayscale(100%) !important; /*firefox*/
--ms-filter: grayscale(100%) !important; /*ie9*/
--o-filter: grayscale(100%) !important; /*opera*/
-filter: grayscale(100%) !important;
-filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) !important; 
-filter:gray !important; /*ie9- */
-}
-
-
 @tcolors:#791b2b;//按钮和标签颜色
 @tcolorm:#e20b3a;//分类的选中的颜色
 @tcolord:#e4be6d;//按钮hover 的颜色
-
 // /***** 粉红色主题****/
 // @tcolors:#97dffd;//按钮和标签颜色
 // @tcolorm:#64609E;//分类的选中的颜色
@@ -51,6 +38,16 @@ filter:gray !important; /*ie9- */
 
 
 /*************其他内容*************/
+// html,
+// body{
+// -webkit-filter: grayscale(100%) !important; /* webkit */
+// -moz-filter: grayscale(100%) !important; /*firefox*/
+// -ms-filter: grayscale(100%) !important; /*ie9*/
+// -o-filter: grayscale(100%) !important; /*opera*/
+// filter: grayscale(100%) !important;
+// filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) !important; 
+// filter:gray !important; /*ie9- */
+// }
 
 
 //时间和标题

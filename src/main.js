@@ -16,8 +16,6 @@ import 'vue-sequential-entrance/vue-sequential-entrance.css'
 import ModalWizard from 'vue-modal-wizard'
 import ImageShadow from 'vue-image-shadow'
 
-import '@/assets/img/icons'
-
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(SequentialEntrance);
