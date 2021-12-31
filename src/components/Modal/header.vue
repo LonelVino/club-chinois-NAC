@@ -1,12 +1,8 @@
 <!-- 头部公用 -->
 <template>
-<div class="">
+<div class="header">
 	<div class="headBack">
-		<el-row class="container">
-			<el-col :span="24">
-				<header-nav/>
-			</el-col>
-		</el-row>
+		<header-nav/>
 	</div>
 	<header-img/>
 </div>
@@ -53,7 +49,10 @@ export default {
 /*********头部导航栏********/
 
 /*头部导航栏盒子*/
-
+.header {
+	width: 100%;
+	margin-bottom: 2.5vh;
+}
 .headBack {
 	width: 100%;
 	background: rgba(40, 42, 44, 0.6);

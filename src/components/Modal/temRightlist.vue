@@ -5,26 +5,45 @@
             <div class="r1-head">
                 <!-- <svg-icon icon-class="github" /> -->
                 <h1 v-if="this.$store.state.themeObj.user_start!=0">
-                    <span>Club Chinois</span>  Links
+                    <span>Club Chinois</span>  Liens
                 </h1>
             </div>
             <div class="r1-body">
                 <div class="catch-me" >
                     <el-tooltip class="item" effect="dark" content="Facebook" placement="top">
                         <a :href="catchMeObj[isAimee].facebook" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Facebook-icon-1.png/640px-Facebook-icon-1.png" width="40" height="40">
+                            <img :src="catchMeObj[isAimee].fb_img" width="40" height="40">
                         </a>
                     </el-tooltip>
                     <el-tooltip class="item" effect="dark" content="Ins" placement="top">
                         <a :href="catchMeObj[isAimee].ins" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png" width="40" height="40">
+                            <img :src="catchMeObj[isAimee].ins_img" width="40" height="40">
                         </a>
                     </el-tooltip>
                     <el-tooltip class="item" effect="dark" content="Bilibili" placement="top">
                         <a :href="catchMeObj[isAimee].bilbili" target="_blank">
-                            <img src="https://yt3.ggpht.com/ytc/AKedOLRzN0znMBzhHspW9K5lnKN6-NYanaRjMBIhIQKj=s900-c-k-c0x00ffffff-no-rj" width="40" height="40">
+                            <img :src="catchMeObj[isAimee].bilibili_img" width="40" height="40">
                         </a>
                     </el-tooltip>
+                </div>
+            </div>
+        </section>
+
+        <section >
+            <div class="r1-head">
+                <!-- <svg-icon icon-class="github" /> -->
+                <h1 v-if="this.$store.state.themeObj.user_start!=0">
+                    Partenaires
+                </h1>
+            </div>
+            <div class="r1-body">
+                <div class="catch-me">
+                    <div class="block" v-for="url in urls" :key="url">
+                        <el-image
+                        style="width: 5rem; height: 5em"
+                        :src="url"
+                        fit="fill"></el-image>
+                    </div>
                 </div>
             </div>
         </section>
@@ -51,14 +70,21 @@ export default {
             going:false,//是否正在执行上滑动作
             catchMeObj:{// 个人信息
                 Aimee:{
-                    git: 'https://github.com/LonelVino/Club-chinois.git',
                     facebook: 'https://www.facebook.com/ClubChinois',
                     ins: 'https://www.instagram.com/club_chinois_centralesupelec/',
                     bilibili: 'https://space.bilibili.com/1229755888/',
-                    linkCS: "https://linkcs.fr/association/club-chinois-61"
+                    fb_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Facebook-icon-1.png/640px-Facebook-icon-1.png',
+                    ins_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png',
+                    bilibili_img: 'https://yt3.ggpht.com/ytc/AKedOLRzN0znMBzhHspW9K5lnKN6-NYanaRjMBIhIQKj=s900-c-k-c0x00ffffff-no-rj'
                 }
             },
-            isAimee:this.$store.state.themeObj.user_start!=0?"Aimee":"Aimee"//判断是哪个website
+            isAimee:this.$store.state.themeObj.user_start!=0?"Aimee":"Aimee",//判断是哪个website
+            urls: [
+                'https://i0.wp.com/www-scee.rennes.supelec.fr/wp/wp-content/uploads/2017/05/cropped-LOGO-1.png?fit=512%2C512',
+                'https://www.minalogic.com/wp-content/uploads/2020/07/minalogic-member-fr-bnp-paribas.png',
+                'https://scontent-mrs2-1.xx.fbcdn.net/v/t1.6435-9/159314480_200291148381081_9193454809572634499_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=-DA2KeO6o1gAX-TgeCn&_nc_ht=scontent-mrs2-1.xx&oh=00_AT8frdnRz83jMhksdOhNg9rAev6fayn6sqVlLw_pjPmSdw&oe=61F55268',
+                'https://pbs.twimg.com/profile_images/1066804809838280704/HBjKfpa-_400x400.jpg',
+            ],
         }
     },
     components: {
@@ -124,6 +150,7 @@ export default {
     transform: translate(0,-2px);
     box-shadow:0 15px 30px rgba(0,0,0,.1);
 }
+
 .rightlistBox .r1-head{
     text-align: center;
     border-radius: 4px 4px 0 0 ;
@@ -161,6 +188,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .rightlistBox .r1-body .catch-me a{
     display: inline-block;

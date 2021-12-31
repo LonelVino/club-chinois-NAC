@@ -71,7 +71,7 @@ body
 {
   position:absolute;
   left:50%;
-  top:70%;
+  top:90%;
   transform:scale(1.5,1.5) translate(-50%,-50%);
 }
 .floor

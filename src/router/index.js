@@ -32,11 +32,23 @@ export default new Router({
 			name: 'Home'
 		}, //首页
 		{
-			path: '/world-week',
-			component: resolve => require(['../pages/Activities/WorldWeek/index.vue'], resolve),
+			path: '/event_1',
+			component: resolve => require(['@/pages/Activities/NouvelAn/event_1.vue'], resolve),
 			meta: {auth: true},
-			name: 'WorldWeek'
+			name: 'Event_1'
 		},
+		{
+			path: '/Zodiac',
+			component: resolve => require(['@/pages/Zodiac/index.vue'], resolve),
+			meta: {auth: true},
+			name: 'Zodiac'			
+		}
+		// {
+		// 	path: '/world-week',
+		// 	component: resolve => require(['../pages/Activities/WorldWeek/index.vue'], resolve),
+		// 	meta: {auth: true},
+		// 	name: 'WorldWeek'
+		// },
 		// {
 		// 	path: '/Message',
 		// 	component: resolve => require(['../pages/Message.vue'], resolve),

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <p class='Headline'>Activities</p>
+    <p class='Headline'>Événements</p>
     <div class="card">
-      <a class="card-link" href="#">
+      <router-link class="card-link" to="/event_1">
         <article class="blog-card">
           <img class="post-image" :src="Eve1.image" />
           <div class="article-details">
@@ -14,10 +14,10 @@
             </div>
           </div>
         </article>
-      </a>
+      </router-link>
     </div>
     <div class="card">
-      <a class="card-link" href="#">
+      <router-link class="card-link" to="event_2">
         <article class="blog-card">
           <img class="post-image" :src="Eve2.image" />
           <div class="article-details">
@@ -29,7 +29,7 @@
             </div>
           </div>
         </article>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
@@ -39,14 +39,14 @@
 export default {
     data: () => ({
       Eve1:{
-        name: 'Activity 1',
+        name: 'Événement 1',
         position: 'Agora',
         image: 'https://images6.alphacoders.com/679/thumb-1920-679338.jpg',
         time: '01/02/22 13H',
         desc: `Description`
       },
       Eve2:{
-        name: 'Activity 2',
+        name: 'Événement 2',
         position: 'Agora',
         image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
         time: '01/02/22 13H',

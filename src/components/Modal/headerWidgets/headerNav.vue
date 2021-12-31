@@ -3,30 +3,43 @@
         <div class="headBox">
             <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
                 <el-menu-item index="/Home"><img class='nav-logo' src="static/img/avatar_1.jpg" alt="logo"></el-menu-item>
-				<el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> 首页</el-menu-item>
+				<el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> Accueil </el-menu-item>
                 <el-submenu index="2-4">
-                    <template slot="title">活动</template>
-                            <el-menu-item index="Activity-1" disabled>Activity 1</el-menu-item>
-                            <el-menu-item index="Activity-2" disabled>Activity 2</el-menu-item>
-                            <el-menu-item index="Activity-3" disabled>Activity 3</el-menu-item>
+                    <template slot="title">Événements</template>
+						<el-menu-item index="Activity-1" disabled>Activity 1</el-menu-item>
+						<el-menu-item index="Activity-2" disabled>Activity 2</el-menu-item>
+						<el-menu-item index="Activity-3" disabled>Activity 3</el-menu-item>
                 </el-submenu>
+				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
+				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
+				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
+				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
+				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> 21 Facts </el-menu-item>
             </el-menu>
         </div>
         <!-- 移动端导航 -->
         <div class="mobileBox">
             <div class="hideMenu">
-                <i @click="pMenu=!pMenu" class="el-icon-menu"></i>
-                <el-collapse-transition>
+                <i @click="pMenu=!pMenu" class="el-icon-menu"></i> 
+				<div class="logo">
+					<img class='nav-logo' src="static/img/avatar_1.jpg" alt="logo">		
+					<p>Club Chinois</p>
+				</div>
+				<el-collapse-transition>
                     <el-menu :default-active="activeIndex" class="mlistmenu" v-show="!pMenu" theme="dark" @open="handleOpen" @close="handleClose" :unique-opened="true" :router="true">
-                        <el-menu-item index="/Home"><img class='nav-logo' src="static/img/avatar_1.jpg" alt="logo"></el-menu-item>
-						<el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> 首页</el-menu-item>
+                        <el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i>  Accueil</el-menu-item>
                         <el-submenu index="2-4">
-                            <template slot="title">活动</template>
+                            <template slot="title">Événements</template>
                             <el-menu-item index="Activity-1" disabled>Activity 1</el-menu-item>
                             <el-menu-item index="Activity-2" disabled>Activity 2</el-menu-item>
                             <el-menu-item index="Activity-3" disabled>Activity 3</el-menu-item>
                         </el-submenu>
-                    </el-menu>
+						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
+						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
+						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
+						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
+						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> 21 Facts </el-menu-item>
+					</el-menu>
                 </el-collapse-transition>
             </div>
         </div>
@@ -180,7 +193,7 @@ export default {
 
 <style lang="scss">
 .headBox .el-menu {
-	background: transparent;
+	background: rgb(202, 6, 6);
 	border-bottom: none!important;
 }
 
@@ -211,6 +224,8 @@ export default {
 .headBox .el-submenu div.el-submenu__title,
 .headBox .el-submenu__title i.el-submenu__icon-arrow {
 	color: #fff;
+	font-weight: bold;
+	font-size: 1rem;
 }
 
 .headBox .el-menu--horizontal .el-submenu>.el-menu {
@@ -364,8 +379,22 @@ export default {
 	width: 100%;
 	height: 100%;
 	line-height: 38px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(202, 6, 6);
 }
-
+.hideMenu .logo {
+	display: flex;
+	flex-direction: row;
+	margin: 1vh 0 0 10vw;
+	align-content: center;
+}
+.hideMenu .logo p {
+	margin-left: 2vw;
+	font-weight: bold;
+}
 .hideMenu ul.mlistmenu {
 	width: 100%;
 	position: absolute;

@@ -51,7 +51,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tcommonBox header section{
 	display: flex;
 	flex-direction: column;

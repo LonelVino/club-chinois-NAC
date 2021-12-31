@@ -5,7 +5,7 @@
     @touchstart="hasMouse = false">
         <wbc-nav class='ww-nav'/>
         <wave/>
-        <div class="container">
+        <div class="ww-container">
             <div class="txt_btn">
               <div class="titles">
                 <div class="title">
@@ -100,7 +100,7 @@ export default {
 a {
   color: coral;
 }
-.container {
+.ww-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -153,7 +153,7 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-  .container {
+  .ww-container {
     transition: 3s;
     transform: scale(0.93);
     margin-left: -7vw;
@@ -176,7 +176,7 @@ a {
 }
   
 @media screen and (max-width: 600px) {
-  .container {
+  .ww-container {
     transform: scale(0.91);
     margin-left: -5vw;
   }
@@ -198,7 +198,7 @@ a {
 }
 
 @media screen and (max-width: 550px) {
-.container {
+.ww-container {
   transform: scale(0.88);
   margin-left: -4vw;
 }

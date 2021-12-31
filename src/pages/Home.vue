@@ -1,29 +1,30 @@
 <!-- 首页 -->
 <template>
-    <div>
-        <wbc-nav></wbc-nav>
-        <div class="container">
-            <el-row  :gutter="30">
-                <el-col :sm="24" :md="18" style="transition:all .5s ease-out;margin-bottom:30px;">
-                    <sequential-entrance>
-                        <!-- <articles/> -->
-                        <Activities/>
-                    </sequential-entrance>
-                </el-col>
-                <el-col :sm="24"  :md="6" >
-                    <wbc-rightlist></wbc-rightlist>
-                </el-col>
-            </el-row>
-        </div>
-        <wbc-footer></wbc-footer>
+  <div>
+    <wbc-nav></wbc-nav>
+    <div class="container">
+      <snow-btn></snow-btn>
+      <el-row  :gutter="30">
+        <el-col :sm="24" :md="18" style="transition:all .5s ease-out;margin-bottom:30px;">
+          <sequential-entrance>
+            <Activities class="activities"/>
+          </sequential-entrance>
+        </el-col>
+        <el-col :sm="24"  :md="6" >
+          <wbc-rightlist></wbc-rightlist>
+        </el-col>
+      </el-row>
     </div>
+    <wbc-footer></wbc-footer>
+  </div>
 </template>
 
 <script>
 import header from '@/components/Modal/header.vue'
 import footer from '@/components/Modal/footer.vue'
+import snowBtn from '@/components/Modal/snowBtn.vue'
 import temRightlist from '@/components/Modal/temRightlist.vue'
-import temCard from '@/components/temCard.vue'
+import nouvelanCards from '@/pages/Activities/NouvelAn/cards.vue'
 
 export default {
     name:'Home',
@@ -39,9 +40,10 @@ export default {
     },
     components: { //定义组件
         'wbc-nav':header,
+        'snow-btn': snowBtn,
         'wbc-rightlist':temRightlist,
         'wbc-footer':footer,
-        'Activities': temCard
+        'Activities': nouvelanCards
     },
     created() { //生命周期函数
 
@@ -73,12 +75,16 @@ a {
   background-color: coral;
   width: 100px;
   height: 100px;
-  margin: 1rem;
 }
 @media screen and (max-width:800px) {
   .caroulse {
     display: none;
   }
-  
+}
+
+@media screen and (max-width: 540px)  {
+  .activities {
+    margin-top: 15vh;
+  }
 }
 </style>
