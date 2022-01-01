@@ -5,7 +5,7 @@
             <div class="r1-head">
                 <!-- <svg-icon icon-class="github" /> -->
                 <h1 v-if="this.$store.state.themeObj.user_start!=0">
-                    <span>Club Chinois</span>  Liens
+                    Liens
                 </h1>
             </div>
             <div class="r1-body">

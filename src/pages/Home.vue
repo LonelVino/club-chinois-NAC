@@ -11,7 +11,7 @@
           </sequential-entrance>
         </el-col>
         <el-col :sm="24"  :md="6" >
-          <wbc-rightlist></wbc-rightlist>
+          <wbc-rightlist class="rightlist"></wbc-rightlist>
         </el-col>
       </el-row>
     </div>
@@ -75,6 +75,9 @@ a {
   background-color: coral;
   width: 100px;
   height: 100px;
+}
+.rightlist {
+  margin: 65px auto
 }
 @media screen and (max-width:800px) {
   .caroulse {

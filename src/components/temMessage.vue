@@ -339,7 +339,7 @@
     position: relative;
     background: #fff;
     padding:15px;
-    margin-bottom: 20px;
+    margin: 100px auto;
     border-radius: 5px;
 }
 .tmsg-respond h3{

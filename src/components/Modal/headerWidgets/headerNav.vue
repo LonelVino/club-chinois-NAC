@@ -6,15 +6,23 @@
 				<el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> Accueil </el-menu-item>
                 <el-submenu index="2-4">
                     <template slot="title">Événements</template>
-						<el-menu-item index="Activity-1" disabled>Activity 1</el-menu-item>
-						<el-menu-item index="Activity-2" disabled>Activity 2</el-menu-item>
-						<el-menu-item index="Activity-3" disabled>Activity 3</el-menu-item>
+						<el-menu-item index="/event_1" disabled>Activity 1</el-menu-item>
+						<el-menu-item index="/event_2" disabled>Activity 2</el-menu-item>
+						<el-menu-item index="/event_3" disabled>Activity 3</el-menu-item>
                 </el-submenu>
 				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
-				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
-				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
-				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
-				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> 21 Facts </el-menu-item>
+				<el-menu-item index="/Calendar"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
+				<el-menu-item index="/Greetings"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
+				<el-menu-item index="/Taboos"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
+				<el-submenu index="/Food">
+                    <template slot="title">Traditions</template>
+						<el-menu-item index="/Food" >Food</el-menu-item>
+						<el-menu-item index="/Drinks" disabled>Drinks</el-menu-item>
+						<el-menu-item index="/Snacks" >Snacks</el-menu-item>
+						<el-menu-item index="/Desserts" >Desserts</el-menu-item>
+						<el-menu-item index="/lantern-festival" >Lantern Festival</el-menu-item>
+						<el-menu-item index="/Decorations" disabled>Decorations</el-menu-item>
+                </el-submenu>
             </el-menu>
         </div>
         <!-- 移动端导航 -->
@@ -35,10 +43,18 @@
                             <el-menu-item index="Activity-3" disabled>Activity 3</el-menu-item>
                         </el-submenu>
 						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
-						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
-						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
-						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
-						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> 21 Facts </el-menu-item>
+						<el-menu-item index="/Calendar"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
+						<el-menu-item index="/Greetings"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
+						<el-menu-item index="/Taboos"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
+						<el-submenu index="/Food">
+							<template slot="title">Traditions</template>
+								<el-menu-item index="/Food" >Food</el-menu-item>
+								<el-menu-item index="/Drinks" disabled>Drinks</el-menu-item>
+								<el-menu-item index="/Snacks" >Snacks</el-menu-item>
+								<el-menu-item index="/Desserts" >Desserts</el-menu-item>						
+								<el-menu-item index="/lantern-festival" >Lantern Festival</el-menu-item>
+								<el-menu-item index="/Decorations" disabled>Decorations</el-menu-item>
+						</el-submenu>
 					</el-menu>
                 </el-collapse-transition>
             </div>
