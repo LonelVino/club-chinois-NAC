@@ -32,7 +32,7 @@
         <section >
             <div class="r1-head">
                 <!-- <svg-icon icon-class="github" /> -->
-                <h1 v-if="this.$store.state.themeObj.user_start!=0">
+                <h1 class='Partenaires' v-if="this.$store.state.themeObj.user_start!=0">
                     Partenaires
                 </h1>
             </div>
@@ -214,6 +214,10 @@ export default {
     margin:0 3.2px;
 }
 
+.rightlistBox .r1-head .Partenaires {
+    font-size: 2em;
+    margin:0 0 0 -75px
+}
 
 /*回到顶部*/
 /*返回到顶部*/

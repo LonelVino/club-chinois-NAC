@@ -17,7 +17,7 @@
       </router-link>
     </div>
     <div class="card">
-      <router-link class="card-link" to="event_2">
+      <router-link class="card-link" to="/event_1">
         <article class="blog-card">
           <img class="post-image" :src="Eve2.image" />
           <div class="article-details">

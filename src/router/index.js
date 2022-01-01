@@ -41,38 +41,82 @@ export default new Router({
 			path: '/Zodiac',
 			component: resolve => require(['@/pages/Zodiac/index.vue'], resolve),
 			meta: {auth: true},
-			name: 'Zodiac'			
-		}
-		// {
-		// 	path: '/world-week',
-		// 	component: resolve => require(['../pages/Activities/WorldWeek/index.vue'], resolve),
-		// 	meta: {auth: true},
-		// 	name: 'WorldWeek'
-		// },
-		// {
-		// 	path: '/Message',
-		// 	component: resolve => require(['../pages/Message.vue'], resolve),
-		// 	meta: {auth: true},
-		// 	name: 'Message'
-		// }, //留言板
-		// {
-		// 	path: '/Aboutme',
-		// 	component: resolve => require(['../pages/Aboutme.vue'], resolve),
-		// 	meta: {auth: true},
-		// 	name: 'Aboutme'
-		// }, //关于
-		// {
-		// 	path: '/Login',
-		// 	component: resolve => require(['../pages/Login.vue'], resolve),
-		// 	meta: {auth: false},
-		// 	name: 'Login'
-		// }, //注册登录
-		// {
-		// 	path: '/UserInfo',
-		// 	component: resolve => require(['../pages/UserInfo.vue'], resolve),
-		// 	meta: {auth: true},
-		// 	name: 'UserInfo'
-		// }, //用户个人中心
+			name: 'Zodiac',	
+		},
+		{
+			path: '/Zodiac/Rat',
+			component: resolve => require(['@/pages/Zodiac/Animals/Rat.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacRat',	
+		},
+		{
+			path: '/Zodiac/Ox',
+			component: resolve => require(['@/pages/Zodiac/Animals/Ox.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacOx',	
+		},
+		{
+			path: '/Zodiac/Tiger',
+			component: resolve => require(['@/pages/Zodiac/Animals/Tiger.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacTiger',	
+		},
+		{
+			path: '/Zodiac/Rabbit',
+			component: resolve => require(['@/pages/Zodiac/Animals/Rabbit.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacRabbit',	
+		},
+		{
+			path: '/Zodiac/Dragon',
+			component: resolve => require(['@/pages/Zodiac/Animals/Dragon.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacDragon',	
+		},
+		{
+			path: '/Zodiac/Snake',
+			component: resolve => require(['@/pages/Zodiac/Animals/Snake.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacSnake',	
+		},
+		{
+			path: '/Zodiac/Horse',
+			component: resolve => require(['@/pages/Zodiac/Animals/Horse.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacHorse',	
+		},
+		{
+			path: '/Zodiac/Goat',
+			component: resolve => require(['@/pages/Zodiac/Animals/Goat.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacGoat',	
+		},
+		{
+			path: '/Zodiac/Monkey',
+			component: resolve => require(['@/pages/Zodiac/Animals/Monkey.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacMonkey',	
+		},
+
+		{
+			path: '/Zodiac/Rooster',
+			component: resolve => require(['@/pages/Zodiac/Animals/Rooster.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacRooster',	
+		},
+		{
+			path: '/Zodiac/Dog',
+			component: resolve => require(['@/pages/Zodiac/Animals/Dog.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacDog',	
+		},
+		{
+			path: '/Zodiac/Pig',
+			component: resolve => require(['@/pages/Zodiac/Animals/Pig.vue'], resolve),
+			meta: {auth: true},
+			name: 'ZodiacPig',	
+		},
+
 		
 	]
 })

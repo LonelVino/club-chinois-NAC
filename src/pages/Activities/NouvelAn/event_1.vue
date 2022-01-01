@@ -37,14 +37,8 @@
 			<div class="product-image">
 				<img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
 				<div class="info">
-				<h2> Description</h2>
-				<ul>
-					<li><strong>Height : </strong>5 Ft </li>
-					<li><strong>Shade : </strong>Olive green</li>
-					<li><strong>Decoration: </strong>balls and bells</li>
-					<li><strong>Material: </strong>Eco-Friendly</li>
-					
-				</ul>
+				<h2> Details</h2>
+				<p>Details</p>
 				</div>
 			</div>
 		</div>
@@ -88,7 +82,7 @@ export default {
 	border-radius: 5px;
 	overflow: hidden;
 	margin: 5em auto;
-	height: 37vh;
+	height: 50vh;
 	width: 75vw;
 }
 
@@ -158,11 +152,11 @@ export default {
 
 
 #card .activity-details > p {
-font-family: 'EB Garamond', serif;
+	font-family: 'EB Garamond', serif;
 	text-align: center;
 	font-size: 18px;
 	color: #7d7d7d;
-	
+	margin: 0.6em auto 
 }
 .control{
 	position: absolute;
@@ -256,7 +250,8 @@ font-family: 'EB Garamond', serif;
     top: 0;
 }
 
-.info h2 {text-align: center}
+.info h2 {text-align: center; margin: 1em auto}
+.info p { padding: 1em}
 .product-image:hover .info{transform: translateX(0);}
 
 .info ul li{transition: 0.3s ease;}
