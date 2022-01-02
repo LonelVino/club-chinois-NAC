@@ -101,8 +101,9 @@ $shadow: rgba(0, 0, 0, 0.2);
 .post-title {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  font-family: 'RabbidHighwaySignIVRegular';
   line-height: 1;
   letter-spacing: 0.0625rem;
   margin: 0 0 0.75rem 0;
@@ -112,6 +113,7 @@ $shadow: rgba(0, 0, 0, 0.2);
 
 .post-description {
   font-family: 'GidolinyaRegular';
+  font-size: 0.9rem;
 }
 
 .card-footer {
@@ -125,9 +127,10 @@ $shadow: rgba(0, 0, 0, 0.2);
 
 .post-pos {
   @include transition(color 0.3s ease);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: $black;
   font-weight: 700;
+  font-family: 'RabbidHighwaySignIVRegular';
   margin: 0 0 0.5rem 0;
   padding: 0.25rem 0 0 1.125rem
 }
@@ -135,7 +138,7 @@ $shadow: rgba(0, 0, 0, 0.2);
 .post-time {
   padding: 0.25rem 1.125rem 0 0;
   border-right: 0.125rem solid $border;
-  font-size: 0.875rem;
+  font-size: 0.925rem;
   font-family: 'RabbidHighwaySignIVRegular';
   font-weight: bolder;
   font-style: normal;

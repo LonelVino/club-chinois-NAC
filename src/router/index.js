@@ -5,13 +5,13 @@ Vue.use(Router)
 
 export const constRoutes = [{
 	path: '/',
-	component: resolve => require(['../pages/Home.vue'], resolve),
+	component: resolve => require(['../pages/Home/Home.vue'], resolve),
 	meta: {auth: true},
 	name: 'Home'
 }, //首页
 {
 	path: '/Home',
-	component: resolve => require(['../pages/Home.vue'], resolve),
+	component: resolve => require(['../pages/Home/Home.vue'], resolve),
 	meta: {auth: true},
 	name: 'Home'
 }, //首页
@@ -81,12 +81,12 @@ export const constRoutes = [{
 	meta: {auth: true},
 	name: 'Decorations'
 },
-{
-	path: '/Drinks',
-	component: resolve => require(['@/pages/Traditions/Drinks.vue'], resolve),
-	meta: {auth: true},
-	name: 'Drinks'
-},
+// {
+// 	path: '/Drinks',
+// 	component: resolve => require(['@/pages/Traditions/Drinks.vue'], resolve),
+// 	meta: {auth: true},
+// 	name: 'Drinks'
+// },
 {
 	path: '/Food',
 	component: resolve => require(['@/pages/Traditions/Food.vue'], resolve),

@@ -1,6 +1,10 @@
 <template>
   <div>
-    <wbc-nav></wbc-nav>
+    <div class="header">
+      <div class="headBack">
+        <wbc-nav></wbc-nav>
+      </div>
+    </div>
     <header class='header'>
       <img class='header-img' src="@/assets/img/animals.png"/>
     </header>

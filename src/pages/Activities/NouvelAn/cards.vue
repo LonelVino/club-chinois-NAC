@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='card-container'>
     <p class='Headline'>Événements</p>
     <div class="card" v-for="(item,index) in events" :key="index">
       <tem-card 
@@ -103,6 +103,7 @@ $shadow: rgba(0, 0, 0, 0.2);
 
 
 .card {
+  transition: all 0.2s linear;
   margin: 2em auto;
 }
 
@@ -223,12 +224,20 @@ $shadow: rgba(0, 0, 0, 0.2);
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
   }
-  
+
   @media (max-width: 40rem) {
     .blog-card {
       grid-template-columns: auto;
       grid-template-rows: 12rem 1fr;
     }
+  }
+}
+@media (max-width: 600px) {
+  .Headline {
+    font-size: 1.5rem;
+  }
+  .card {
+    margin: 2em 2em 0 2em;
   }
 }
 </style>

@@ -49,6 +49,15 @@ font-weight: bolder;
 line-height: 2.5vh; 
 margin: 1.5vh 0 2.5vh; }
 
+h4 { 
+    color: #333333; 
+    font-family: 'KhmerSBBICSerifRegular'; 
+    font-size: 2vh; 
+    font-weight: bolder; 
+    line-height: 2vh; 
+    margin: 1vh 0 1vh; 
+}
+
 ul {
     padding-inline-start: 40px;
     margin: 1.3125em 0;
@@ -89,6 +98,7 @@ a:hover { color: #333333; text-decoration: underline; }
     h1 {font-size: 5.2vh;}
     h2 {font-size: 3.7vh;}
     h3 {font-size: 2.8vh;}
+    h4 {font-size: 1.7vh;}
     p {font-size: 2vh;}
 }
 
@@ -103,7 +113,8 @@ a:hover { color: #333333; text-decoration: underline; }
     h1 {font-size: 5vh;}
     h2 {font-size: 3.5vh;}
     h3 {font-size: 2.7vh;}
-    p {font-size: 2vh;}
+    h4 {font-size: 1.6vh;}
+    p {font-size: 1.7vh; margin: 0 0 22px;}
 }
 
 @media (max-width: 600px) {
@@ -112,6 +123,7 @@ a:hover { color: #333333; text-decoration: underline; }
     }
     h1 {font-size: 4.5vh;}
     h2 {font-size: 3vh;}
-    h3 {font-size: 2.2vh;}
-    p {font-size: 1.8vh;}
+    h3 {font-size: 2.8vh;}
+    h4 {font-size: 2vh;}
+    p {font-size: 1.8vh; margin: 0 0 15px;}
 }

@@ -8,9 +8,7 @@
 7.After finishing the user add info part, then add login and logout part
 
 NouvelAn
-1. Decrease Font Size, Mobile Version
-2. Beautify Link Style 
-3. Update Canlendar
-4. Update Greetings
-5. Update Taboos
-6. Update 21 Facts
+1. Decrease Font Size, Mobile Version 
+2. Update Canlendar, Greetings, Taboos
+3. Beautify Link Style
+4. NavBar Float at Top while Scrolling

@@ -3,7 +3,6 @@
     <div class="rightlistBox">
         <section >
             <div class="r1-head">
-                <!-- <svg-icon icon-class="github" /> -->
                 <h1 v-if="this.$store.state.themeObj.user_start!=0">
                     Liens
                 </h1>
@@ -31,7 +30,6 @@
 
         <section >
             <div class="r1-head">
-                <!-- <svg-icon icon-class="github" /> -->
                 <h1 class='Partenaires' v-if="this.$store.state.themeObj.user_start!=0">
                     Partenaires
                 </h1>
@@ -143,8 +141,9 @@ export default {
     position: relative;
     background: #fff;
     padding:15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    margin-bottom: 3vh;
+    border-radius: 0.375rem;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 .rightlistBox section:hover{
     transform: translate(0,-2px);
@@ -164,13 +163,14 @@ export default {
 }
 .rightlistBox .r1-head h1{
     position: absolute;
-    bottom:5px;
-    margin:0 0 0 -65px;
-    font-size: 20px;
+    bottom: 15px;
+    margin:0 0 0 -68px;
+    font-size: 28px;
+    font-family: 'RabbidHighwaySignIVRegular';
     letter-spacing:0.5px;
-    color:#fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
-    font-weight: 700;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgba(139, 9, 9, 0.7);
+    font-weight: 800;
     width:130px;
     left:50%;
 }
@@ -215,8 +215,7 @@ export default {
 }
 
 .rightlistBox .r1-head .Partenaires {
-    font-size: 2em;
-    margin:0 0 0 -75px
+    
 }
 
 /*回到顶部*/
@@ -266,4 +265,15 @@ export default {
 .goTophui{
     bottom:120vh;
 }
+
+
+@media (max-width: 600px) {
+    .rightlistBox {
+        margin-top: -2em;
+    }
+    .rightlistBox section:first-child {
+        margin-bottom: 5vh;
+    }
+}
+
 </style>

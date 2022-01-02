@@ -1,6 +1,10 @@
 <template>
     <div>
-        <wbc-nav></wbc-nav>
+        <div class="header">
+            <div class="headBack">
+                <wbc-nav></wbc-nav>
+            </div>
+        </div>
         <header class='header'>
             <img class='header-img' src="https://chinesenewyear.imgix.net/assets/images/zodiac/chinese-zodiac-rooster.png?fit=crop&q=50&w=1024&h=224&auto=format"/>
         </header>
@@ -72,91 +76,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.paragraph {
-  background:#efefef;
-  min-height:100vh;
-  overflow-x: hidden;
-  -webkit-overflow-x: hidden;
-  -webkit-tap-highlight-color: transparent;
-  max-width: 60%;
-  margin: 2vh auto;
-  padding:0 10px;
-  // overflow-x: hidden;
-  // -webkit-overflow-x: hidden;
-}
-
-.header {
-  width: 100%;
-  background-color: #df292f;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-}
-.header-img {
-  width: 80%;
-  height: 80%;
-  object-fit: fill;
-}
-
-h1 { 
-  color: #333333; 
-  font-family: 'Bitter', serif; 
-  font-size: 5.5vh; 
-  font-weight: normal; 
-  line-height:6vh; 
-  margin: 2.5vh 0 6vh; }
-
-h2 { 
-  color: #333333; 
-  font-family: 'Bitter', serif; 
-  font-size: 4vh; 
-  font-weight: normal; 
-  line-height: 3.5vh; 
-  margin: 2vh 0 3.5vh; }
-
-h3 { 
-  color: #333333; 
-  font-family: 'KhmerSBBICSerifRegular'; 
-  font-size: 3vh; 
-  font-weight: bolder; 
-  line-height: 2.5vh; 
-  margin: 1.5vh 0 2.5vh; }
-
-ul {
-    padding-inline-start: 40px;
-    margin: 1.3125em 0;
-    padding-left: 2em;
-    li {
-        font-size: 1.3125rem;
-        list-style: square;
-    }
-    li::marker {
-        color: black;
-        font-size: 1.2em;
-    }
-    strong {
-        font-weight: bolder;
-    }
-}
-
-
-p { color: #333333; font-family: Georgia, serif; font-size: 2.2vh; line-height: 28px; margin: 0 0 28px; }
-
-
-p:first-of-type { font-size: 2.5vh; line-height: 36px; margin: 0 0 28px; }
-
-
-a { color: #c73036; font-family: Georgia, serif; text-decoration: underline; }
-
-
-a:hover { color: #333333; text-decoration: underline; }
-
-
-.author { color: #8d8d8d; font-family: Georgia, serif; font-style: italic; font-size: 14px; margin-bottom: 28px; }
-
-
-.author a { color: #c73036; font-family: "Helvetica Neue", sans-serif; font-weight: bold; text-decoration: none; text-transform: uppercase; }
+@import "@/styles/index.scss";
+@import "@/styles/typograph.scss";
 
 </style>

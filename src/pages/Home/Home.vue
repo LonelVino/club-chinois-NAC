@@ -14,12 +14,15 @@
           <wbc-rightlist class="rightlist"></wbc-rightlist>
         </el-col>
       </el-row>
+      <el-divider></el-divider>
+      <description/>
     </div>
     <wbc-footer></wbc-footer>
   </div>
 </template>
 
 <script>
+import Description from './Desc.vue'
 import header from '@/components/Modal/header.vue'
 import footer from '@/components/Modal/footer.vue'
 import snowBtn from '@/components/Modal/snowBtn.vue'
@@ -43,7 +46,8 @@ export default {
         'snow-btn': snowBtn,
         'wbc-rightlist':temRightlist,
         'wbc-footer':footer,
-        'Activities': nouvelanCards
+        'Activities': nouvelanCards,
+        'description': Description,
     },
     created() { //生命周期函数
 
@@ -88,6 +92,9 @@ a {
 @media screen and (max-width: 540px)  {
   .activities {
     margin-top: 15vh;
+  }
+  .rightlist {
+    margin: 2em auto
   }
 }
 </style>

@@ -3,14 +3,16 @@
     <div v-if="this.$store.state.themeObj.user_start!=0" class="footBack footBackQian">
         <div class="fcontainer">
             <p>
-                This website has already been around for <span v-html='longTime'>{{longTime}}</span><span class="timeJump">(●'◡'●)ﾉ♥</span>
+                This website has already been around for <span v-html='longTime'>{{longTime}}</span>
+				<!-- <span class="timeJump">(●'◡'●)ﾉ♥</span> -->
             </p>
             <p>
                 Hosted on <a href="https://github.com/LonelVino/Club-chinois" target="_blank">GitHub</a>. 
-				<a href="https://www.aliyun.com/?spm=a2c49.11131515.0.0.5Z9AkR" target="_blank">AliCloud</a> Provide static file cloud storage service. <a href="https://tongji.baidu.com/web/welcome/login" target="_blank">Baidu Statistic</a> Provide website statistics services. <a href="https://www.cloudxns.net/Order/index.html" target="_blank">CloudXNS</a> Provide DNS resolution service.
+				<a href="https://www.aliyun.com/?spm=a2c49.11131515.0.0.5Z9AkR" target="_blank">AliCloud</a> Provide static file cloud storage service. 
+				<a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a> Provide DNS resolution service.
             </p>
             <p>
-                © 2021 <a href="#">Club Chinois</a>.powered by  <a href="https://cn.vuejs.org/" target="_blank">Vue</a> 
+                © 2022 <a href="#">Club Chinois</a>.powered by  <a href="https://cn.vuejs.org/" target="_blank">Vue</a> 
             </p>
             <p>
                 <span>Made by Club Chinois</span>

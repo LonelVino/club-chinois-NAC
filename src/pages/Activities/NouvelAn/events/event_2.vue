@@ -1,6 +1,10 @@
 <template>
   <div class="cards">
-    <wbc-nav></wbc-nav>
+    <div class="header">
+		<div class="headBack">
+			<wbc-nav></wbc-nav>
+		</div>
+	</div>
 	<div class="card_container">
 		<div id="card">
 			<div class="activity-details">  
@@ -72,6 +76,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "@/styles/index.scss";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
 @import '@/styles/event-detail.scss'
 </style>

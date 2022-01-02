@@ -1,6 +1,10 @@
 <template>
   <div>
-    <wbc-nav></wbc-nav>
+    <div class="header">
+      <div class="headBack">
+        <wbc-nav></wbc-nav>
+      </div>
+    </div>
     <header class='header'>
       <img class='header-img' src="https://chinesenewyear.imgix.net/assets/images/food/chinese-new-year-food-feast.jpg?fit=crop&q=50&w=960&h=224&auto=format"/>
     </header>

@@ -17,11 +17,10 @@
 				<el-submenu index="/Food">
                     <template slot="title">Traditions</template>
 						<el-menu-item index="/Food" >Food</el-menu-item>
-						<el-menu-item index="/Drinks" disabled>Drinks</el-menu-item>
 						<el-menu-item index="/Snacks" >Snacks</el-menu-item>
 						<el-menu-item index="/Desserts" >Desserts</el-menu-item>
 						<el-menu-item index="/lantern-festival" >Lantern Festival</el-menu-item>
-						<el-menu-item index="/Decorations" disabled>Decorations</el-menu-item>
+						<el-menu-item index="/Decorations">Decorations</el-menu-item>
                 </el-submenu>
             </el-menu>
         </div>
@@ -49,11 +48,10 @@
 						<el-submenu index="/Food">
 							<template slot="title">Traditions</template>
 								<el-menu-item index="/Food" >Food</el-menu-item>
-								<el-menu-item index="/Drinks" disabled>Drinks</el-menu-item>
 								<el-menu-item index="/Snacks" >Snacks</el-menu-item>
 								<el-menu-item index="/Desserts" >Desserts</el-menu-item>						
 								<el-menu-item index="/lantern-festival" >Lantern Festival</el-menu-item>
-								<el-menu-item index="/Decorations" disabled>Decorations</el-menu-item>
+								<el-menu-item index="/Decorations">Decorations</el-menu-item>
 						</el-submenu>
 					</el-menu>
                 </el-collapse-transition>

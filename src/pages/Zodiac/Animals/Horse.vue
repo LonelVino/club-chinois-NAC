@@ -1,6 +1,10 @@
 <template>
     <div>
-        <wbc-nav></wbc-nav>
+        <div class="header">
+            <div class="headBack">
+                <wbc-nav></wbc-nav>
+            </div>
+        </div>
         <header class='header'>
             <img class='header-img' src="https://chinesenewyear.imgix.net/assets/images/zodiac/chinese-zodiac-horse.png?fit=crop&q=50&w=1024&h=224&auto=format"/>
         </header>
@@ -69,6 +73,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "@/styles/index.scss";
 @import "@/styles/typograph.scss";
 
 </style>
