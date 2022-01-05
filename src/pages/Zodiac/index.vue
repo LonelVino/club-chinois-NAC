@@ -58,7 +58,7 @@
         <el-table-column
           prop="Zodiac_Sign"
           label="Zodiac Sign"
-          width="180">
+          min-width="80">
           <template slot-scope="scope">
             <router-link :to="scope.row.route">{{scope.row.Zodiac_Sign}}</router-link>
           </template>
@@ -66,7 +66,7 @@
         <el-table-column
           prop="Chinese_Name"
           label="Chinese Name"
-          width="180">
+          min-width="80">
         </el-table-column>
         <el-table-column
           prop="Zodiac_Years"

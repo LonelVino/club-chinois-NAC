@@ -7,8 +7,7 @@
 				<!-- <span class="timeJump">(●'◡'●)ﾉ♥</span> -->
             </p>
             <p>
-                Hosted on <a href="https://github.com/LonelVino/Club-chinois" target="_blank">GitHub</a>. 
-				<a href="https://www.aliyun.com/?spm=a2c49.11131515.0.0.5Z9AkR" target="_blank">AliCloud</a> Provide static file cloud storage service. 
+                <a href="https://www.aliyun.com/?spm=a2c49.11131515.0.0.5Z9AkR" target="_blank">AliCloud</a> Provide static file cloud storage service. 
 				<a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a> Provide DNS resolution service.
             </p>
             <p>

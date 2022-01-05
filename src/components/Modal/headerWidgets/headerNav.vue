@@ -28,9 +28,9 @@
         <div class="mobileBox">
             <div class="hideMenu">
                 <i @click="pMenu=!pMenu" class="el-icon-menu"></i> 
-				<div class="logo">
+				<div class="logo mobile-logo">
 					<img class='nav-logo' src="static/img/avatar_1.jpg" alt="logo">		
-					<p>Club Chinois</p>
+					<span>Club Chinois</span>
 				</div>
 				<el-collapse-transition>
                     <el-menu :default-active="activeIndex" class="mlistmenu" v-show="!pMenu" theme="dark" @open="handleOpen" @close="handleClose" :unique-opened="true" :router="true">
@@ -216,18 +216,8 @@ export default {
 	height: 38px;
 	line-height: 38px;
 	border-bottom: none!important;
-
 }
 
-.headBox .el-submenu li.el-menu-item {
-	height: 38px;
-	line-height: 38px;
-	
-}
-.nav-logo {
-	height: 30px;
-	line-height: 30px;
-}
 .headBox li .fa-wa {
 	vertical-align: baseline;
 }
@@ -252,6 +242,13 @@ export default {
 .headBox>ul li.el-submenu:hover .el-submenu__title {
 	background: #48456C;
 	border-bottom: none;
+	color: white
+}
+
+.headBox>ul li.is-active {
+	background: #fff;
+	border-bottom: none;
+	color: black !important; 
 }
 
 .headBox>ul .el-submenu .el-menu,
@@ -264,57 +261,7 @@ export default {
 }
 
 .headBox>ul .el-submenu .el-menu .el-menu-item:hover {
-	background: #64609E;
-}
-
-/*pc搜索框*/
-
-.headBox .pcsearchbox {
-	padding: 0;
-	max-width: 170px;
-	/*min-width: 30px;*/
-	height: 100%;
-	line-height: 38px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	cursor: pointer;
-}
-
-.headBox .pcsearchbox:hover .pcsearchinput {
-	opacity: 1;
-	/*transform: scaleX(1);*/
-	visibility: visible;
-}
-
-.headBox .pcsearchbox i.pcsearchicon {
-	color: #fff;
-	padding-left: 10px;
-}
-
-.headBox .pcsearchbox .pcsearchinput {
-	width: 180px;
-	padding: 10px 20px 10px 20px;
-	background: rgba(40, 42, 44, 0.6);
-	border-radius: 0 0 2px 2px;
-	position: absolute;
-	right: 0;
-	top: 38px;
-	opacity: 0;
-	visibility: hidden;
-	/*transform: scaleX(0);*/
-	transform-origin: right;
-	transition: all 0.3s ease-out;
-}
-
-.headBox .pcsearchbox .hasSearched {
-	opacity: 1;
-	/*transform: scaleX(1);*/
-	visibility: visible;
-}
-
-.headBox .pcsearchbox .el-input {
-	width: 100%;
+	background: #cccbdf;
 }
 
 .headBox .el-input__inner {
@@ -387,7 +334,10 @@ export default {
 	line-height: 38px;
 	color: #fff;
 }
-
+.nav-logo {
+	height: 30px;
+	line-height: 30px;
+}
 .hideMenu {
 	position: relative;
 	width: 100%;
@@ -398,16 +348,19 @@ export default {
 	align-items: center;
 	justify-content: center;
 	background-color: rgb(202, 6, 6);
-}
-.hideMenu .logo {
-	display: flex;
-	flex-direction: row;
-	margin: 1vh 0 0 10vw;
-	align-content: center;
-}
-.hideMenu .logo p {
-	margin-left: 2vw;
-	font-weight: bold;
+	.logo {
+		display: flex;
+		flex-direction: row;
+		margin: 1vh 0 0.5vh 10vw;
+		align-content: center;
+		.nav-logo {
+			margin-top: 0.2vh;
+		}
+		span {
+			margin-left: 2vw;
+			font-weight: bold;
+		}
+	}
 }
 .hideMenu ul.mlistmenu {
 	width: 100%;
@@ -473,5 +426,12 @@ export default {
 .hideMenu>ul li.el-menu-item:hover,
 .hideMenu>ul li.el-menu-item.is-active {
 	background: #48576a;
+}
+
+@media (max-width: 770px) {
+	.headBox .el-menu-demo li.el-menu-item,
+	.headBox .el-menu-demo li.el-submenu .el-submenu__title {
+		font-size: 90%;
+	}
 }
 </style>
