@@ -1,6 +1,7 @@
 <!-- 右侧固定导航栏 -->
 <template>
     <div class="rightlistBox">
+        <el-divider></el-divider>
         <section >
             <div class="r1-head">
                 <h1 v-if="this.$store.state.themeObj.user_start!=0">
@@ -27,7 +28,6 @@
                 </div>
             </div>
         </section>
-
         <section >
             <div class="r1-head">
                 <h1 class='Partenaires' v-if="this.$store.state.themeObj.user_start!=0">
@@ -73,13 +73,13 @@ export default {
                     bilibili: 'https://space.bilibili.com/1229755888/',
                     fb_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Facebook-icon-1.png/640px-Facebook-icon-1.png',
                     ins_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png',
-                    bilibili_img: 'https://yt3.ggpht.com/ytc/AKedOLRzN0znMBzhHspW9K5lnKN6-NYanaRjMBIhIQKj=s900-c-k-c0x00ffffff-no-rj'
+                    bilibili_img: 'https://cdn.iconscout.com/icon/free/png-256/bilibili-3244512-2701884.png'
                 }
             },
             isAimee:this.$store.state.themeObj.user_start!=0?"Aimee":"Aimee",//判断是哪个website
             urls: [
-                'https://www.shorttermprograms.com/images/cache/600_by_314/uploads/institution-logos/CentraleSup%C3%A9lec.jpg',
-                'https://www.minalogic.com/wp-content/uploads/2020/07/minalogic-member-fr-bnp-paribas.png',
+                'https://upload.wikimedia.org/wikipedia/fr/thumb/8/86/Logo_CentraleSup%C3%A9lec.svg/1200px-Logo_CentraleSup%C3%A9lec.svg.png',
+                'https://e7.pngegg.com/pngimages/209/419/png-clipart-bnp-paribas-fortis-computer-icons-bank-bank-bnp-paribas-computer-icons-thumbnail.png',
                 'https://cvec.etudiant.gouv.fr/img/CVEC_2019.png',
                 'https://pbs.twimg.com/profile_images/1066804809838280704/HBjKfpa-_400x400.jpg',
                 'https://scontent-cdt1-1.xx.fbcdn.net/v/t31.18172-8/12621997_772123712891475_8600574980844174568_o.jpg?_nc_cat=106&ccb=1-5&_nc_sid=973b4a&_nc_ohc=WxTuK-ZfM48AX98wyXP&_nc_ht=scontent-cdt1-1.xx&oh=00_AT-Q0gZkASzV9iX6XbAjvGZSmJf5hGhzmcuaRyQGaD8YdA&oe=61FB7518',
@@ -141,6 +141,8 @@ export default {
 }
 </script>
 
+
+
 <style lang="less">
 .rightlistBox{
     position: relative;
@@ -148,11 +150,11 @@ export default {
 .rightlistBox section {
     transition: all 0.2s linear;
     position: relative;
-    background: #fff;
+    background: transparent;
     padding:15px;
     margin-bottom: 3vh;
     border-radius: 0.375rem;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    box-shadow:0 5px 15px rgba(0,0,0,.01);
 }
 .rightlistBox section:hover{
     transform: translate(0,-2px);
@@ -164,6 +166,7 @@ export default {
     border-radius: 4px 4px 0 0 ;
     text-align: center;
     position: relative;
+    margin-top: 2vh;
     /*box-shadow: inset 0 -70px 100px -50px rgba(0,0,0,.5);*/
 }
 .rightlistBox .r1-head img{
@@ -201,7 +204,7 @@ export default {
     .part_block {
         width: 6em;
         height: 6em;
-        margin: 0.5em auto;
+        margin: 1.2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -284,10 +287,21 @@ export default {
     bottom:120vh;
 }
 
+
+@media (max-width: 1516px) {
+    .rightlistBox .r1-body .catch-me{
+        .part_block {
+            flex: 1 0 20%;
+            margin: 0.8em;
+        }
+    }
+}
+
 @media (max-width: 1016px) {
     .rightlistBox .r1-body .catch-me{
         .part_block {
             flex: 1 0 15%;
+            margin: 0.5em;
         }
     }
 }
@@ -305,4 +319,18 @@ export default {
     }
 }
 
+</style>
+
+
+<style lang="scss" scoped>
+
+@mixin transition($args...) {
+    transition: $args;
+}
+.rightlistBox .r1-body .catch-me{
+    @include transition(all 0.3s ease);
+    .part_block {
+        @include transition(all 0.3s ease);
+    }
+}
 </style>

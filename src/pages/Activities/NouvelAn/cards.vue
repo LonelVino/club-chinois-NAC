@@ -1,15 +1,17 @@
 <template>
-  <div class='card-container'>
+  <div class='cards-container'>
     <p class='Headline'>Événements</p>
-    <div class="card" v-for="(item,index) in events" :key="index">
-      <tem-card 
-      :link="item.link"
-      :image="item.image"
-      :name="item.name"
-      :desc="item.desc"
-      :time="item.time"
-      :position="item.position"
-      ></tem-card>
+    <div class="cards">
+      <div class="card" v-for="(item,index) in events" :key="index">
+        <tem-card 
+        :link="item.link"
+        :image="item.image"
+        :name="item.name"
+        :desc="item.desc"
+        :time="item.time"
+        :position="item.position"
+        ></tem-card>
+      </div>
     </div>
   </div>
 </template>
@@ -77,6 +79,22 @@ export default {
   font-weight: bolder;
   font-style: normal;
   font-size: 2rem;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 2em;
+  flex:  1 0 35%
+}
+
+@media (max-width: 1400px) {
+  .card {
+    margin: 0em;
+    flex: 1 0 80%
+  }
 }
 
 @media (max-width: 600px) {

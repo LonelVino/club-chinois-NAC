@@ -161,8 +161,15 @@ $shadow: rgba(0, 0, 0, 0.2);
   
   .blog-card {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: 12rem 1fr;
+  }
+
+  @media (max-width: 1400px) {
+    .blog-card {
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr;
+    }
   }
   
   @media (max-width: 40rem) {
