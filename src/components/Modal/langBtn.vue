@@ -2,10 +2,11 @@
 <template>
     <center>
         <div class="switch">
-            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-            <label for="language-toggle"></label>
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" 
+                value="language-toggle" type="checkbox" v-model="selected">
+            <label for="language-toggle"  @click="changeLanguage(languageToChange)"></label>
             <span class="on">FR</span>
-            <span class="off">EN</span>
+            <span class="off" @click="changeLanguage('en')">EN</span>
         </div>
     </center>
 </template>
@@ -17,20 +18,30 @@ import { Trans } from '@/utils/Translation'
 export default {
     data() { //选项 / 数据
 		return {
-			languages: ['en', 'fr'],
+			selected: false
 		}
 	},
+    created() {
+        if (Trans.currentLanguage == 'en') {this.selected = true}
+    },
     computed: {
         supportedLanguages () {
             return Trans.supportedLanguages
         },
         currentLanguage () {
             return Trans.currentLanguage
+        },
+        languageToChange() {
+            if (Trans.currentLanguage == 'en') {
+                return 'fr'
+            } else {
+                return 'en'
+            } 
         }
     },
     methods: {
 		changeLanguage (e) {
-            const lang = e.target.value
+            const lang = e
             const to = this.$router.resolve({ params: { lang } })
             return Trans.changeLanguage(lang).then(() => {
                 this.$router.push(to.location)

@@ -1,11 +1,93 @@
 {
   "nav": {
-    "Zodiac": "Zodiac"
+    "Home": "Home",
+    "Events": "Events",
+    "Event1": "Events", "Event2": "Events", "Event3": "Events",  
+    "Event4": "Events", "Event5": "Events", "Event6": "Events",
+    "Zodiac": "Zodiac",
+    "Calendar": "Calendar",
+    "Greetings": "Greetings",
+    "Taboos": "Taboos",
+    "Traditions": "Traditions",
+    "Food": "Food",
+    "Snacks": "Snacks",
+    "Desserts": "Desserts",
+    "Lantern_Festival": "Lantern Festival",
+    "Decorations": "Decorations"
   },
-  "Links": "Links",
-  "new_year": "Happy New Year!",
   "pages": {
     "about": "About Page"
+  },
+  "Home": {
+    "header": {
+      "new_year": "Happy New Year!"
+    },
+    "ravioli": "Dumplings",
+    "Events": "Events",
+    "intro": {
+      "time": {
+        "q": "When is Chinese New Year 2022?", "title": "Tuesday, February 1",
+        "more": "Chinese New Year 2022 falls on Tuesday, February 1st, 2022, and celebrations culminate with the Lantern Festival on February 15th, 2022."
+      },
+      "length": {
+        "q": "How Long is Chinese New Year?", "title": "16 Days",
+        "more": "Celebrations last up to 16 days, but only the first 7 days are considered a public holiday (January 31st–February 6th, 2022)."
+      },
+      "zodiac": {
+        "q": "What is the 2022 Chinese Zodiac?", "title": "Tiger",
+        "more": "Chinese New Year marks the transition between zodiac signs 2022 is the year of the Tiger 2021 the year of the Ox."
+      } 
+    },
+    "calendar": {
+      "title": "CALENDAR",
+      "subtitle": "Chinese New Year 2022 Dates",
+      "phase_1": {
+        "time": "JAN 24TH–31ST",
+        "title": "Little Year",
+        "more": "Preparations for the new year begin on January 24th, 2022, and last until New Years Eve."
+      },
+      "phase_2": {
+        "time": "FEB 1ST–FEB 15TH",
+        "title": "Spring Festival",
+        "more": "Chinese New Year officially begins on February 1st, 2022, and ends on February 15th."
+      },
+      "phase_3": {
+        "time": "FEB 15TH",
+        "title": "Lantern Festival",
+        "more": "Preparations begin the 12th, and the Lantern Festival is held on February 15th. "
+      }
+    }
+  },
+  "sides": {
+    "Links": "Links", "Partners": "Partners"
+  },
+  "Events": {
+    "title": "Événements",
+    "Join": "Join",
+    "Event1": {
+      "title": "Événement1",
+      "desc": ""
+    },
+    "Event2": {
+      "title": "",
+      "desc": ""
+    },
+    "Event3": {
+      "title": "",
+      "desc": ""
+    },
+    "Event4": {
+      "title": "",
+      "desc": ""
+    },
+    "Event5": {
+      "title": "",
+      "desc": ""
+    },
+    "Event6": {
+      "title": "",
+      "desc": ""
+    }
   }
 }
   

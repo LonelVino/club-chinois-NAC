@@ -3,24 +3,24 @@
         <div class="headBox">
             <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
                 <el-menu-item :index="$i18nRoute({ name: 'Home'})"><img class='nav-logo' src="@/assets/img/avatar_1.jpg" alt="logo"></el-menu-item>
-				<el-menu-item :index="$i18nRoute({ name: 'Home'})"><i class="fa fa-wa fa-home"></i> Accueil </el-menu-item>
+				<el-menu-item :index="$i18nRoute({ name: 'Home'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Home')}} </el-menu-item>
                 <el-submenu>
-                    <template slot="title">Événements</template>
-						<el-menu-item :index="$i18nRoute({ name: 'event_1'})" disabled>Activity 1</el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'event_2'})" disabled>Activity 2</el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'event_3'})" disabled>Activity 3</el-menu-item>
+                    <template slot="title"> {{$t('nav.Events')}}  </template>
+						<el-menu-item :index="$i18nRoute({ name: 'event_1'})" disabled> {{$t('nav.Event1')}} </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'event_2'})" disabled>{{$t('nav.Event2')}}</el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'event_3'})" disabled>{{$t('nav.Event3')}}</el-menu-item>
                 </el-submenu>
-				<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
-				<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
-				<el-menu-item :index="$i18nRoute({ name: 'Greetings'})"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
-				<el-menu-item :index="$i18nRoute({ name: 'Taboos'})"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
+				<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Zodiac')}} </el-menu-item>
+				<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Calendar')}}  </el-menu-item>
+				<el-menu-item :index="$i18nRoute({ name: 'Greetings'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Greetings')}} </el-menu-item>
+				<el-menu-item :index="$i18nRoute({ name: 'Taboos'})"><i class="fa fa-wa fa-home"></i>  {{$t('nav.Taboos')}} </el-menu-item>
 				<el-submenu :index="$i18nRoute({ name: 'Food'})">
-                    <template slot="title">Traditions</template>
-						<el-menu-item :index="$i18nRoute({ name: 'Food'})">Food</el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'Snacks'})">Snacks</el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'Desserts'})">Desserts</el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'LanternFestival'})">Lantern Festival</el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'Decorations'})">Decorations</el-menu-item>
+                    <template slot="title"> {{$t('nav.Traditions')}} </template>
+						<el-menu-item :index="$i18nRoute({ name: 'Food'})"> {{$t('nav.Food')}} </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Snacks'})"> {{$t('nav.Snacks')}} </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Desserts'})"> {{$t('nav.Desserts')}} </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'LanternFestival'})"> {{$t('nav.Lantern_Festival')}} </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Decorations'})"> {{$t('nav.Decorations')}} </el-menu-item>
                 </el-submenu>
             </el-menu>
         </div>
@@ -29,29 +29,29 @@
             <div class="hideMenu">
                 <i @click="pMenu=!pMenu" class="el-icon-menu"></i> 
 				<div class="logo mobile-logo">
-					<img class='nav-logo' src="static/img/avatar_1.jpg" alt="logo">		
+					<img class='nav-logo' src="@/assets/img/avatar_1.jpg" alt="logo">		
 					<span>Club Chinois</span>
 				</div>
 				<el-collapse-transition>
                     <el-menu :default-active="activeIndex" class="mlistmenu" v-show="!pMenu" theme="dark" @open="handleOpen" @close="handleClose" :unique-opened="true" :router="true">
-                        <el-menu-item :index="$i18nRoute({ name: 'Home'})"><i class="fa fa-wa fa-home"></i>  Accueil</el-menu-item>
-                        <el-submenu index="2-4">
-                            <template slot="title">Événements</template>
-                            <el-menu-item index="Activity-1" disabled>Activity 1</el-menu-item>
-                            <el-menu-item index="Activity-2" disabled>Activity 2</el-menu-item>
-                            <el-menu-item index="Activity-3" disabled>Activity 3</el-menu-item>
-                        </el-submenu>
-						<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'Greetings'})"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'Taboos'})"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
+                        <el-menu-item :index="$i18nRoute({ name: 'Home'})"><i class="fa fa-wa fa-home"></i>  {{$t('nav.Home')}} </el-menu-item>
+                        <el-submenu>
+                            <template slot="title"> {{$t('nav.Events')}} </template>
+							<el-menu-item :index="$i18nRoute({ name: 'event_1'})" disabled> {{$t('nav.Event1')}} </el-menu-item>
+							<el-menu-item :index="$i18nRoute({ name: 'event_2'})" disabled>{{$t('nav.Event2')}}</el-menu-item>
+							<el-menu-item :index="$i18nRoute({ name: 'event_3'})" disabled>{{$t('nav.Event3')}}</el-menu-item>
+						</el-submenu>
+						<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Zodiac')}} </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Calendar')}}  </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Greetings'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Greetings')}} </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Taboos'})"><i class="fa fa-wa fa-home"></i>  {{$t('nav.Taboos')}} </el-menu-item>
 						<el-submenu :index="$i18nRoute({ name: 'Food'})">
-							<template slot="title">Traditions</template>
-								<el-menu-item :index="$i18nRoute({ name: 'Food'})">Food</el-menu-item>
-								<el-menu-item :index="$i18nRoute({ name: 'Snacks'})">Snacks</el-menu-item>
-								<el-menu-item :index="$i18nRoute({ name: 'Desserts'})">Desserts</el-menu-item>						
-								<el-menu-item :index="$i18nRoute({ name: 'LanternFestival'})">Lantern Festival</el-menu-item>
-								<el-menu-item :index="$i18nRoute({ name: 'Decorations'})">Decorations</el-menu-item>
+							<template slot="title"> {{$t('nav.Traditions')}} </template>
+								<el-menu-item :index="$i18nRoute({ name: 'Food'})"> {{$t('nav.Food')}} </el-menu-item>
+								<el-menu-item :index="$i18nRoute({ name: 'Snacks'})"> {{$t('nav.Snacks')}} </el-menu-item>
+								<el-menu-item :index="$i18nRoute({ name: 'Desserts'})"> {{$t('nav.Desserts')}} </el-menu-item>
+								<el-menu-item :index="$i18nRoute({ name: 'LanternFestival'})"> {{$t('nav.Lantern_Festival')}} </el-menu-item>
+								<el-menu-item :index="$i18nRoute({ name: 'Decorations'})"> {{$t('nav.Decorations')}} </el-menu-item>
 						</el-submenu>
 					</el-menu>
                 </el-collapse-transition>

@@ -1,11 +1,98 @@
 {
   "nav": {
-    "Zodiac": "Signe"
+    "Home": "Accueil",
+    "Events": "Événements",
+    "Event1": "Events", "Event2": "Events", "Event3": "Events",  
+    "Event4": "Events", "Event5": "Events", "Event6": "Events",
+    "Zodiac": "Signe",
+    "Calendar": "Calendrier",
+    "Greetings": "Salutation",
+    "Taboos": "Tabous",
+    "Traditions": "Traditions",
+    "Food": "Repas",
+    "Snacks": "Snacks",
+    "Desserts": "Desserts",
+    "Lantern_Festival": "Fête des lanternes",
+    "Decorations": "Décorations"
   },
-  "Links": "Liens",
-  "new_year": "Bonne Annee!",
+  "Home": {
+    "header": {
+      "new_year": "Bonne Annee!"
+    },
+    "ravioli": "Ravioli",
+    "intro": {
+      "time": {
+        "q": "Quand est Nouvel An Chinois 2022 ?", "title": "Le mardi 1 février",
+        "more": " Le Nouvel An Chinois cette année tombe au mardi 1er février et dure jusqu’au mardi 15 février pour la fête des lanternes."
+      },
+      "length": {
+        "q": "Combien dure la célébration du Nouvel An Chinois ?", "title": "16 jours.",
+        "more": "La célébration dure 16 jours de la veille à la fête des lanternes, mais les jours fériés officiels sont seulement 7 journées (31 janvier – 6 février)"
+      },
+      "zodiac": {
+        "q": "Quel est le signe de l’année 2022 ?", "title": "Tigre",
+        "more": "Le Nouvel An Chinois fait la transition entre deux signes : 2021 est l’année du buffle et 2022 est l’année du tigre."
+      }
+    },
+    "calendar": {
+      "title": "CALENDIRER",
+      "subtitle": "Les dates du Nouvel An Chinois 2022",
+      "phase_1": {
+        "time": "Le 24-31 janvier",
+        "title": "Petit Nouvel An",
+        "more": "Préparation du Nouvel An Chinois commence au 24 janvier et dure jusqu’à la veille."
+      },
+      "phase_2": {
+        "time": "Le 1er-15 février",
+        "title": "Le Nouvel An Chinois (la fête du printemps)",
+        "more": "Le Nouvel An Chinois commence au 1er février 2022 et termine au 15 février."
+      },
+      "phase_3": {
+        "time": "Le 15 février",
+        "title": "La fête des lanternes",
+        "more": "La fête des lanternes tombent au 15 février"
+      }
+    }
+  },
   "pages": {
     "about": "About Page"
+  },
+  "sides": {
+    "Links": "Liens", "Partners": "Partenaires"
+  },
+  "Events": {
+    "title": "Événements",
+    "Join": "Rejoindre",
+    "Event1": {
+      "title": "Événement1",
+      "desc": "",
+      "info": ""
+    },
+    "Event2": {
+      "title": "",
+      "desc": "",
+      "info": ""
+    },
+    "Event3": {
+      "title": "",
+      "desc": "",
+      "info": ""
+    },
+    "Event4": {
+      "title": "",
+      "desc": "",
+      "info": ""
+    },
+    "Event5": {
+      "title": "",
+      "desc": "",
+      "info": ""
+    },
+    "Event6": {
+      "title": "",
+      "desc": "",
+      "info": ""
+    }
   }
 }
     

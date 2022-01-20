@@ -3,43 +3,43 @@
       <div class="container">
         <div class='row'>
           <div class="content">
-            <h4>When is Chinese New Year 2022?</h4>
-            <h3>Tuesday, February 1</h3>
-            <p>Chinese New Year 2022 falls on Tuesday, February 1st, 2022, and celebrations culminate with the <router-link to='/lantern-festival'>Lantern Festival</router-link> on February 15th, 2022.</p>
+            <h4> {{$t('Home.intro.time.q')}} </h4>
+            <h3> {{$t('Home.intro.time.title')}} </h3>
+            <p> {{$t('Home.intro.time.more')}} </p>
           </div>
           <div class="content">
-            <h4>How Long is Chinese New Year?</h4>
-            <h3>16 Days</h3>
-            <p>Celebrations last up to 16 days, but only the first 7 days are considered a public holiday (January 31st–February 6th, 2022).</p>
+            <h4> {{$t('Home.intro.length.q')}} </h4>
+            <h3> {{$t('Home.intro.length.title')}} </h3>
+            <p> {{$t('Home.intro.length.more')}} </p>
           </div>
           <div class="content">
-            <h4>What is the 2022 Chinese Zodiac?</h4>
-            <h3>Tiger</h3>
-            <p>Chinese New Year marks the transition between <router-link to='/Zodiac'>zodiac signs</router-link>: 2022 is the <router-link to='/Zodiac/Tiger'>year of the Tiger</router-link>; 2021 the <router-link to='/Zodiac/Ox'>year of the Ox</router-link>.</p>
+            <h4> {{$t('Home.intro.zodiac.q')}} </h4>
+            <h3> {{$t('Home.intro.zodiac.title')}} </h3>
+            <p> {{$t('Home.intro.zodiac.more')}} </p>
           </div>
         </div>
         <el-divider></el-divider>
         <div class="calendar">
           <section class='title'>
-            <router-link to='/Calendar'><h6>CALENDAR</h6></router-link>
-            <h2>Chinese New Year 2022 Dates</h2>
+            <router-link to='/Calendar'><h6>{{$t('Home.calendar.title')}}</h6></router-link>
+            <h2>{{$t('Home.calendar.subtitle')}}</h2>
           </section>
           <img src="@/assets/img/calendar_bar.png" alt="">
           <section class='date'>
             <div class="content date-1">
-              <h6>JAN 24TH–31ST</h6>
-              <h3>Little Year</h3>
-              <p class="small-p">Preparations for the new year begin on January 24th, 2022, and last until New Years Eve.</p>
+              <h6>{{$t('Home.calendar.phase_1.time')}}</h6>
+              <h3>{{$t('Home.calendar.phase_1.title')}}</h3>
+              <p class="small-p">{{$t('Home.calendar.phase_1.more')}}</p>
             </div>
             <div class="content date-2">
-              <h6>FEB 1ST–FEB 11TH</h6>
-              <h3>Spring Festival</h3>
-              <p class="small-p">Chinese New Year officially begins on February 1st, 2022, and ends on February 11th.</p>
+              <h6>{{$t('Home.calendar.phase_2.time')}}</h6>
+              <h3>{{$t('Home.calendar.phase_2.title')}}</h3>
+              <p class="small-p">{{$t('Home.calendar.phase_2.more')}}</p>
             </div>
             <div class="content date-3">
-              <h6>FEB 12TH–15TH</h6>
-              <h3>Lantern Festival</h3>
-              <p class="small-p">Preparations begin the 12th, and the Lantern Festival is held on February 15th.</p>
+              <h6>{{$t('Home.calendar.phase_3.time')}}</h6>
+              <h3>{{$t('Home.calendar.phase_3.title')}}</h3>
+              <p class="small-p">{{$t('Home.calendar.phase_3.more')}}</p>
             </div>
           </section>
         </div>

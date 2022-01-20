@@ -1,6 +1,6 @@
 <template>
   <div class='cards-container'>
-    <p class='Headline'>Événements</p>
+    <p class='Headline'> {{$t('Events.title')}} </p>
     <div class="cards">
       <div class="card" v-for="(item,index) in events" :key="index">
         <tem-card 
@@ -25,43 +25,52 @@ export default {
         events: {
           "Eve1": {
             link: 'Event_1',
-            name: 'Événement 1',
+            name:  this.$i18n.t('Events.Event1.title'),
             position: 'Agora',
             image: 'https://images6.alphacoders.com/679/thumb-1920-679338.jpg',
             time: '01/02/22 13H',
-            desc: `Description`
+            desc: this.$i18n.t('Events.Event1.desc'),
           },
           "Eve2":{
             link: 'Event_2',
-            name: 'Événement 2',
+            name: this.$i18n.t('Events.Event2.title'),
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
             time: '01/02/22 13H',
-            desc: `Description`
+            desc: this.$i18n.t('Events.Event2.desc')
           },
           "Eve3":{
             link: 'Event_3',
-            name: 'Événement 3',
+            name: this.$i18n.t('Events.Event3.title'),
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
             time: '01/02/22 13H',
-            desc: `Description`
+            desc: this.$i18n.t('Events.Event3.desc')
           },
           "Eve4":{
             link: 'Event_4',
-            name: 'Événement 4',
+            name: this.$i18n.t('Events.Event4.title'),
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
             time: '01/02/22 13H',
-            desc: `Description`
+            desc: this.$i18n.t('Events.Event4.desc')
           },
           "Eve5":{
             link: 'Event_5',
-            name: 'Événement 5',
+            name: this.$i18n.t('Events.Event5.title'),
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
             time: '01/02/22 13H',
-            desc: `Description`
+            desc: this.$i18n.t('Events.Event5.desc')
+          },
+
+          "Eve6":{
+            link: 'Event_6',
+            name:  this.$i18n.t('Events.Event6.title'),
+            position: 'Agora',
+            image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
+            time: '01/02/22 13H',
+            desc: this.$i18n.t('Events.Event6.desc')
           },
         }
       }

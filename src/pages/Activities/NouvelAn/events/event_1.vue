@@ -8,7 +8,7 @@
 	<div class="card_container">
 		<div id="card">
 			<div class="activity-details">  
-				<h1>Activity 1</h1>
+				<h1> {{$t('Events.Event1.title')}} </h1>
 				<ul>
 					<li>
 						<i class="el-icon-location" aria-hidden="true"></i>
@@ -27,11 +27,11 @@
 						<p>Organization</p>
 					</li>
 				</ul>
-				<p class="information">"Let's spread the joy , here is Christmas , the most awaited day of the year.Christmas Tree is what one need the most. Here is the correct tree which will enhance your Christmas."</p>
+				<p class="information">{{$t('Events.Event1.info')}} </p>
 
 				<div class="control">
 					<button class="btn">
-						<span class="price">Join</span>
+						<span class="price">{{$t('Events.Join')}}</span>
 						<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
 						<span class="buy">Shot Gun</span>
 					</button>

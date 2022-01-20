@@ -418,7 +418,7 @@ const Typeit = (isAimee,emId) =>{
                 });
 
         theater
-                .write("Luke:新年快乐!",1000)
+                .write("Luke:新年快乐!",1000) 
 //                .write("Vader:I am your father.", toggleClass)
                 .write("Luke:Bonne année de tigre"+world, 500)
                 .write({ name: "call", args: [kill, true] })
