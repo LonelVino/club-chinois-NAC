@@ -24,7 +24,7 @@ export default {
       return {
         events: {
           "Eve1": {
-            link: 'event_1',
+            link: 'Event_1',
             name: 'Événement 1',
             position: 'Agora',
             image: 'https://images6.alphacoders.com/679/thumb-1920-679338.jpg',
@@ -32,7 +32,7 @@ export default {
             desc: `Description`
           },
           "Eve2":{
-            link: 'event_2',
+            link: 'Event_2',
             name: 'Événement 2',
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
@@ -40,7 +40,7 @@ export default {
             desc: `Description`
           },
           "Eve3":{
-            link: 'event_3',
+            link: 'Event_3',
             name: 'Événement 3',
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
@@ -48,7 +48,7 @@ export default {
             desc: `Description`
           },
           "Eve4":{
-            link: 'event_4',
+            link: 'Event_4',
             name: 'Événement 4',
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
@@ -56,7 +56,7 @@ export default {
             desc: `Description`
           },
           "Eve5":{
-            link: 'event_5',
+            link: 'Event_5',
             name: 'Événement 5',
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',

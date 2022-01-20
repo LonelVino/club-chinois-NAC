@@ -2,25 +2,25 @@
     <header>
         <div class="headBox">
             <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
-                <el-menu-item index="/Home"><img class='nav-logo' src="static/img/avatar_1.jpg" alt="logo"></el-menu-item>
-				<el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i> Accueil </el-menu-item>
-                <el-submenu index="2-4">
+                <el-menu-item :index="$i18nRoute({ name: 'Home'})"><img class='nav-logo' src="@/assets/img/avatar_1.jpg" alt="logo"></el-menu-item>
+				<el-menu-item :index="$i18nRoute({ name: 'Home'})"><i class="fa fa-wa fa-home"></i> Accueil </el-menu-item>
+                <el-submenu>
                     <template slot="title">Événements</template>
-						<el-menu-item index="/event_1" disabled>Activity 1</el-menu-item>
-						<el-menu-item index="/event_2" disabled>Activity 2</el-menu-item>
-						<el-menu-item index="/event_3" disabled>Activity 3</el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'event_1'})" disabled>Activity 1</el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'event_2'})" disabled>Activity 2</el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'event_3'})" disabled>Activity 3</el-menu-item>
                 </el-submenu>
-				<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
-				<el-menu-item index="/Calendar"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
-				<el-menu-item index="/Greetings"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
-				<el-menu-item index="/Taboos"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
-				<el-submenu index="/Food">
+				<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
+				<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
+				<el-menu-item :index="$i18nRoute({ name: 'Greetings'})"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
+				<el-menu-item :index="$i18nRoute({ name: 'Taboos'})"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
+				<el-submenu :index="$i18nRoute({ name: 'Food'})">
                     <template slot="title">Traditions</template>
-						<el-menu-item index="/Food" >Food</el-menu-item>
-						<el-menu-item index="/Snacks" >Snacks</el-menu-item>
-						<el-menu-item index="/Desserts" >Desserts</el-menu-item>
-						<el-menu-item index="/lantern-festival" >Lantern Festival</el-menu-item>
-						<el-menu-item index="/Decorations">Decorations</el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Food'})">Food</el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Snacks'})">Snacks</el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Desserts'})">Desserts</el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'LanternFestival'})">Lantern Festival</el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Decorations'})">Decorations</el-menu-item>
                 </el-submenu>
             </el-menu>
         </div>
@@ -34,24 +34,24 @@
 				</div>
 				<el-collapse-transition>
                     <el-menu :default-active="activeIndex" class="mlistmenu" v-show="!pMenu" theme="dark" @open="handleOpen" @close="handleClose" :unique-opened="true" :router="true">
-                        <el-menu-item index="/Home"><i class="fa fa-wa fa-home"></i>  Accueil</el-menu-item>
+                        <el-menu-item :index="$i18nRoute({ name: 'Home'})"><i class="fa fa-wa fa-home"></i>  Accueil</el-menu-item>
                         <el-submenu index="2-4">
                             <template slot="title">Événements</template>
                             <el-menu-item index="Activity-1" disabled>Activity 1</el-menu-item>
                             <el-menu-item index="Activity-2" disabled>Activity 2</el-menu-item>
                             <el-menu-item index="Activity-3" disabled>Activity 3</el-menu-item>
                         </el-submenu>
-						<el-menu-item index="/Zodiac"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
-						<el-menu-item index="/Calendar"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
-						<el-menu-item index="/Greetings"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
-						<el-menu-item index="/Taboos"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
-						<el-submenu index="/Food">
+						<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> Zodiac </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> Calendar </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Greetings'})"><i class="fa fa-wa fa-home"></i> Greetings </el-menu-item>
+						<el-menu-item :index="$i18nRoute({ name: 'Taboos'})"><i class="fa fa-wa fa-home"></i> Taboos </el-menu-item>
+						<el-submenu :index="$i18nRoute({ name: 'Food'})">
 							<template slot="title">Traditions</template>
-								<el-menu-item index="/Food" >Food</el-menu-item>
-								<el-menu-item index="/Snacks" >Snacks</el-menu-item>
-								<el-menu-item index="/Desserts" >Desserts</el-menu-item>						
-								<el-menu-item index="/lantern-festival" >Lantern Festival</el-menu-item>
-								<el-menu-item index="/Decorations">Decorations</el-menu-item>
+								<el-menu-item :index="$i18nRoute({ name: 'Food'})">Food</el-menu-item>
+								<el-menu-item :index="$i18nRoute({ name: 'Snacks'})">Snacks</el-menu-item>
+								<el-menu-item :index="$i18nRoute({ name: 'Desserts'})">Desserts</el-menu-item>						
+								<el-menu-item :index="$i18nRoute({ name: 'LanternFestival'})">Lantern Festival</el-menu-item>
+								<el-menu-item :index="$i18nRoute({ name: 'Decorations'})">Decorations</el-menu-item>
 						</el-submenu>
 					</el-menu>
                 </el-collapse-transition>
@@ -77,7 +77,6 @@ export default {
         }
     },
     components: {
-
     },
     watch: {
         // 如果路由有变化，会再次执行该方法
@@ -95,7 +94,7 @@ export default {
 			if (document[hiddenProperty]) { //被隐藏
 				document.title = 'Club Chinois';
 			} else {
-				document.title = 'Welcome to Clubu Chinois'; //当前窗口打开
+				document.title = 'Bonne Année'; //当前窗口打开
 				if (that.$route.path != '/DetailShare') {
 					if (localStorage.getItem('userInfo')) {
 						that.haslogin = true;

@@ -28,6 +28,7 @@
     "sass-loader": "^7.3.1",
     "vue": "^2.6.12",
     "vue-conversational-form": "^1.0.1",
+    "vue-i18n": "^8.26.8",
     "vue-image-shadow": "^1.0.0",
     "vue-modal-wizard": "^1.0.6",
     "vue-particle-effect-buttons": "^1.0.4",

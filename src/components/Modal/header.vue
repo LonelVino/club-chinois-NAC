@@ -3,6 +3,9 @@
 <div class="header">
 	<div class="headBack">
 		<header-nav/>
+		<div class="lang-btn">
+			<lang-btn></lang-btn>
+		</div>
 	</div>
 	<header-img/>
 </div>
@@ -10,18 +13,16 @@
 <script>
 import { Typeit } from '@/utils/plug.js'
 
+import langBtn from '@/components/Modal/langBtn.vue'
 import HeaderNav from './headerWidgets/headerNav'
 import HeaderImg from './headerWidgets/headerImg.vue'
 
 export default {
-	data() { //选项 / 数据
-		return {
-
-		}
-	},
+	
 	components: { //定义组件
 		HeaderImg,
 		HeaderNav,
+		'lang-btn': langBtn
 	},
 	watch: {
 
@@ -37,7 +38,6 @@ export default {
 
 	},
 	methods: { //事件处理器
-
 	},
 }
 </script>
@@ -46,9 +46,14 @@ export default {
 
 <style lang='scss' scoped>
 @import "@/styles/index.scss";
+.lang-btn {
+	display: flex;
+	justify-content: flex-end;
+	background: transparent;
+}
 .headBox li.is-active {
 	/*background: #48456C;*/
-	background: rgba(73, 69, 107, 0.7);
+	background: transparent;
 }
 
 .el-menu--horizontal>.el-submenu.is-active .el-submenu__title {

@@ -11,9 +11,9 @@
     </header>
     <div class="paragraph">
       <h1>New Year Calendar</h1>
-      <p>The <a href="https://en.wikipedia.org/wiki/Chinese_New_Year">Chinese New Year</a>, or Spring Festival, has more than 4,000 years of history and is the longest holiday of the year. In the 21st century, the national holiday begins on the first of the Lunar Calendar and lasts until the 15th of the first month. In 2022, Chinese New Year begins on February 1st and ends February 15th with the <router-link to='lantern-festival'>Lantern Festival</router-link>.</p>
+      <p>The <a href="https://en.wikipedia.org/wiki/Chinese_New_Year">Chinese New Year</a>, or Spring Festival, has more than 4,000 years of history and is the longest holiday of the year. In the 21st century, the national holiday begins on the first of the Lunar Calendar and lasts until the 15th of the first month. In 2022, Chinese New Year begins on February 1st and ends February 15th with the <router-link :to="$i18nRoute({ name: 'LanternFestival'})">Lantern Festival</router-link>.</p>
       <p>
-          In China, all stores are closed during the first five days of the Spring Festival, with some not opening until the very end. People must stock up on New Year supplies (年货 / nian huo) beforehand and many begin on the Laba Festival. Kitchens will also show the first signs of <router-link to='/Food'>Spring Festival dishes</router-link> with the preparation of cured meat, salted fish and other preserved food.
+          In China, all stores are closed during the first five days of the Spring Festival, with some not opening until the very end. People must stock up on New Year supplies (年货 / nian huo) beforehand and many begin on the Laba Festival. Kitchens will also show the first signs of <router-link :index="$i18nRoute({ name: 'Food'})">Spring Festival dishes</router-link> with the preparation of cured meat, salted fish and other preserved food.
       </p>
       <el-divider></el-divider>
 

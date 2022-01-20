@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-      <router-link class="card-link" :to="link">
+      <router-link class="card-link" :to="$i18nRoute({ name: link})">
         <article class="blog-card">
           <img class="post-image" :src="image" />
           <div class="article-details">

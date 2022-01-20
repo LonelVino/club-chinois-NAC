@@ -1,7 +1,7 @@
 <template>
   <div class="snow-btn">
 		<div class="btn">
-      <div class="shop-now">Shot Gun</div>
+      <div class="shop-now">Shotgun<br> Ravioli</div>
       <div class="snowflake-grid to-left">
         <div class="snowflake-item border-bottom border-right">
           <div class="sub-items border-right border-bottom pull-down">
@@ -74,12 +74,14 @@ $lightsOutBg: #fd4141;
   align-items: center;
   
   width: 220px;
-  height: 60px;
+  height: 80px;
   
   background-color: #b80000;
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: bold;
+  font-family: serif;
+  line-height: 120%;
   color: rgba(245, 246, 247, 0.945);
   transition: all 0.3s;
   position: relative;
