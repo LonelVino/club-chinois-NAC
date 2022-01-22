@@ -1,5 +1,4 @@
-api_v2/*.*
-clubChinois/*.*
+
 .DS_Store
 node_modules/
 /dist/
