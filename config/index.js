@@ -10,12 +10,13 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {'/django_api/user/add_info':{                                // 要代理的接口名
-          target:'http://world-week-test.herokuapp.com/django_api/user/add_info',   // 要代理的接口地址
-          changeOrigin:true,                            // 允许跨域
-          pathRewrite:{'^/django_api/user/add_info':''}            // 接口名重写
-        }
- },
+    proxyTable: {
+        //   '/django_api/user/add_info':{                                // 要代理的接口名
+        //   target:'http://world-week-test.herokuapp.com/django_api/user/add_info',   // 要代理的接口地址
+        //   changeOrigin:true,                            // 允许跨域
+        //   pathRewrite:{'^/django_api/user/add_info':''}            // 接口名重写
+        // }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
