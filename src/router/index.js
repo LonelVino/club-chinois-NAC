@@ -39,16 +39,16 @@ export const constRoutes = [
 
 		// ----------------------- Events ----------------------- 
 		{
-			path: 'event_1',
-			component: resolve => require(['@/pages/Activities/NouvelAn/events/event_1.vue'], resolve),
+			path: 'relay',
+			component: resolve => require(['@/pages/Activities/NouvelAn/events/relay.vue'], resolve),
 			meta: {auth: true},
 			name: 'Event_1'
 		},
 		{
-			path: 'event_2',
-			component: resolve => require(['@/pages/Activities/NouvelAn/events/event_2.vue'], resolve),
+			path: 'raviolis',
+			component: resolve => require(['@/pages/Activities/NouvelAn/events/raviolis.vue'], resolve),
 			meta: {auth: true},
-			name: 'Event_2'
+			name: 'raviolis'
 		},
 		{
 			path: 'event_3',

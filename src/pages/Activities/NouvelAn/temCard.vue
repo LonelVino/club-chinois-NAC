@@ -7,7 +7,7 @@
             <h4 class="post-title">{{ name }}</h4>
             <p class="post-description">{{ desc }}</p>
             <div class="card-footer">
-              <p class="post-time">{{ time }}</p>
+              <p class="post-time">{{ date }} <br>{{ time }}</p>
               <h3 class="post-pos">{{ position }}</h3>
             </div>
           </div>
@@ -24,6 +24,7 @@ export default {
         image: String,
         name: String,
         desc: String,
+        date: String,
         time: String,
         position: String,
     }

@@ -8,6 +8,7 @@
         :image="item.image"
         :name="item.name"
         :desc="item.desc"
+        :date="item.date"
         :time="item.time"
         :position="item.position"
         ></tem-card>
@@ -28,22 +29,25 @@ export default {
             name:  this.$i18n.t('Events.Event1.title'),
             position: 'Agora',
             image: 'https://images6.alphacoders.com/679/thumb-1920-679338.jpg',
+            date: '',
             time: '01/02/22 13H',
             desc: this.$i18n.t('Events.Event1.desc'),
           },
           "Eve2":{
-            link: 'Event_2',
-            name: this.$i18n.t('Events.Event2.title'),
-            position: 'Agora',
-            image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
-            time: '01/02/22 13H',
-            desc: this.$i18n.t('Events.Event2.desc')
+            link: 'raviolis',
+            name: this.$i18n.t('Events.Ravioli.title'),
+            position: 'Terrasse Michelin',
+            image: 'https://cdn-pop.viarezo.fr/static/linkcs/images/d116392f5530a035201dff4e7fc5a65ce387c4d71fb90517ecbf1228ef5ef4b7.jpeg',
+            date:  this.$i18n.t('Events.Ravioli.date'),
+            time: '19h00 - 21h00',
+            desc: this.$i18n.t('Events.Ravioli.desc')
           },
           "Eve3":{
             link: 'Event_3',
             name: this.$i18n.t('Events.Event3.title'),
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
+            date: '',
             time: '01/02/22 13H',
             desc: this.$i18n.t('Events.Event3.desc')
           },
@@ -52,6 +56,7 @@ export default {
             name: this.$i18n.t('Events.Event4.title'),
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
+            date: '',
             time: '01/02/22 13H',
             desc: this.$i18n.t('Events.Event4.desc')
           },
@@ -60,6 +65,7 @@ export default {
             name: this.$i18n.t('Events.Event5.title'),
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
+            date: '',
             time: '01/02/22 13H',
             desc: this.$i18n.t('Events.Event5.desc')
           },
@@ -69,6 +75,7 @@ export default {
             name:  this.$i18n.t('Events.Event6.title'),
             position: 'Agora',
             image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
+            date: '',
             time: '01/02/22 13H',
             desc: this.$i18n.t('Events.Event6.desc')
           },

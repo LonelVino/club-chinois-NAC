@@ -68,9 +68,10 @@
       "title": "Événement1",
       "desc": ""
     },
-    "Event2": {
-      "title": "",
-      "desc": ""
+    "Ravioli": {
+      "title": "Chinese Dumpling Market",
+      "desc": "ClubChinois presents a dumpling bar for you to taste this gastronomy, Chinese dumpling. This is a great opportunity to discover this specialty!",
+      "date": "Monday, January 31, 2022"
     },
     "Event3": {
       "title": "",
