@@ -17,7 +17,7 @@ export const constRoutes = [
 			component: resolve => require(['../pages/Home/Home.vue'], resolve),
 			meta: {auth: true},
 			name: 'Home'
-		}, //首页
+		}, //首页 
 		{
 			path: 'Home',
 			component: resolve => require(['../pages/Home/Home.vue'], resolve),
