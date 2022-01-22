@@ -57,7 +57,10 @@ CORS_ALLOW_HEADERS = (
     'Pragma',
 )
 
-ALLOWED_HOSTS=['*']
+ALLOWED_HOSTS=['*', 
+               'https://www.nouvelan-chinois.com/',
+               'https://www.nouvelan-chinois.com/en/',
+               'https://www.nouvelan-chinois.com/fr/']
 # ALLOWED_HOSTS = [
 #     'http://club-chinois.herokuapp.com/',
 #     'https://club-chinois.herokuapp.com/',
