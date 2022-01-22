@@ -22,9 +22,9 @@ from django.conf.urls import include
 
 urlpatterns = [
   path('admin/', admin.site.urls),
-  url(r'^$', TemplateView.as_view(template_name='index.html')),
-  url(r'en/^$', TemplateView.as_view(template_name='index.html')),
-  url(r'fr/^$', TemplateView.as_view(template_name='index.html')),
+  url(r'', TemplateView.as_view(template_name='index.html')),
+#   url(r'en/^$', TemplateView.as_view(template_name='index.html')),
+#   url(r'fr/^$', TemplateView.as_view(template_name='index.html')),
   path('api_v2', include('api_v2.urls')),
 
   path('testdb', include('TestModel.urls')),
