@@ -36,7 +36,7 @@
 						</ul>
 					</div>
 					<div class="product-image">
-						<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/film.jpg'" alt="">
+						<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/film.jpg" alt="">
 					</div>
 				</div>
 				
@@ -53,7 +53,7 @@
 					</button>
 				</div> -->
 				<div class="mobile-image">
-					<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/film.jpg'" alt="">
+					<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/film.jpg" alt="">
 				</div>
 			</div>
 			
