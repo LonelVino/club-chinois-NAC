@@ -50,7 +50,7 @@
 				</div>
 				<div class="control">
 					<button class="btn" @contextmenu="handler($event)"
-					onclick="window.location.href='https://forms.viarezo.fr/paps/s2gpgq'">
+					onclick="window.location.href='https://www.facebook.com/ClubChinois'">
 						<span class="price">+</span>
 						<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
 						<span class="buy">Facebook</span>
