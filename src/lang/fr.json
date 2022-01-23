@@ -63,35 +63,56 @@
   "Events": {
     "title": "Événements",
     "Join": "Rejoindre",
-    "Event1": {
-      "title": "Événement1",
-      "desc": "",
-      "info": ""
+    "info": "Le Nouvel An Chinois(NAC) est la fête la plus importante pour tous les Chinois. Le ClubChinois vous invite à vivre ensemble les célébrations traditionnelles, avec 7 événements pour vous apporter un voyage culturel!",
+    "Relay": {
+      "title": "Relay Tradition Chinoise",
+      "pos": "<a style='color: red; textdecoration: underline' href='https://www.facebook.com/ClubChinois'>Facebook</a>",
+      "desc": "Il y a même une tradition quotidienne à respecter pour cette semaine! Partagez-le dans vos réseaux sociaux en laissant des commentaires.",
+      "date": "Mardi 25 Janvier 2022 - Lundi 31 Janvier 2022",
+      "time": "00h00 - 23h55",
+      "feature": "Découverte, Festival | Divertissement, International",
+      "info_1": "En ligne sans inscription",
+      "info_2": "Le savez-vous? Les Chinois commencent à fêter le Nouvel An Chinois une semaine avant la date précise, ce qu’on appelle le “Petit Nouvel An”. Il y a même une tradition quotidienne à respecter pour cette semaine ! Cette année, ce “Petit Nouvel An” tombe du 25 janvier au 31 janvier. Le Club chinois vous présente pendant cette semaine en Facebook @ClubChinois la tradition du jour. Partagez-le dans vos réseaux sociaux en laissant des commentaires. Nous choisirons chaque jour un(e) participant(e) chanceux(se) qui gagnera un cadeau mystère pour la nouvelle année!"
     },
     "Ravioli": {
       "title": "Barspé Ravioli Chinoi",
+      "pos": "Terrasse Michelin",
+      "time": "19h00 - 21h00",
       "desc": "Le ClubChinois vous présente un barspé de ravioli pour vous faire gôuter cette gastronomie les raviolis chinois. C'est une bonne occasion de découvrir cette spécialité! ",
-      "date": "Lundi 31 Janvier 2022"
+      "date": "Lundi 31 Janvier 2022",
+      "feature": "Festival, Repas | Culinaire, Festif, International",
+      "info_1": "Shotgun dès ce dimanche, masque obligatoire.",
+      "info_2": "Le ravioli est un plat que les Chinois doivent manger à la veille du Nouvel An. Le ClubChinois vous présente un barspé de ravioli pour vous faire gôuter cette gastronomie les raviolis chinois. C'est une bonne occasion de découvrir cette spécialité! Dans ce barspé, nous vous proposons un choix de ravioli viande (bœuf et carotte) ou ravioli végétarien (œuf et courgette). Chaque plat contient 10 raviolis pour seulement 3 euros ! La place sera limitée à 56 personnes. Allez vite au shotgun qui commence dès ce dimanche. Après la réservation, veuillez retirer vos raviolis à la Terrase Michelin le soir du 31/1 à l'heure de votre choix. N'oubliez pas d'apporter votre lunch box!"
     },
-    "Event3": {
-      "title": "",
-      "desc": "",
-      "info": ""
+    "Ceremony": {
+      "title": "Cérémonie de Nouvel An Chinois",
+      "pos": "Amphi Janet",
+      "time": "20h00 - 21h30",
+      "desc": "Une cérémonie à ne pas rater pour les amateurs d’art. En coopération avec LyriCS et Lit de Camps, le ClubChinois vous présente une cérémonie fantastique ! ",
+      "date": "Mercredi 2 Février 2022",
+      "feature": "Festival, Jeux, Spectacle | Festif, International, Musique",
+      "info_1": "Entrée gratuite sans inscription, masque et pass vaccinal obligatoire",
+      "info_2": "Une cérémonie à ne pas rater pour les amateurs d’art. En coopération avec LyriCS et Lit de Camps, le ClubChinois vous présente une cérémonie fantastique ! Nous jouerons des instruments traditionnels chinois, erhu, nous chanterons de belles chansons chinoises et nous présenterons également des danses folkloriques festives！Cette érémonie vous donnera un aperçu fascinant de l'art chinois et ne doit pas être manquée! Pendant la cérémonie, nous avons également conçu des jeux auxquels vous pourrez participer pour gagner des prix !"
     },
-    "Event4": {
-      "title": "",
-      "desc": "",
-      "info": ""
+    "Marche": {
+      "title": "Marché Nouvel An Chinois",
+      "pos": "Diagonale Eiffel",
+      "time": "12h00 - 18h00",
+      "desc": "Un évènement ouvert à tous qui marquera l’apogée de notre Semaine de Nouvel An! Des stands très variés prévus à Diagonale Eiffel pour vous donner l’occasion à découvrir notre tradition!",
+      "date": "Jeudi 3 Février 2022",
+      "feature": "Découverte, Festival, Jeux | Divertissement, Festif, International, Sport",
+      "info_1": "Entrée gratuite sans inscription, masque obligatoire. Attention à la bonne distance sociale.",
+      "info_2": "Un évènement ouvert à tous qui marquera l’apogée de notre Semaine de Nouvel An! Des stands très variés prévus à Diagonale Eiffel pour vous donner l’occasion à découvrir notre tradition: stand du cosplay pour prendre des photos stylées, stand de calligraphie pour écrire le mot « 福 » et ramener le bonheur à la maison, stands de jeux traditionnels chinois, intellectuels et sportifs, pour gagner des prix !"
     },
-    "Event5": {
-      "title": "",
-      "desc": "",
-      "info": ""
-    },
-    "Event6": {
-      "title": "",
-      "desc": "",
-      "info": ""
+    "Film": {
+      "title": "Projection de Film Nezha",
+      "pos": "Amphi I",
+      "time": "20h30 - 22h30",
+      "desc": "Connaissez-vous l'histoire de NeZha? C'est un héros chinois inspiré des anciennes légendes traditionnelles. Nous offrons un film d'animation chinois <La Naissance d'enfant démon Nezha> avec une courte histoire à la fin du film.",
+      "date": "Vendredi 4 Février 2022",
+      "feature": "Festival, Projection | Art, Festif, International",
+      "info_1": "Entrée gratuite sans inscription, masque et pass vaccinal obligatoire.",
+      "info_2": "Il n'y a pas de meilleure façon de terminer la semaine de Nouvel An Chinois qu'avec un bon film un vendredi soir, et le Club Chinois a un film chinois gratuit pour vous！ Connaissez-vous l'histoire de NeZha? C'est un héros chinois inspiré des anciennes légendes traditionnelles. De nombreux enfants chinois ont grandi en écoutant ses histoires. Nous offrons un film d'animation chinois 'La Naissance d'enfant démon Nezha' avec une courte histoire à la fin du film."
     }
   }
 }

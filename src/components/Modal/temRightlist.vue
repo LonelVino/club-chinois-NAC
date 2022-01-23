@@ -50,10 +50,10 @@
         </section>
     
         <!-- 右侧上滑小图片 -->
-        <div  v-if="this.$store.state.themeObj.user_start!=0" :class="gotoTop?'toTop hidden':'toTop goTop hidden'" @click="toTopfun">
+        <!-- <div  v-if="this.$store.state.themeObj.user_start!=0" :class="gotoTop?'toTop hidden':'toTop goTop hidden'" @click="toTopfun">
             <img :src="this.$store.state.themeObj.right_img?this.$store.state.themeObj.right_img:'static/img/scroll_fu.png'" alt="">
-        </div>
-        <div v-else :class="gotoTop?'back2Top hidden':'back2Top goTophui hidden'" @click="toTopfun">
+        </div> -->
+        <div :class="gotoTop?'back2Top goTophui':'back2Top hidden'" @click="toTopfun">
             <img :src="this.$store.state.themeObj.right_img?this.$store.state.themeObj.right_img:'static/img/scroll_fu.png'" alt="">
         </div>
     </div>
@@ -90,7 +90,7 @@ export default {
                     'web_url': 'https://mabanque.bnpparibas/'
                 },
                 {
-                    'img_url': 'https://cvec.etudiant.gouv.fr/img/CVEC_2019.png',
+                    'img_url': 'https://www.univ-orleans.fr/upload/public/styles/univ_wysiwyg_small/public/2021-11/CVEC1_finance_par_rvb%20web%20univ.png?h=d7f97092&itok=ri37xLPK',
                     'web_url': 'https://cvec.etudiant.gouv.fr/'
                 },
                 {
@@ -129,16 +129,16 @@ export default {
             this.gotoTop = false;
             this.going = true;
             var timer = setInterval(function(){
-                    //获取滚动条距离顶部高度
-                    var osTop = document.documentElement.scrollTop || document.body.scrollTop;
-                    var ispeed = Math.floor(-osTop / 7);
-                    document.documentElement.scrollTop = document.body.scrollTop = osTop+ispeed;
-                    //到达顶部，清除定时器
-                    if (osTop == 0) {
-                        that.going = false;
-                    clearInterval(timer);
-                    timer = null;
-                    };
+                //获取滚动条距离顶部高度
+                var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+                var ispeed = Math.floor(-osTop / 7);
+                document.documentElement.scrollTop = document.body.scrollTop = osTop+ispeed;
+                //到达顶部，清除定时器
+                if (osTop == 0) {
+                    that.going = false;
+                clearInterval(timer);
+                timer = null;
+                };
             },30);
         },
     },
@@ -148,11 +148,13 @@ export default {
     created() { //生命周期函数
         var that = this;
         window.onscroll = function(){
-                var t = document.documentElement.scrollTop || document.body.scrollTop;
-            // console.log(t);
+            var t = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
+
             if(!that.going){
                 if(t>600){
                     that.gotoTop = true;
+                    console.log(t, that.gotoTop);
+                    
                 }else{
                     that.gotoTop = false;
                 }
@@ -318,7 +320,9 @@ export default {
 @media (max-width: 1516px) {
     .rightlistBox .r1-body .catch-me{
         .part_block {
-            flex: 1 0 20%;
+            width: 6em;
+            height: 6em;
+            // flex: 1 0 15%;
             margin: 0.8em;
         }
     }
@@ -327,7 +331,8 @@ export default {
 @media (max-width: 1016px) {
     .rightlistBox .r1-body .catch-me{
         .part_block {
-            flex: 1 0 15%;
+            width: 8em;
+            height: 8em;
             margin: 0.5em;
         }
     }

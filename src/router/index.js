@@ -42,7 +42,7 @@ export const constRoutes = [
 			path: 'relay',
 			component: resolve => require(['@/pages/Activities/NouvelAn/events/relay.vue'], resolve),
 			meta: {auth: true},
-			name: 'Event_1'
+			name: 'relay'
 		},
 		{
 			path: 'raviolis',
@@ -51,22 +51,22 @@ export const constRoutes = [
 			name: 'raviolis'
 		},
 		{
-			path: 'event_3',
-			component: resolve => require(['@/pages/Activities/NouvelAn/events/event_3.vue'], resolve),
+			path: 'ceremony',
+			component: resolve => require(['@/pages/Activities/NouvelAn/events/ceremony.vue'], resolve),
 			meta: {auth: true},
-			name: 'Event_3'
+			name: 'ceremony'
 		},
 		{
-			path: 'event_4',
-			component: resolve => require(['@/pages/Activities/NouvelAn/events/event_4.vue'], resolve),
+			path: 'marche',
+			component: resolve => require(['@/pages/Activities/NouvelAn/events/marche.vue'], resolve),
 			meta: {auth: true},
-			name: 'Event_4'
+			name: 'marche'
 		},
 		{
-			path: 'event_5',
-			component: resolve => require(['@/pages/Activities/NouvelAn/events/event_5.vue'], resolve),
+			path: 'film',
+			component: resolve => require(['@/pages/Activities/NouvelAn/events/film.vue'], resolve),
 			meta: {auth: true},
-			name: 'Event_5'
+			name: 'film'
 		},
 
 		// ----------------------- Traditions -----------------------

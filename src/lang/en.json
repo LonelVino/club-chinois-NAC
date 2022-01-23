@@ -64,30 +64,56 @@
   "Events": {
     "title": "Événements",
     "Join": "Join",
-    "Event1": {
-      "title": "Événement1",
-      "desc": ""
+    "info": "The Chinese New Year is the most important festival for all Chinese. Clubchinois invites you to live together traditional celebrations, with 7 events to bring you a cultural trip!",
+    "Relay": {
+      "title": "Relay Chinese Tradition",
+      "pos": "<a style='color: red; textdecoration: underline' href='https://www.facebook.com/ClubChinois'>Facebook</a>",
+      "time": "00h00 - 23h55",
+      "desc": "There is even a daily tradition to keep for this week! Share it in your social networks by leaving comments.",
+      "date": "Tuesday, January 25th 2022 - Monday 31 January 2022",
+      "feature": "Discovery, Festival |Entertainment, International",
+      "info_1": "Online without registration",
+      "info_2": "Do you know? The Chinese begin to celebrate the Chinese New Year a week before the accurate date, what is called the 'Little New Year'. There is even a daily tradition to respect for this week! This year, this 'Little New Year' falls from January 25 to January 31. Club chinois presents you during this week in Facebook <a style='color:red; text-decoration: underline;' href='https://www.facebook.com/ClubChinois'>@Clubchnois</a> the tradition of the day. Share it in your social networks leaving comments. We will choose a lucky participant who will win a mystery gift for the new year!"
     },
     "Ravioli": {
       "title": "Chinese Dumpling Market",
-      "desc": "ClubChinois presents a dumpling bar for you to taste this gastronomy, Chinese dumpling. This is a great opportunity to discover this specialty!",
-      "date": "Monday, January 31, 2022"
+      "pos": "Terrasse Michelin",
+      "time": "19h00 - 21h00",
+      "desc": "Club chinois presents a dumpling bar for you to taste this gastronomy, Chinese dumpling. This is a great opportunity to discover this specialty!",
+      "date": "Monday, January 31, 2022",
+      "feature": "Festival, Meal | Culinary, Festive, International",
+      "info_1": "Shotgun from this Sunday, mask mandatory.",
+      "info_2": "The ravioli is a dish that the Chinese must eat on the eve of the New Year. The clubchinois presents a ravioli barspe to gain this gastronomy Chinese ravioli.It's a good opportunity to discover this specialty!In this barspe, we offer a choice of ravioli meat (beef and carrot) or ravioli vegetarian (egg and zucchini).Each dish contains 10 ravioli for only 3 euros!The place will be limited to 56 people.Go quickly to Shotgun starting on this Sunday.After the reservation, please remove your ravioli from Michelin Terrase on the evening of 31/1 at the time of your choice. Do not forget to bring your lunch box!"
     },
-    "Event3": {
-      "title": "",
-      "desc": ""
+    "Ceremony": {
+      "title": "Chinese New Year Ceremony",
+      "pos": "Amphi Janet",
+      "time": "20h00 - 21h30",
+      "desc": "A ceremony not to be missed for art lovers. In cooperation with lyrics and beds of camps, Club chinois presents a fantastic ceremony!",
+      "date": "Wednesday 2 February 2022",
+      "feature": "Festival, Games, Show |Festive, International, Music",
+      "info_1": "Free admission without registration, mask and pass vaccinal required",
+      "info_2": "A ceremony not to be missed for art lovers. In cooperation with lyrics and beds of camps, Club chinois presents a fantastic ceremony! We will play traditional Chinese instruments, Erhu, we will sing beautiful Chinese songs and we will also present festive folk dances! This ceremony will give you a fascinating overview of Chinese art and should not be missed! During the ceremony, we also designed games you can participate in winning prizes!"
     },
-    "Event4": {
-      "title": "",
-      "desc": ""
+    "Marche": {
+      "title": "Chinese New Year Market",
+      "pos": "Diagonale Eiffel",
+      "time": "12h00 - 18h00",
+      "desc": "An open event to all that will mark the apogee of our New Year's week! Very varied stands planned with Eiffel diagonal to give you the opportunity to discover our tradition.",
+      "date": "Thursday, February 3, 2022",
+      "feature": "Discovery, Festival |Entertainment, International",
+      "info_1": "Free admission without registration, mandatory mask.Attention to the good social distance.",
+      "info_2": "An open event to all that will mark the apogee of our New Year's week! Very varied stands planned with Eiffel diagonal to give you the opportunity to discover our tradition: booth of cosplay to take stylish photos, calligraphy stand to write the word '福' and bring happiness home, traditional game standsChinese, intellectual and sports, to win prizes!"
     },
-    "Event5": {
-      "title": "",
-      "desc": ""
-    },
-    "Event6": {
-      "title": "",
-      "desc": ""
+    "Film": {
+      "title": "Film projection Nezha",
+      "pos": "Amphi I",
+      "time": "20h30 - 22h30",
+      "desc": "Do you know the story of Nezha? It is a Chinese hero inspired by the old traditional legends.  We offer a Chinese animation movie 'Ne Zha' with a short story at the end of the movie.",
+      "date": "Friday, February 4, 2022",
+      "feature": "Festival, projection |Art, Festive, International",
+      "info_1": "Free admission without registration, mask and mandatory vaccinal pass.",
+      "info_2": "There is no better way to finish Chinese New Year's week with a good movie on a Friday night, and Club chinois has a free Chinese movie for you! Do you know the story of Nezha? It is a Chinese hero inspired by the old traditional legends. Many Chinese children have grown while listening to his stories. We offer a Chinese animation movie 'Ne Zha' with a short story at the end of the movie."
     }
   }
 }

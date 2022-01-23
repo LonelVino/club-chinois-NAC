@@ -11,19 +11,19 @@
 			<div class="activity-details">  
 				<div class="header">
 					<div class="intro">
-						<h1>[NAC] Barspé Ravioli Chinois</h1>
+						<h1>{{$t('Events.Ravioli.title')}}</h1>
 						<ul>
 							<li>
 								<i class="el-icon-location" aria-hidden="true"></i>
-								<p>Terrasse Michelin</p>
+								<p><span v-html="$t('Events.Ravioli.pos')"></span></p>
 							</li>
 							<li>
 								<i class="el-icon-date" aria-hidden="true"></i>
-								<p>Lundi 31 Janvier 2022</p>
+								<p>{{$t('Events.Ravioli.date')}}</p>
 							</li>
 							<li>
 								<i class="el-icon-alarm-clock" aria-hidden="true"></i>
-								<p>19h00 - 21h00</p>
+								<p>{{$t('Events.Ravioli.time')}}</p>
 							</li>
 							<!-- <li>
 								<i class="el-icon-school" aria-hidden="true"></i>
@@ -31,7 +31,7 @@
 							</li> -->
 							<li>
 								<i class="el-icon-help" aria-hidden="true"></i>
-								<p>Festival, Repas | Culinaire, Festif, International</p>
+								<p>{{$t('Events.Ravioli.feature')}}</p>
 							</li>
 						</ul>
 					</div>
@@ -45,9 +45,9 @@
 				</div>
 				
 				<div class="text">
-					<p class="information">Le Nouvel An Chinois(NAC) est la fête la plus importante pour tous les Chinois. Le ClubChinois vous invite à vivre ensemble les célébrations traditionnelles, avec 7 événements pour vous apporter un voyage culturel!</p>
-					<p class="information"><a href="https://forms.viarezo.fr/paps/s2gpgq">Shotgun</a> dès ce dimanche, masque obligatoire.</p>
-					<p class="information">Le ravioli est un plat que les Chinois doivent manger à la veille du Nouvel An. Le ClubChinois vous présente un barspé de ravioli pour vous faire gôuter cette gastronomie les raviolis chinois. C'est une bonne occasion de découvrir cette spécialité! Dans ce barspé, nous vous proposons un choix de ravioli viande (bœuf et carotte) ou ravioli végétarien (œuf et courgette). Chaque plat contient 10 raviolis pour seulement 3 euros ! La place sera limitée à 56 personnes. Allez vite au <a href="https://forms.viarezo.fr/paps/s2gpgq">shotgun</a> qui commence dès ce dimanche. Après la réservation, veuillez retirer vos raviolis à la Terrase Michelin le soir du 31/1 à l'heure de votre choix. N'oubliez pas d'apporter votre lunch box!</p>
+					<p class="information"><span style='font-weight: bold' v-html="$t('Events.Ravioli.info_1')"></span></p>
+					<p class="information">{{$t('Events.Ravioli.info_2')}}</p>
+					
 				</div>
 				<div class="control">
 					<button class="btn" @contextmenu="handler($event)"

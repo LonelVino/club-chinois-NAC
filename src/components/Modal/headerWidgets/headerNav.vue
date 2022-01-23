@@ -23,6 +23,9 @@
 						<el-menu-item :index="$i18nRoute({ name: 'Decorations'})"> {{$t('nav.Decorations')}} </el-menu-item>
                 </el-submenu>
             </el-menu>
+			<div class="lang-btn">
+				<lang-btn></lang-btn>
+			</div>
         </div>
         <!-- 移动端导航 -->
         <div class="mobileBox">
@@ -55,13 +58,18 @@
 						</el-submenu>
 					</el-menu>
                 </el-collapse-transition>
+				<div class="lang-btn">
+					<lang-btn></lang-btn>
+				</div>
             </div>
         </div>
+		
     </header>
 </template>
 
 <script>
 import { Typeit } from '@/utils/plug.js'
+import langBtn from '@/components/Modal/langBtn.vue'
 
 export default {
     name: 'header-nav',
@@ -77,6 +85,7 @@ export default {
         }
     },
     components: {
+		'lang-btn': langBtn
     },
     watch: {
         // 如果路由有变化，会再次执行该方法
@@ -205,6 +214,12 @@ export default {
 </style>
 
 <style lang="scss">
+.lang-btn {
+	display: flex;
+	justify-content: flex-end;
+	background: transparent;
+}
+
 .headBox .el-menu {
 	background: rgb(202, 6, 6);
 	border-bottom: none!important;

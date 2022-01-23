@@ -15,15 +15,15 @@
 						<ul>
 							<li>
 								<i class="el-icon-location" aria-hidden="true"></i>
-								<p><span v-html="$t('Events.Relay.pos')"></span></p>
+								<p>Amphi Janet</p>
 							</li>
 							<li>
 								<i class="el-icon-date" aria-hidden="true"></i>
-								<p>{{$t('Events.Relay.date')}}</p>
+								<p>Lundi 31 Janvier 2022</p>
 							</li>
 							<li>
 								<i class="el-icon-alarm-clock" aria-hidden="true"></i>
-								<p>{{$t('Events.Relay.time')}}</p>
+								<p>19h00 - 21h00</p>
 							</li>
 							<!-- <li>
 								<i class="el-icon-school" aria-hidden="true"></i>
@@ -31,12 +31,12 @@
 							</li> -->
 							<li>
 								<i class="el-icon-help" aria-hidden="true"></i>
-								<p>{{$t('Events.Relay.feature')}}</p>
+								<p></p>
 							</li>
 						</ul>
 					</div>
 					<div class="product-image">
-						<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/2fc0f792961d7916432c49ad73e2a19abcaf606e14e08ce4228057483c760900.jpeg" alt="">
+						<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/0e38d12e1a77eb67c3322862cf0737e17b101d6d50ae3e0442b190dea8d2bbfb.jpeg" alt="">
 						<div class="info">
 						<h2> Details</h2>
 						<p>Details</p>
@@ -45,8 +45,8 @@
 				</div>
 				
 				<div class="text">
-					<p class="information"><span style='font-weight: bold' v-html="$t('Events.Relay.info_1')"></span></p>
-					<p class="information"><span v-html="$t('Events.Relay.info_2')"></span></p>
+					<p class="information"><span style='font-weight: bold' v-html="$t('Events.Ceremony.info_1')"></span></p>
+					<p class="information">{{$t('Events.Ceremony.info_2')}}</p>
 				</div>
 				<div class="control">
 					<button class="btn" @contextmenu="handler($event)"

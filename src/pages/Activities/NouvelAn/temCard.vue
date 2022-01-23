@@ -6,9 +6,10 @@
           <div class="article-details">
             <h4 class="post-title">{{ name }}</h4>
             <p class="post-description">{{ desc }}</p>
+            <p class="post-time"><br>{{ date }}</p>
             <div class="card-footer">
-              <p class="post-time">{{ date }} <br>{{ time }}</p>
-              <h3 class="post-pos">{{ position }}</h3>
+              <p class="post-time">{{ time }}</p>
+              <h3 class="post-pos"><span v-html="position"></span></h3>
             </div>
           </div>
         </article>
@@ -27,6 +28,13 @@ export default {
         date: String,
         time: String,
         position: String,
+    },
+    computed: {
+      cssProps() {
+        return {
+          '--mobile_bg': this.image,
+        }
+      }
     }
 }
 </script>
@@ -180,18 +188,20 @@ $shadow: rgba(0, 0, 0, 0.2);
       flex-wrap: wrap;
     }
   }
+}
+</style>
 
-  @media (max-width: 650px) {
-    .blog-card {
-      background-image: url(https://hbimg.huabanimg.com/226c9995f2beb566de00a9e61643d7dc12980c841ab9-orxzmV_fw658);
-      .post-image {
-        display: none;
-      }
-      .post-title, .post-description, .post-time, .post-pos {
-        color: #fdeceb;
-      }
-      .post-time, .post-title, .post-pos { font-weight: 1000;}
-    }
+<style scoped>
+@media (max-width: 650px) {
+  .blog-card {
+    background-image: var(--mobile_bg);
   }
+  .post-image {
+    display: none;
+  }
+  .post-title, .post-description, .post-time, .post-pos {
+    color: #fdeceb;
+  }
+  .post-time, .post-title, .post-pos { font-weight: 1000;}
 }
 </style>
