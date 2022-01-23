@@ -44,7 +44,7 @@
 				</div>
 				
 				<div class="text">
-					<p class="information"><span v-html="$t('Events.Ravioli.info_1')"></span></p>
+					<p class="information"><span v-html="$t('Events.Marche.info_1')"></span></p>
 					<p class="information">{{$t('Events.Marche.info_2')}}</p>
 				</div>
 				<!-- <div class="control">

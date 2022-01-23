@@ -45,8 +45,7 @@
 				</div>
 				
 				<div class="text">
-					<p class="information">{{$t('Events.info')}}</p>
-					<p class="information"><span v-html="$t('Events.Ravioli.info_1')"></span></p>
+					<p class="information"><span v-html="$t('Events.Film.info_1')"></span></p>
 					<p class="information">{{$t('Events.Film.info_2')}}</p>
 				</div>
 				<!-- <div class="control">
