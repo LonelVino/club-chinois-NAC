@@ -50,10 +50,10 @@
         </section>
     
         <!-- 右侧上滑小图片 -->
-        <!-- <div  v-if="this.$store.state.themeObj.user_start!=0" :class="gotoTop?'toTop hidden':'toTop goTop hidden'" @click="toTopfun">
-            <img :src="this.$store.state.themeObj.right_img?this.$store.state.themeObj.right_img:'static/img/scroll_fu.png'" alt="">
-        </div> -->
-        <div :class="gotoTop?'back2Top goTophui':'back2Top hidden'" @click="toTopfun">
+        <div  v-if="this.$store.state.themeObj.user_start!=0" :class="gotoTop?'toTop hidden':'toTop goTop hidden'" @click="toTopfun">
+            <!-- <img :src="this.$store.state.themeObj.right_img?this.$store.state.themeObj.right_img:'static/img/scroll_fu.png'" alt=""> -->
+        </div>
+        <div else :class="gotoTop?'back2Top goTophui':'back2Top hidden'" @click="toTopfun">
             <img :src="this.$store.state.themeObj.right_img?this.$store.state.themeObj.right_img:'static/img/scroll_fu.png'" alt="">
         </div>
     </div>
@@ -290,14 +290,15 @@ export default {
 .back2Top{
     position: fixed;
     right:10px;
-    bottom:80px;
+    bottom:60px;
     z-index: 99;
-    width:120px;
-    height:120px;
-    transition: all .5s 0.3s ease-in-out;
+    width:80px;
+    height:30px;
+    transition: all .3s .7s ease-in-out;
     cursor: pointer;
     animation: toflow 2s ease-in-out infinite;
 }
+.hidden {bottom: 5000px;}
 @keyframes toflow {
     0%{
         /*top:400px;*/
@@ -354,9 +355,7 @@ export default {
         margin-bottom: 5vh;
     }
     .back2Top{
-        right: 0.5px;
-        width:60px;
-        height:60px;
+        display: none;
     }
 }
 

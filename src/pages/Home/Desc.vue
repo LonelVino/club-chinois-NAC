@@ -27,17 +27,17 @@
           <img src="@/assets/img/calendar_bar.png" alt="">
           <section class='date'>
             <div class="content date-1">
-              <h6>{{$t('Home.calendar.phase_1.time')}}</h6>
+              <h5>{{$t('Home.calendar.phase_1.time')}}</h5>
               <h3>{{$t('Home.calendar.phase_1.title')}}</h3>
               <p class="small-p">{{$t('Home.calendar.phase_1.more')}}</p>
             </div>
             <div class="content date-2">
-              <h6>{{$t('Home.calendar.phase_2.time')}}</h6>
+              <h5>{{$t('Home.calendar.phase_2.time')}}</h5>
               <h3>{{$t('Home.calendar.phase_2.title')}}</h3>
               <p class="small-p">{{$t('Home.calendar.phase_2.more')}}</p>
             </div>
             <div class="content date-3">
-              <h6>{{$t('Home.calendar.phase_3.time')}}</h6>
+              <h5>{{$t('Home.calendar.phase_3.time')}}</h5>
               <h3>{{$t('Home.calendar.phase_3.title')}}</h3>
               <p class="small-p">{{$t('Home.calendar.phase_3.more')}}</p>
             </div>
@@ -102,15 +102,16 @@
         flex-direction: column;
         justify-content: flex-start;
         margin: 0 0.5em;
-        h6 {
+        h5 {
           font-family: "Raisonne", "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-weight: bolder;
           margin-bottom: 0vh;
-          font-size: 1.2vh;
+          font-size: 1.8vh;
         }
         h3 {font-size: 2vh;}
         p {
-          font-size: 2;
+          font-size: 1.4vw;
+          line-height: 1.6vw;
         }
       }
       .content:not(:first-child) {
@@ -146,6 +147,10 @@
           h3 {margin-bottom: 1.8vh;}
           .content {
             margin: 0;
+            p {
+              font-size: 1.8vw;
+              line-height: 1.9vw;
+            }
           }
           .content:first-child {padding-top: 1em; border-top: 0.4em solid rgb(216, 70, 70);}
           .content:not(:first-child) {
@@ -164,9 +169,9 @@
     .calendar .date {
       .content {
         margin-bottom: 2vh;
-        h6 {font-size: 1.4vh;}
+        h5 {font-size: 1.4vh;}
         h3 {font-size: 2.4vh;}
-        .small-p {font-size: 1.7vh;}
+        .small-p {font-size: 2vh;}
       }
     }
   }
