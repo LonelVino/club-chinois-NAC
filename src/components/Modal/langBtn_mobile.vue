@@ -1,6 +1,6 @@
 <template>
   <div class="switch-button">
-    <input class="switch-button-checkbox" type="checkbox" @click="changeLanguage(languageToChange)">
+    <input class="switch-button-checkbox" v-model="selected" type="checkbox" @click="changeLanguage(languageToChange)">
     <label class="switch-button-label" for="">
       <span class="switch-button-label-span">FR</span>
     </label>

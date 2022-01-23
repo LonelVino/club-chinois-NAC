@@ -37,7 +37,7 @@ export default {
             link: 'raviolis',
             name: this.$i18n.t('Events.Ravioli.title'),
             position: this.$i18n.t('Events.Ravioli.pos'),
-            image: 'https://cdn-pop.viarezo.fr/static/linkcs/images/d116392f5530a035201dff4e7fc5a65ce387c4d71fb90517ecbf1228ef5ef4b7.jpeg',
+            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.1/ClubChinois/dumplings.jpg',
             date:  this.$i18n.t('Events.Ravioli.date'),
             time: this.$i18n.t('Events.Ravioli.time'),
             desc: this.$i18n.t('Events.Ravioli.desc')
