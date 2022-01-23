@@ -28,7 +28,7 @@ export default {
             link: 'relay',
             name:  this.$i18n.t('Events.Relay.title'),
             position: this.$i18n.t('Events.Relay.pos'),
-            image: 'https://cdn-pop.viarezo.fr/static/linkcs/images/2fc0f792961d7916432c49ad73e2a19abcaf606e14e08ce4228057483c760900.jpeg',
+            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/relay.jpg',
             date: this.$i18n.t('Events.Relay.date'),
             time: this.$i18n.t('Events.Relay.time'),
             desc: this.$i18n.t('Events.Relay.desc'),
@@ -37,7 +37,7 @@ export default {
             link: 'raviolis',
             name: this.$i18n.t('Events.Ravioli.title'),
             position: this.$i18n.t('Events.Ravioli.pos'),
-            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.1/ClubChinois/dumplings.jpg',
+            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/dumplings.jpg',
             date:  this.$i18n.t('Events.Ravioli.date'),
             time: this.$i18n.t('Events.Ravioli.time'),
             desc: this.$i18n.t('Events.Ravioli.desc')
@@ -46,7 +46,7 @@ export default {
             link: 'ceremony',
             name: this.$i18n.t('Events.Ceremony.title'),
             position: this.$i18n.t('Events.Ceremony.pos'),
-            image: 'https://cdn-pop.viarezo.fr/static/linkcs/images/0e38d12e1a77eb67c3322862cf0737e17b101d6d50ae3e0442b190dea8d2bbfb.jpeg',
+            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/ceremony.jpg',
             date: this.$i18n.t('Events.Ceremony.date'),
             time: this.$i18n.t('Events.Ceremony.time'),
             desc: this.$i18n.t('Events.Ceremony.desc')
@@ -55,7 +55,7 @@ export default {
             link: 'marche',
             name: this.$i18n.t('Events.Marche.title'),
             position: this.$i18n.t('Events.Marche.pos'),
-            image: 'https://cdn-pop.viarezo.fr/static/linkcs/images/ed932863cda2a01aad8ccc06dc2d5239e6b28ae7d1841b19542effc8f8c2ef28.jpeg',
+            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/marche.jpg',
             date: this.$i18n.t('Events.Marche.date'),
             time: this.$i18n.t('Events.Marche.time'),
             desc: this.$i18n.t('Events.Marche.desc')
@@ -64,7 +64,7 @@ export default {
             link: 'film',
             name: this.$i18n.t('Events.Film.title'),
             position: this.$i18n.t('Events.Film.pos'),
-            image: 'https://cdn-pop.viarezo.fr/static/linkcs/images/5b93724af634a4852ad1836a64c960097612d5c6f09966665733707e0c015988.jpeg',
+            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/film.jpg',
             date: this.$i18n.t('Events.Film.date'),
             time: this.$i18n.t('Events.Film.time'),
             desc: this.$i18n.t('Events.Film.desc')

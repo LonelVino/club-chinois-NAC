@@ -36,7 +36,7 @@
 						</ul>
 					</div>
 					<div class="product-image">
-						<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/0e38d12e1a77eb67c3322862cf0737e17b101d6d50ae3e0442b190dea8d2bbfb.jpeg" alt="">
+						<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/ceremony.jpg'" alt="">
 					</div>
 				</div>
 				
@@ -53,7 +53,7 @@
 					</button>
 				</div> -->
 				<div class="mobile-image">
-					<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/0e38d12e1a77eb67c3322862cf0737e17b101d6d50ae3e0442b190dea8d2bbfb.jpeg" alt="">
+					<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/ceremony.jpg'" alt="">
 				</div>
 			</div>
 			
