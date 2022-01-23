@@ -96,5 +96,9 @@ a {
   .rightlist {
     margin: 2em auto
   }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="switch-button">
     <input class="switch-button-checkbox" type="checkbox" @click="changeLanguage(languageToChange)">
     <label class="switch-button-label" for="">
-      <span class="switch-button-label-span">EN</span>
+      <span class="switch-button-label-span">FR</span>
     </label>
   </div>
 </template>
@@ -73,7 +73,7 @@ export default {
   position: relative;
 
   &:before {
-    content: "FR";
+    content: "EN";
     position: absolute;
     top: 0;
     bottom: 0;
