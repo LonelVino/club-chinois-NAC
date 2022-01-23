@@ -188,20 +188,10 @@ $shadow: rgba(0, 0, 0, 0.2);
       flex-wrap: wrap;
     }
   }
-}
-</style>
-
-<style scoped>
-@media (max-width: 650px) {
-  .blog-card {
-    background-image: var(--mobile_bg);
+  @media (max-width: 650px) {
+    .article-details{
+      display: none
+    }
   }
-  .post-image {
-    display: none;
-  }
-  .post-title, .post-description, .post-time, .post-pos {
-    color: #fdeceb;
-  }
-  .post-time, .post-title, .post-pos { font-weight: 1000;}
 }
 </style>

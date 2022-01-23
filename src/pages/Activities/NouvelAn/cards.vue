@@ -115,11 +115,14 @@ export default {
 }
 
 @media (max-width: 600px) {
+  .cards-container {
+    margin-top: 5em;
+  }
   .Headline {
-    font-size: 1.5rem;
+    display: none;
   }
   .card {
-    margin: 2em 2em 0 2em;
+    margin: 1em 1.5em 0 1.5em;
   }
 }
 </style>

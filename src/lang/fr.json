@@ -2,8 +2,8 @@
   "nav": {
     "Home": "Accueil",
     "Events": "Événements",
-    "Event1": "Events", "Event2": "Events", "Event3": "Events",  
-    "Event4": "Events", "Event5": "Events", "Event6": "Events",
+    "Relais": "Relais", "Ravioli": "Ravioli", "Ceremony": "Cérémonie",  
+    "Marche": "Marché", "Film": "Film", 
     "Zodiac": "Signe",
     "Calendar": "Calendrier",
     "Greetings": "Salutation",
@@ -65,7 +65,7 @@
     "Join": "Rejoindre",
     "info": "Le Nouvel An Chinois(NAC) est la fête la plus importante pour tous les Chinois. Le ClubChinois vous invite à vivre ensemble les célébrations traditionnelles, avec 7 événements pour vous apporter un voyage culturel!",
     "Relay": {
-      "title": "Relay Tradition Chinoise",
+      "title": "Relais Tradition Chinoise",
       "pos": "<a style='color: red; textdecoration: underline' href='https://www.facebook.com/ClubChinois'>Facebook</a>",
       "desc": "Il y a même une tradition quotidienne à respecter pour cette semaine! Partagez-le dans vos réseaux sociaux en laissant des commentaires.",
       "date": "Mardi 25 Janvier 2022 - Lundi 31 Janvier 2022",

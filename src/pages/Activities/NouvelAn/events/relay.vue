@@ -51,9 +51,9 @@
 				<div class="control">
 					<button class="btn" @contextmenu="handler($event)"
 					onclick="window.location.href='https://forms.viarezo.fr/paps/s2gpgq'">
-						<span class="price">Join</span>
+						<span class="price">+</span>
 						<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
-						<span class="buy">Shot Gun</span>
+						<span class="buy">Facebook</span>
 					</button>
 				</div>
 			</div>

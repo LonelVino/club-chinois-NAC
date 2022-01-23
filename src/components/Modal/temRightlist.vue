@@ -343,11 +343,20 @@ export default {
         margin-top: -2em;
         transform: scale(0.9);
         .r1-body .catch-me {
-            .part_block {margin: 0 0.5em;}
+            .part_block {
+                margin: 0.5em;
+                width: 3.3em;
+                height: 3.3em;
+            }
         }
     }
     .rightlistBox section:first-child {
         margin-bottom: 5vh;
+    }
+    .back2Top{
+        right: 0.5px;
+        width:60px;
+        height:60px;
     }
 }
 

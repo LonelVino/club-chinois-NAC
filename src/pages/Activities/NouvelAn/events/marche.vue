@@ -6,8 +6,7 @@
 		</div>
 	</div>
 	<div class="card_container">
-		<div id="card">
-			
+		<div id="card">	
 			<div class="activity-details">  
 				<div class="header">
 					<div class="intro">
@@ -15,15 +14,15 @@
 						<ul>
 							<li>
 								<i class="el-icon-location" aria-hidden="true"></i>
-								<p>Terrasse Michelin</p>
+								<p><span v-html="$t('Events.Marche.pos')"></span></p>
 							</li>
 							<li>
 								<i class="el-icon-date" aria-hidden="true"></i>
-								<p>Lundi 31 Janvier 2022</p>
+								<p>{{$t('Events.Marche.date')}}</p>
 							</li>
 							<li>
 								<i class="el-icon-alarm-clock" aria-hidden="true"></i>
-								<p>19h00 - 21h00</p>
+								<p>{{$t('Events.Marche.time')}}</p>
 							</li>
 							<!-- <li>
 								<i class="el-icon-school" aria-hidden="true"></i>
@@ -31,7 +30,7 @@
 							</li> -->
 							<li>
 								<i class="el-icon-help" aria-hidden="true"></i>
-								<p>Festival, Repas | Culinaire, Festif, International</p>
+								<p>{{$t('Events.Marche.feature')}}</p>
 							</li>
 						</ul>
 					</div>

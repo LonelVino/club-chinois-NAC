@@ -5,7 +5,7 @@
             <input id="language-toggle" class="check-toggle check-toggle-round-flat" 
                 value="language-toggle" type="checkbox" v-model="selected">
             <label for="language-toggle"  @click="changeLanguage(languageToChange)"></label>
-            <span class="on">FR</span>
+            <span class="on" @click="changeLanguage('fr')">FR</span>
             <span class="off" @click="changeLanguage('en')">EN</span>
         </div>
     </center>
@@ -160,5 +160,15 @@ input.check-toggle-round-flat:checked + label {
 
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
+}
+
+@media (max-width: 600px) {
+  .switch {
+    transform: scale(0.8);
+    transition: 1s, linear;
+  }
+  .switch > span.on, .switch > span.off {
+    margin-top: -1em;
+  }
 }
 </style>

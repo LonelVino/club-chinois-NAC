@@ -6,9 +6,11 @@
 				<el-menu-item :index="$i18nRoute({ name: 'Home'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Home')}} </el-menu-item>
                 <el-submenu>
                     <template slot="title"> {{$t('nav.Events')}}  </template>
-						<el-menu-item :index="$i18nRoute({ name: 'event_1'})" disabled> {{$t('nav.Event1')}} </el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'event_2'})" disabled>{{$t('nav.Event2')}}</el-menu-item>
-						<el-menu-item :index="$i18nRoute({ name: 'event_3'})" disabled>{{$t('nav.Event3')}}</el-menu-item>
+					<el-menu-item :index="$i18nRoute({ name: 'relay'})" > {{$t('nav.Relais')}} </el-menu-item>
+					<el-menu-item :index="$i18nRoute({ name: 'raviolis'})" > {{$t('nav.Ravioli')}} </el-menu-item>
+					<el-menu-item :index="$i18nRoute({ name: 'ceremony'})" >{{$t('nav.Ceremony')}}</el-menu-item>
+					<el-menu-item :index="$i18nRoute({ name: 'marche'})" >{{$t('nav.Marche')}}</el-menu-item>
+					<el-menu-item :index="$i18nRoute({ name: 'film'})" >{{$t('nav.Film')}}</el-menu-item>
                 </el-submenu>
 				<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Zodiac')}} </el-menu-item>
 				<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Calendar')}}  </el-menu-item>
@@ -31,18 +33,16 @@
         <div class="mobileBox">
             <div class="hideMenu">
                 <i @click="pMenu=!pMenu" class="el-icon-menu"></i> 
-				<div class="logo mobile-logo">
-					<img class='nav-logo' src="@/assets/img/avatar_1.jpg" alt="logo">		
-					<span>Club Chinois</span>
-				</div>
 				<el-collapse-transition>
                     <el-menu :default-active="activeIndex" class="mlistmenu" v-show="!pMenu" theme="dark" @open="handleOpen" @close="handleClose" :unique-opened="true" :router="true">
                         <el-menu-item :index="$i18nRoute({ name: 'Home'})"><i class="fa fa-wa fa-home"></i>  {{$t('nav.Home')}} </el-menu-item>
                         <el-submenu>
                             <template slot="title"> {{$t('nav.Events')}} </template>
-							<el-menu-item :index="$i18nRoute({ name: 'event_1'})" disabled> {{$t('nav.Event1')}} </el-menu-item>
-							<el-menu-item :index="$i18nRoute({ name: 'event_2'})" disabled>{{$t('nav.Event2')}}</el-menu-item>
-							<el-menu-item :index="$i18nRoute({ name: 'event_3'})" disabled>{{$t('nav.Event3')}}</el-menu-item>
+							<el-menu-item :index="$i18nRoute({ name: 'relay'})" > {{$t('nav.Relais')}} </el-menu-item>
+							<el-menu-item :index="$i18nRoute({ name: 'raviolis'})" > {{$t('nav.Ravioli')}} </el-menu-item>
+							<el-menu-item :index="$i18nRoute({ name: 'ceremony'})" >{{$t('nav.Ceremony')}}</el-menu-item>
+							<el-menu-item :index="$i18nRoute({ name: 'marche'})" >{{$t('nav.Marche')}}</el-menu-item>
+							<el-menu-item :index="$i18nRoute({ name: 'film'})" >{{$t('nav.Film')}}</el-menu-item>
 						</el-submenu>
 						<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Zodiac')}} </el-menu-item>
 						<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Calendar')}}  </el-menu-item>
@@ -58,10 +58,14 @@
 						</el-submenu>
 					</el-menu>
                 </el-collapse-transition>
-				<div class="lang-btn">
-					<lang-btn></lang-btn>
+				<div class="logo mobile-logo">
+					<img class='nav-logo' src="@/assets/img/avatar_1.jpg" alt="logo">		
+					<span>Club Chinois</span>
 				</div>
             </div>
+			<div class="lang-btn">
+				<lang-btn-mobile></lang-btn-mobile>
+			</div>
         </div>
 		
     </header>
@@ -70,6 +74,7 @@
 <script>
 import { Typeit } from '@/utils/plug.js'
 import langBtn from '@/components/Modal/langBtn.vue'
+import langBtn_mobile from '@/components/Modal/langBtn_mobile.vue'
 
 export default {
     name: 'header-nav',
@@ -85,7 +90,8 @@ export default {
         }
     },
     components: {
-		'lang-btn': langBtn
+		'lang-btn': langBtn,
+		'lang-btn-mobile': langBtn_mobile
     },
     watch: {
         // 如果路由有变化，会再次执行该方法
@@ -446,6 +452,16 @@ export default {
 	.headBox .el-menu-demo li.el-menu-item,
 	.headBox .el-menu-demo li.el-submenu .el-submenu__title {
 		font-size: 90%;
+	}
+	.hideMenu {
+		display: flex;
+		flex: 1 1 1;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.lang-btn {
+		margin-top: -15px;
+		margin-right: -60px;
 	}
 }
 </style>

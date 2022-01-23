@@ -11,19 +11,19 @@
 			<div class="activity-details">  
 				<div class="header">
 					<div class="intro">
-						<h1>[NAC] Barspé Ravioli Chinois</h1>
+						<h1>{{$t('Events.Relay.title')}}</h1>
 						<ul>
 							<li>
 								<i class="el-icon-location" aria-hidden="true"></i>
-								<p>Terrasse Michelin</p>
+								<p><span v-html="$t('Events.Film.pos')"></span></p>
 							</li>
 							<li>
 								<i class="el-icon-date" aria-hidden="true"></i>
-								<p>Lundi 31 Janvier 2022</p>
+								<p>{{$t('Events.Film.date')}}</p>
 							</li>
 							<li>
 								<i class="el-icon-alarm-clock" aria-hidden="true"></i>
-								<p>19h00 - 21h00</p>
+								<p>{{$t('Events.Film.time')}}</p>
 							</li>
 							<!-- <li>
 								<i class="el-icon-school" aria-hidden="true"></i>
@@ -31,7 +31,7 @@
 							</li> -->
 							<li>
 								<i class="el-icon-help" aria-hidden="true"></i>
-								<p>Festival, Repas | Culinaire, Festif, International</p>
+								<p>{{$t('Events.Film.feature')}}</p>
 							</li>
 						</ul>
 					</div>

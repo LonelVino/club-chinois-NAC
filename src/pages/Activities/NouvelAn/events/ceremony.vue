@@ -15,15 +15,15 @@
 						<ul>
 							<li>
 								<i class="el-icon-location" aria-hidden="true"></i>
-								<p>Amphi Janet</p>
+								<p><span v-html="$t('Events.Ceremony.pos')"></span></p>
 							</li>
 							<li>
 								<i class="el-icon-date" aria-hidden="true"></i>
-								<p>Lundi 31 Janvier 2022</p>
+								<p>{{$t('Events.Ceremony.date')}}</p>
 							</li>
 							<li>
 								<i class="el-icon-alarm-clock" aria-hidden="true"></i>
-								<p>19h00 - 21h00</p>
+								<p>{{$t('Events.Ceremony.time')}}</p>
 							</li>
 							<!-- <li>
 								<i class="el-icon-school" aria-hidden="true"></i>
@@ -31,7 +31,7 @@
 							</li> -->
 							<li>
 								<i class="el-icon-help" aria-hidden="true"></i>
-								<p></p>
+								<p>{{$t('Events.Ceremony.feature')}}</p>
 							</li>
 						</ul>
 					</div>
