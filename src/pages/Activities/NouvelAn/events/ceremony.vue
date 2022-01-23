@@ -37,10 +37,6 @@
 					</div>
 					<div class="product-image">
 						<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/0e38d12e1a77eb67c3322862cf0737e17b101d6d50ae3e0442b190dea8d2bbfb.jpeg" alt="">
-						<div class="info">
-						<h2> Details</h2>
-						<p>Details</p>
-						</div>
 					</div>
 				</div>
 				
@@ -56,6 +52,9 @@
 						<span class="buy">Shot Gun</span>
 					</button>
 				</div> -->
+				<div class="mobile-image">
+					<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/0e38d12e1a77eb67c3322862cf0737e17b101d6d50ae3e0442b190dea8d2bbfb.jpeg" alt="">
+				</div>
 			</div>
 			
 			

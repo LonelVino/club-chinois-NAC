@@ -37,10 +37,6 @@
 					</div>
 					<div class="product-image">
 						<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/d116392f5530a035201dff4e7fc5a65ce387c4d71fb90517ecbf1228ef5ef4b7.jpeg" alt="">
-						<div class="info">
-						<h2> Details</h2>
-						<p>Details</p>
-						</div>
 					</div>
 				</div>
 				
@@ -56,6 +52,9 @@
 						<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
 						<span class="buy">Shot Gun</span>
 					</button>
+				</div>
+				<div class="mobile-image">
+					<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/d116392f5530a035201dff4e7fc5a65ce387c4d71fb90517ecbf1228ef5ef4b7.jpeg" alt="">
 				</div>
 			</div>
 			

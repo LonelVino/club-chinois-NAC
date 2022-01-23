@@ -5,8 +5,8 @@
 	text-align: center;
 	border-radius: 5px;
 	overflow: hidden;
-	margin: 7.5em auto;
-	width: 75vw;
+	margin: 7.5em;
+	width: 80vw;
 }
 
 
@@ -23,6 +23,7 @@
 	height: 100%;
 	float: left;
 	width: 100%;
+	margin-left: -20px;
 }
 
 .header {
@@ -70,8 +71,6 @@
 	padding-left: 1.5vw;
 	font-family: 'EB Garamond', serif;
 }
-
-
 
 
 .hint-star {
@@ -167,36 +166,14 @@
 	width: 300px;
 	display: inline-block;
 }
+.mobile-image {
+	display: none;
+}
 
 #card img {width: 100%;height: 100%;}
 
-.info {
-    background: rgba(27, 26, 26, 0.9);
-    font-family: 'Bree Serif', serif;
-    transition: all 0.3s ease-out;
-    transform: translateX(-100%);
-    position: absolute;
-    line-height: 1.8;
-    text-align: left;
-    font-size: 105%;
-    cursor: no-drop;
-    color: #FFF;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
 
-.info h2 {text-align: center; margin: 1em auto}
-.info p { padding: 1em; }
 .intro p {padding: 0.2em; font-size: 1.3em;}
-// .product-image:hover .info{transform: translateX(0);}
-
-.info ul li{transition: 0.3s ease;}
-.info ul li:hover{transform: translateX(50px) scale(1.3);}
-
-// .product-image:hover img {transition: all 0.3s ease-out;}
-// .product-image:hover img {transform: scale(1.2, 1.2);}
 
 @media (max-width: 40rem) {
 	#card {
@@ -216,12 +193,42 @@
 	.intro p {font-size: 1em;}
 	.control {
 	}
-
+	
 	.product-image {
 		display: none;
 	}
+	.mobile-image {
+		transition: all 0.3s ease-out;
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		float: right;
+		width: 370px;
+		height: 210px;
+		display: inline-block;
+		border-radius: 25px;
+		margin-top: 3em; margin-bottom: 2em;
+	}
 	.activity-details {
 		width: 80%;
+		margin-left: 20px;
+		.information {
+			margin-top: 2vh;
+		}
+	}
+}
+
+@media (max-width: 540px) {
+
+	.mobile-image {
+		width: 65vw;
+		height: 20vh;
+		border-radius: 25px;
+		margin-top: 3em; margin-bottom: 2em;
+	}
+	.activity-details {
+		width: 80%;
+		margin-left: 0px;
 		.information {
 			margin-top: 2vh;
 		}

@@ -15,7 +15,9 @@
         </el-col>
       </el-row>
       <el-divider></el-divider>
-      <description/>
+      <div class="desc">
+        <description/>
+      </div>
     </div>
     <wbc-footer></wbc-footer>
   </div>
@@ -99,6 +101,9 @@ a {
   .container {
     display: flex;
     flex-direction: column;
+  }
+  .desc {
+    
   }
 }
 </style>

@@ -37,10 +37,6 @@
 					</div>
 					<div class="product-image">
 						<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/2fc0f792961d7916432c49ad73e2a19abcaf606e14e08ce4228057483c760900.jpeg" alt="">
-						<div class="info">
-						<h2> Details</h2>
-						<p>Details</p>
-						</div>
 					</div>
 				</div>
 				
@@ -55,6 +51,9 @@
 						<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
 						<span class="buy">Facebook</span>
 					</button>
+				</div>
+				<div class="mobile-image">
+					<img src="https://cdn-pop.viarezo.fr/static/linkcs/images/2fc0f792961d7916432c49ad73e2a19abcaf606e14e08ce4228057483c760900.jpeg" alt="">
 				</div>
 			</div>
 			

@@ -171,7 +171,7 @@
         margin-bottom: 2vh;
         h5 {font-size: 1.4vh;}
         h3 {font-size: 2.4vh;}
-        .small-p {font-size: 2vh;}
+        .small-p {font-size: 1.5vh; line-height: 2vh;}
       }
     }
   }

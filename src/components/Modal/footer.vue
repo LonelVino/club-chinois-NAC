@@ -114,7 +114,8 @@
     color:#000;
 }
 @media (max-width: 600px)  {
-	.desc {display: none} 
+	.fcontainer .desc {display: none} 
 }
 
 </style>
+
