@@ -11,7 +11,7 @@
 			<div class="activity-details">  
 				<div class="header">
 					<div class="intro">
-						<h1>{{$t('Events.Relay.title')}}</h1>
+						<h1>{{$t('Events.Film.title')}}</h1>
 						<ul>
 							<li>
 								<i class="el-icon-location" aria-hidden="true"></i>
@@ -47,16 +47,16 @@
 				<div class="text">
 					<p class="information">{{$t('Events.info')}}</p>
 					<p class="information"><span v-html="$t('Events.Ravioli.info_1')"></span></p>
-					<p class="information">{{$t('Events.Ravioli.info_2')}}</p>
+					<p class="information">{{$t('Events.Film.info_2')}}</p>
 				</div>
-				<div class="control">
+				<!-- <div class="control">
 					<button class="btn" @contextmenu="handler($event)"
 					onclick="window.location.href='https://forms.viarezo.fr/paps/s2gpgq'">
 						<span class="price">Join</span>
 						<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
 						<span class="buy">Shot Gun</span>
 					</button>
-				</div>
+				</div> -->
 			</div>
 			
 			
