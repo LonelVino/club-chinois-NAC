@@ -33,6 +33,13 @@
 								<i class="el-icon-help" aria-hidden="true"></i>
 								<p>{{$t('Events.Ceremony.feature')}}</p>
 							</li>
+							<div class="control">
+								<button class="btn" @contextmenu="handler($event)"
+								onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeJOYMi2hXicoI8zbmIonrimq-uGruC-8r1s1rWz8fAZC8oSQ/viewform?usp=sf_link'">
+									<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
+									<span class="buy">Questionnaire</span>
+								</button>
+							</div>
 						</ul>
 					</div>
 					<div class="product-image">
@@ -40,12 +47,14 @@
 					</div>
 				</div>
 				
+				
 				<div class="text">
 					<p class="information"><span style='font-weight: bold' v-html="$t('Events.Ceremony.info_1')"></span></p>
 					<p class="information">{{$t('Events.Ceremony.info_2')}}</p>
 				</div>
+			
 				<div class='ceremony-details'>
-					<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.1/ClubChinois/ceremony_details.jpg" alt="">
+					<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.3/ClubChinois/ceremony_details.jpg" alt="">
 				</div>
 				<!-- <div class="control">
 					<button class="btn" @contextmenu="handler($event)"

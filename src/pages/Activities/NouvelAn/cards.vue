@@ -70,15 +70,24 @@ export default {
             desc: this.$i18n.t('Events.Film.desc')
           },
 
-          // "Eve6":{
-          //   link: 'Event_6',
-          //   name:  this.$i18n.t('Events.Event6.title'),
-          //   position: 'Agora',
-          //   image: 'https://preview.redd.it/1yh6x8jpt6a41.jpg?width=4096&format=pjpg&auto=webp&s=f8b657e35078e9738d3c0ed8561af60f99659bb8',
-          //   date: this.$i18n.t('Events.Ravioli.date'),
-          //   time: '01/02/22 13H',
-          //   desc: this.$i18n.t('Events.Event6.desc')
-          // },
+          "Eve6":{
+            link: 'tangyuan',
+            name:  this.$i18n.t('Events.Tangyuan.title'),
+            position: this.$i18n.t('Events.Tangyuan.pos'),
+            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.2/ClubChinois/tangyuan.jpg',
+            date: this.$i18n.t('Events.Tangyuan.date'),
+            time: this.$i18n.t('Events.Tangyuan.time'),
+            desc: this.$i18n.t('Events.Tangyuan.desc')
+          },
+          "Eve7":{
+            link: 'raviolis_metz',
+            name: this.$i18n.t('Events.Ravioli_Metz.title'),
+            position: this.$i18n.t('Events.Ravioli_Metz.pos'),
+            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.3/ClubChinois/dumplings_metz.jpg',
+            date:  this.$i18n.t('Events.Ravioli_Metz.date'),
+            time: this.$i18n.t('Events.Ravioli_Metz.time'),
+            desc: this.$i18n.t('Events.Ravioli_Metz.desc')
+          },
         }
       }
     },

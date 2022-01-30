@@ -68,6 +68,18 @@ export const constRoutes = [
 			meta: {auth: true},
 			name: 'film'
 		},
+		{
+			path: 'tangyuan',
+			component: resolve => require(['@/pages/Activities/NouvelAn/events/tangyuan.vue'], resolve),
+			meta: {auth: true},
+			name: 'tangyuan'
+		},
+		{
+			path: 'raviolis_metz',
+			component: resolve => require(['@/pages/Activities/NouvelAn/events/raviolis_metz.vue'], resolve),
+			meta: {auth: true},
+			name: 'raviolis_metz'
+		},
 
 		// ----------------------- Traditions -----------------------
 

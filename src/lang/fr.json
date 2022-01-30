@@ -113,6 +113,26 @@
       "feature": "Festival, Projection | Art, Festif, International",
       "info_1": "Entrée gratuite sans inscription, masque et pass vaccinal obligatoire.",
       "info_2": "Il n'y a pas de meilleure façon de terminer la semaine de Nouvel An Chinois qu'avec un bon film un vendredi soir, et le Club Chinois a un film chinois gratuit pour vous！ Connaissez-vous l'histoire de NeZha? C'est un héros chinois inspiré des anciennes légendes traditionnelles. De nombreux enfants chinois ont grandi en écoutant ses histoires. Nous offrons un film d'animation chinois 'La Naissance d'enfant démon Nezha' avec une courte histoire à la fin du film."
+    },
+    "Tangyuan": {
+      "title": "Barspé Tangyuan",
+      "pos": " Cesal, 4CE306",
+      "time": "19h00 - 21h00",
+      "desc": "Un petit dessert Tangyuan est la spécialité de ce jour. Composé de riz gluant et de graines de sésame noir, ce dessert. Chaque plat contient trois Tangyuans pour seulement 1,50 €.",
+      "date": "Vendredi 06 Février 2022",
+      "feature": "Festival, Repas | Culinaire, Festif, International",
+      "info_1": "Shotgun de 06/02, masque obligatoire.",
+      "info_2": "Le Nouvel An dure jusqu'à la première pleine lune. Un petit dessert Tangyuan est la spécialité de ce jour. Composé de riz gluant et de graines de sésame noir, ce dessert. Chaque plat contient trois Tangyuans pour seulement 1,50 €. N'hésitez pas à venir découvrir cette gastronomie et connaissent plus des traditions chinoises. Le shotgun commence le 6 février pour seulement 50 personnes."
+    },
+    "Ravioli_Metz": {
+      "title": "Barspé Ravioli Chinoi (Metz)",
+      "pos": "Livraison ou Résidence c203 (Metz)",
+      "time": "16h00 - 18h30",
+      "desc": "Le ClubChinois et le BdI Metz vous proposent un barspé de ravioli pour vous faire gôuter cette gastronomie . C'est une bonne occasion de découvrir cette spécialité! ",
+      "date": "Jeudi 03 Février 2022",
+      "feature": "Festival, Repas | Culinaire, Festif, International",
+      "info_1": "Shotgun de 31/01, masque obligatoire.",
+      "info_2": "Le ravioli est un plat que les Chinois doivent manger à la veille du Nouvel An. Le jeudi 3 février, le ClubChinois et le BdI Metz vous proposent un barspé de ravioli pour vous faire gôuter cette gastronomie . C'est une bonne occasion de découvrir cette spécialité! Dans ce barspé, nous vous proposons un choix de ravioli viande (porc + shiitake, porc + feuille chinoise, poulet + champignon) ou ravioli végétarien (œuf, radis et vermicelle). Chaque plat contient 5 raviolis pour seulement 2 euros ! La place sera limitée à 50 personnes. Allez vite au Shotgun. Après la réservation, vous pouvez choisir une option de livraison ou récupérer au C203 à l'heure de votre choix. N'oubliez pas d'apporter votre lunch box!"
     }
   }
 }

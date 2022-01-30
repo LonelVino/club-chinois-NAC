@@ -32,6 +32,13 @@
 								<i class="el-icon-help" aria-hidden="true"></i>
 								<p>{{$t('Events.Marche.feature')}}</p>
 							</li>
+							<div class="control">
+								<button class="btn" @contextmenu="handler($event)"
+								onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfm_bOigipkzseJ6VnF6FNQyj8Bwsq4tAgpd5Uzs1Fd0sOS0Q/viewform?usp=sf_link'">
+									<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
+									<span class="buy">Questionnaire</span>
+								</button>
+							</div>
 						</ul>
 					</div>
 					<div class="product-image">

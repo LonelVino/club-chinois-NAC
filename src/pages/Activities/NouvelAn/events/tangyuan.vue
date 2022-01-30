@@ -11,19 +11,19 @@
 			<div class="activity-details">  
 				<div class="header">
 					<div class="intro">
-						<h1>{{$t('Events.Film.title')}}</h1>
+						<h1>{{$t('Events.Tangyuan.title')}}</h1>
 						<ul>
 							<li>
 								<i class="el-icon-location" aria-hidden="true"></i>
-								<p><span v-html="$t('Events.Film.pos')"></span></p>
+								<p><span v-html="$t('Events.Tangyuan.pos')"></span></p>
 							</li>
 							<li>
 								<i class="el-icon-date" aria-hidden="true"></i>
-								<p>{{$t('Events.Film.date')}}</p>
+								<p>{{$t('Events.Tangyuan.date')}}</p>
 							</li>
 							<li>
 								<i class="el-icon-alarm-clock" aria-hidden="true"></i>
-								<p>{{$t('Events.Film.time')}}</p>
+								<p>{{$t('Events.Tangyuan.time')}}</p>
 							</li>
 							<!-- <li>
 								<i class="el-icon-school" aria-hidden="true"></i>
@@ -31,36 +31,30 @@
 							</li> -->
 							<li>
 								<i class="el-icon-help" aria-hidden="true"></i>
-								<p>{{$t('Events.Film.feature')}}</p>
+								<p>{{$t('Events.Tangyuan.feature')}}</p>
 							</li>
-							<div class="control">
-								<button class="btn" @contextmenu="handler($event)"
-								onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScioJWav_5RNgDrn1C53lc25TGQeSnSpRoNHm5PTxuqA-R6Yw/viewform?usp=sf_link'">
-									<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
-									<span class="buy">Questionnaire</span>
-								</button>
-							</div>
 						</ul>
 					</div>
 					<div class="product-image">
-						<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/film.jpg" alt="">
+						<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.1/ClubChinois/tangyuan.jpg" alt="">
 					</div>
 				</div>
 				
 				<div class="text">
-					<p class="information"><span v-html="$t('Events.Film.info_1')"></span></p>
-					<p class="information">{{$t('Events.Film.info_2')}}</p>
+					<p class="information"><span style='font-weight: bold' v-html="$t('Events.Tangyuan.info_1')"></span></p>
+					<p class="information">{{$t('Events.Tangyuan.info_2')}}</p>
+					
 				</div>
-				<!-- <div class="control">
+				<div class="control">
 					<button class="btn" @contextmenu="handler($event)"
-					onclick="window.location.href='https://forms.viarezo.fr/paps/s2gpgq'">
+					onclick="window.location.href='https://forms.viarezo.fr/paps/ng91s0'">
 						<span class="price">Join</span>
 						<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
 						<span class="buy">Shot Gun</span>
 					</button>
-				</div> -->
+				</div>
 				<div class="mobile-image">
-					<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/film.jpg" alt="">
+					<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.1/ClubChinois/tangyuan.jpg" alt="">
 				</div>
 			</div>
 			

@@ -71,7 +71,7 @@
       "time": "00h00 - 23h55",
       "desc": "There is even a daily tradition to keep for this week! Share it in your social networks by leaving comments.",
       "date": "Tuesday, January 25th 2022 - Monday 31 January 2022",
-      "feature": "Discovery, Festival |Entertainment, International",
+      "feature": "Discovery, Festival | Entertainment, International",
       "info_1": "Online without registration",
       "info_2": "Do you know? The Chinese begin to celebrate the Chinese New Year a week before the accurate date, what is called the 'Little New Year'. There is even a daily tradition to respect for this week! This year, this 'Little New Year' falls from January 25 to January 31. Club chinois presents you during this week in Facebook <a style='color:red; text-decoration: underline;' href='https://www.facebook.com/ClubChinois'>@Clubchnois</a> the tradition of the day. Share it in your social networks leaving comments. We will choose a lucky participant who will win a mystery gift for the new year!"
     },
@@ -91,7 +91,7 @@
       "time": "20h00 - 21h30",
       "desc": "A ceremony not to be missed for art lovers. In cooperation with lyrics and beds of camps, Club chinois presents a fantastic ceremony!",
       "date": "Wednesday 2 February 2022",
-      "feature": "Festival, Games, Show |Festive, International, Music",
+      "feature": "Festival, Games, Show | Festive, International, Music",
       "info_1": "Free admission without registration, mask and pass vaccinal required",
       "info_2": "A ceremony not to be missed for art lovers. In cooperation with lyrics and beds of camps, Club chinois presents a fantastic ceremony! We will play traditional Chinese instruments, Erhu, we will sing beautiful Chinese songs and we will also present festive folk dances! This ceremony will give you a fascinating overview of Chinese art and should not be missed! During the ceremony, we also designed games you can participate in winning prizes!"
     },
@@ -101,7 +101,7 @@
       "time": "12h00 - 18h00",
       "desc": "An open event to all that will mark the apogee of our New Year's week! Very varied stands planned with Eiffel diagonal to give you the opportunity to discover our tradition.",
       "date": "Thursday, February 3, 2022",
-      "feature": "Discovery, Festival |Entertainment, International",
+      "feature": "Discovery, Festival | Entertainment, International",
       "info_1": "Free admission without registration, mandatory mask.Attention to the good social distance.",
       "info_2": "An open event to all that will mark the apogee of our New Year's week! Very varied stands planned with Eiffel diagonal to give you the opportunity to discover our tradition: booth of cosplay to take stylish photos, calligraphy stand to write the word '福' and bring happiness home, traditional game standsChinese, intellectual and sports, to win prizes!"
     },
@@ -111,9 +111,29 @@
       "time": "20h30 - 22h30",
       "desc": "Do you know the story of Nezha? It is a Chinese hero inspired by the old traditional legends.  We offer a Chinese animation movie 'Ne Zha' with a short story at the end of the movie.",
       "date": "Friday, February 4, 2022",
-      "feature": "Festival, projection |Art, Festive, International",
+      "feature": "Festival, projection | Art, Festive, International",
       "info_1": "Free admission without registration, mask and mandatory vaccinal pass.",
       "info_2": "There is no better way to finish Chinese New Year's week with a good movie on a Friday night, and Club chinois has a free Chinese movie for you! Do you know the story of Nezha? It is a Chinese hero inspired by the old traditional legends. Many Chinese children have grown while listening to his stories. We offer a Chinese animation movie 'Ne Zha' with a short story at the end of the movie."
+    },
+    "Tangyuan": {
+      "title": "Tangyuan Market",
+      "pos": "Cesal, 4CE306",
+      "time": "19h00 - 21h00",
+      "desc": "A small Tangyuan dessert is the specialty of this day. Composed of sticky rice and black sesame seeds, this dessert. Each dish contains three Tangyuans for only €1.50.",
+      "date": "Friday, February 06, 2022",
+      "feature": "Festival, Meal | Culinary, Festive, International",
+      "info_1": "Shotgun from 06/02, mask mandatory.",
+      "info_2": "The New Year lasts until the first full moon. A small Tangyuan dessert is the specialty of this day. Composed of sticky rice and black sesame seeds, this dessert. Each dish contains three Tangyuans for only €1.50. Do not hesitate to come and discover this gastronomy and learn more about Chinese traditions. The shotgun starts on February 6 for only 50 people."
+    },
+    "Ravioli_Metz": {
+      "title": "Chinese Dumpling Market (Metz)",
+      "pos": "Delivery & Residence C203 (Metz)",
+      "time": "16h00 - 18h30",
+      "desc": "Club Chinois and BdI Metz invite you to try this Chinese delicacies! This is a great opportunity to discover this specialty!",
+      "date": "Thursday, February 03, 2022",
+      "feature": "Festival, Meal | Culinary, Festive, International",
+      "info_1": "Shotgun from 31/01, mask mandatory.",
+      "info_2": "The ravioli is a must-eat dish on Chinese New Year's Eve. On Thursday 3 February, Club Chinois and BdI Metz invite you to try this Chinese delicacies! This is a great opportunity to discover this specialty! In this barspe, we offer ravioli meat (pork + shiitake, pork + Chinese leaf, chicken + mushroom) or ravioli vegetarian (egg, radish and vermicelli). Each dish contains 5 raviolis for only 2 euros! The place will be limited to 50 people. Go quickly to Shotgun. After the reservation, you can choose a delivery option or pick up at c203 at a time of your choice. Don't forget to bring your lunch box!"
     }
   }
 }
