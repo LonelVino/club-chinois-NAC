@@ -54,7 +54,7 @@
 				</div>
 			
 				<div class='ceremony-details'>
-					<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.3/ClubChinois/ceremony_details.jpg" alt="">
+					<img :src="$t('Events.Ceremony.detail_link')" alt="">
 				</div>
 				<!-- <div class="control">
 					<button class="btn" @contextmenu="handler($event)"

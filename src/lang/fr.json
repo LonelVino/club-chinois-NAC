@@ -75,7 +75,7 @@
       "info_2": "Le savez-vous? Les Chinois commencent à fêter le Nouvel An Chinois une semaine avant la date précise, ce qu’on appelle le “Petit Nouvel An”. Il y a même une tradition quotidienne à respecter pour cette semaine ! Cette année, ce “Petit Nouvel An” tombe du 25 janvier au 31 janvier. Le Club chinois vous présente pendant cette semaine en Facebook @ClubChinois la tradition du jour. Partagez-le dans vos réseaux sociaux en laissant des commentaires. Nous choisirons chaque jour un(e) participant(e) chanceux(se) qui gagnera un cadeau mystère pour la nouvelle année!"
     },
     "Ravioli": {
-      "title": "Barspé Ravioli Chinoi",
+      "title": "Barspé Ravioli Chinois",
       "pos": "Terrasse Langue Eiffel",
       "time": "19h00 - 21h00",
       "desc": "Le ClubChinois vous présente un barspé de ravioli pour vous faire gôuter cette gastronomie les raviolis chinois. C'est une bonne occasion de découvrir cette spécialité! ",
@@ -92,7 +92,8 @@
       "date": "Mercredi 2 Février 2022",
       "feature": "Festival, Jeux, Spectacle | Festif, International, Musique",
       "info_1": "Entrée gratuite sans inscription, masque et pass vaccinal obligatoire",
-      "info_2": "Une cérémonie à ne pas rater pour les amateurs d’art. En coopération avec LyriCS et Lit de Camps, le ClubChinois vous présente une cérémonie fantastique ! Nous jouerons des instruments traditionnels chinois, erhu, nous chanterons de belles chansons chinoises et nous présenterons également des danses folkloriques festives！Cette érémonie vous donnera un aperçu fascinant de l'art chinois et ne doit pas être manquée! Pendant la cérémonie, nous avons également conçu des jeux auxquels vous pourrez participer pour gagner des prix !"
+      "info_2": "Une cérémonie à ne pas rater pour les amateurs d’art. En coopération avec LyriCS et Lit de Camps, le ClubChinois vous présente une cérémonie fantastique ! Nous jouerons des instruments traditionnels chinois, erhu, nous chanterons de belles chansons chinoises et nous présenterons également des danses folkloriques festives！Cette érémonie vous donnera un aperçu fascinant de l'art chinois et ne doit pas être manquée! Pendant la cérémonie, nous avons également conçu des jeux auxquels vous pourrez participer pour gagner des prix !",
+      "detail_link": "https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.4/ClubChinois/ceremony_details_fr.jpg"
     },
     "Marche": {
       "title": "Marché Nouvel An Chinois",
@@ -121,17 +122,17 @@
       "desc": "Un petit dessert Tangyuan est la spécialité de ce jour. Composé de riz gluant et de graines de sésame noir, ce dessert. Chaque plat contient trois Tangyuans pour seulement 1,50 €.",
       "date": "Dimanche 06 Février 2022",
       "feature": "Festival, Repas | Culinaire, Festif, International",
-      "info_1": "Shotgun de 06/02, masque obligatoire.",
+      "info_1": "Shotgun le 06/02, masque obligatoire.",
       "info_2": "Le Nouvel An dure jusqu'à la première pleine lune. Un petit dessert Tangyuan est la spécialité de ce jour. Composé de riz gluant et de graines de sésame noir, ce dessert. Chaque plat contient trois Tangyuans pour seulement 1,50 €. N'hésitez pas à venir découvrir cette gastronomie et connaissent plus des traditions chinoises. Le shotgun commence le 6 février pour seulement 50 personnes."
     },
     "Ravioli_Metz": {
-      "title": "Barspé Ravioli Chinoi (Metz)",
+      "title": "Barspé Ravioli Chinois (Metz)",
       "pos": "Livraison ou Résidence c203 (Metz)",
       "time": "16h00 - 18h30",
       "desc": "Le ClubChinois et le BdI Metz vous proposent un barspé de ravioli pour vous faire gôuter cette gastronomie . C'est une bonne occasion de découvrir cette spécialité! ",
       "date": "Jeudi 03 Février 2022",
       "feature": "Festival, Repas | Culinaire, Festif, International",
-      "info_1": "Shotgun de 31/01, masque obligatoire.",
+      "info_1": "Shotgun le 31/01, masque obligatoire.",
       "info_2": "Le ravioli est un plat que les Chinois doivent manger à la veille du Nouvel An. Le jeudi 3 février, le ClubChinois et le BdI Metz vous proposent un barspé de ravioli pour vous faire gôuter cette gastronomie . C'est une bonne occasion de découvrir cette spécialité! Dans ce barspé, nous vous proposons un choix de ravioli viande (porc + shiitake, porc + feuille chinoise, poulet + champignon) ou ravioli végétarien (œuf, radis et vermicelle). Chaque plat contient 5 raviolis pour seulement 2 euros ! La place sera limitée à 50 personnes. Allez vite au Shotgun. Après la réservation, vous pouvez choisir une option de livraison ou récupérer au C203 à l'heure de votre choix. N'oubliez pas d'apporter votre lunch box!"
     }
   }
