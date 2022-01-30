@@ -37,7 +37,7 @@
 								<button class="btn" @contextmenu="handler($event)"
 								onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScioJWav_5RNgDrn1C53lc25TGQeSnSpRoNHm5PTxuqA-R6Yw/viewform?usp=sf_link'">
 									<span class="shopping-cart"><i class="el-icon-circle-plus" aria-hidden="true"></i></span>
-									<span class="buy">Questionnaire</span>
+									<span class="buy">Feuille d'or</span>
 								</button>
 							</div>
 						</ul>
