@@ -102,7 +102,7 @@ export default {
                     'web_url': 'https://bdi.cs-campus.fr/presentation/'
                 },
                 {
-                    'img_url': 'https://scontent-mrs2-1.xx.fbcdn.net/v/t1.6435-9/159314480_200291148381081_9193454809572634499_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=-DA2KeO6o1gAX-TgeCn&_nc_ht=scontent-mrs2-1.xx&oh=00_AT8frdnRz83jMhksdOhNg9rAev6fayn6sqVlLw_pjPmSdw&oe=61F55268',
+                    'img_url': 'https://scontent-cdg2-1.xx.fbcdn.net/v/t1.6435-9/159314480_200291148381081_9193454809572634499_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=Vs53g9OgIGkAX8-TDzS&_nc_ht=scontent-cdg2-1.xx&oh=00_AT97e9kbof4SlPdcCt8yR2qnWSmnNDgZGAgFUueBwIE-Tg&oe=621CDF68',
                     'web_url': 'https://galerie.pics/'
                 },
                 {
