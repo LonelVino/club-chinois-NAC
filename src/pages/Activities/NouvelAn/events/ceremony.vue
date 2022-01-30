@@ -106,4 +106,11 @@ export default {
 	margin: 2em;
 	margin-right: 3em;
 }
+
+@media (max-width: 600px) {
+	.ceremony-details {
+		margin: 0em;
+		margin-top: 1em;
+	}
+}
 </style>
