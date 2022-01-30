@@ -44,6 +44,9 @@
 					<p class="information"><span style='font-weight: bold' v-html="$t('Events.Ceremony.info_1')"></span></p>
 					<p class="information">{{$t('Events.Ceremony.info_2')}}</p>
 				</div>
+				<div class='ceremony-details'>
+					<img src="https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.1/ClubChinois/ceremony_details.jpg" alt="">
+				</div>
 				<!-- <div class="control">
 					<button class="btn" @contextmenu="handler($event)"
 					onclick="window.location.href='https://forms.viarezo.fr/paps/s2gpgq'">
@@ -96,5 +99,11 @@ export default {
 
 @import "@/styles/index.scss";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
-@import '@/styles/event-detail.scss'
+@import '@/styles/event-detail.scss';
+
+
+.ceremony-details {
+	margin: 2em;
+	margin-right: 3em;
+}
 </style>

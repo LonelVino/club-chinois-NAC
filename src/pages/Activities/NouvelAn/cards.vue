@@ -37,7 +37,7 @@ export default {
             link: 'raviolis',
             name: this.$i18n.t('Events.Ravioli.title'),
             position: this.$i18n.t('Events.Ravioli.pos'),
-            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2/ClubChinois/dumplings.jpg',
+            image: 'https://cdn.jsdelivr.net/gh/LonelVino/CDN@1.2.1/ClubChinois/dumplings.jpg',
             date:  this.$i18n.t('Events.Ravioli.date'),
             time: this.$i18n.t('Events.Ravioli.time'),
             desc: this.$i18n.t('Events.Ravioli.desc')

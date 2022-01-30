@@ -1,7 +1,7 @@
 <template>
   <div class="snow-btn">
 		<div class="btn">
-      <div class="shop-now" onclick="window.location.href='https://forms.viarezo.fr/paps/s2gpgq'">Shotgun<br> {{$t('Home.ravioli')}} </div>
+      <div class="shop-now" onclick="window.location.href='https://www.facebook.com/ClubChinois'">RELAY<br>Facebook</div>
       <div class="snowflake-grid to-left">
         <div class="snowflake-item border-bottom border-right">
           <div class="sub-items border-right border-bottom pull-down">
