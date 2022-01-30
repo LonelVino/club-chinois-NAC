@@ -11,7 +11,9 @@
 					<el-menu-item :index="$i18nRoute({ name: 'ceremony'})" >{{$t('nav.Ceremony')}}</el-menu-item>
 					<el-menu-item :index="$i18nRoute({ name: 'marche'})" >{{$t('nav.Marche')}}</el-menu-item>
 					<el-menu-item :index="$i18nRoute({ name: 'film'})" >{{$t('nav.Film')}}</el-menu-item>
-                </el-submenu>
+					<el-menu-item :index="$i18nRoute({ name: 'tangyuan'})" >{{$t('nav.Tangyuan')}}</el-menu-item>
+					<el-menu-item :index="$i18nRoute({ name: 'raviolis_metz'})" >{{$t('nav.Ravioli_Metz')}}</el-menu-item>
+				</el-submenu>
 				<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Zodiac')}} </el-menu-item>
 				<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Calendar')}}  </el-menu-item>
 				<el-menu-item :index="$i18nRoute({ name: 'Greetings'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Greetings')}} </el-menu-item>
@@ -43,6 +45,8 @@
 							<el-menu-item :index="$i18nRoute({ name: 'ceremony'})" >{{$t('nav.Ceremony')}}</el-menu-item>
 							<el-menu-item :index="$i18nRoute({ name: 'marche'})" >{{$t('nav.Marche')}}</el-menu-item>
 							<el-menu-item :index="$i18nRoute({ name: 'film'})" >{{$t('nav.Film')}}</el-menu-item>
+							<el-menu-item :index="$i18nRoute({ name: 'tangyuan'})" >{{$t('nav.Tangyuan')}}</el-menu-item>
+					<el-menu-item :index="$i18nRoute({ name: 'raviolis_metz'})" >{{$t('nav.Ravioli_Metz')}}</el-menu-item>
 						</el-submenu>
 						<el-menu-item :index="$i18nRoute({ name: 'Zodiac'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Zodiac')}} </el-menu-item>
 						<el-menu-item :index="$i18nRoute({ name: 'Calendar'})"><i class="fa fa-wa fa-home"></i> {{$t('nav.Calendar')}}  </el-menu-item>
