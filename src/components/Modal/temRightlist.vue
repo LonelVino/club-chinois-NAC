@@ -98,11 +98,11 @@ export default {
                     'web_url': 'https://bde-cs.fr/'
                 },
                 {
-                    'img_url': 'https://scontent-cdt1-1.xx.fbcdn.net/v/t31.18172-8/12621997_772123712891475_8600574980844174568_o.jpg?_nc_cat=106&ccb=1-5&_nc_sid=973b4a&_nc_ohc=WxTuK-ZfM48AX98wyXP&_nc_ht=scontent-cdt1-1.xx&oh=00_AT-Q0gZkASzV9iX6XbAjvGZSmJf5hGhzmcuaRyQGaD8YdA&oe=61FB7518',
+                    'img_url': 'https://cdn.jsdelivr.net/gh/LonelVino/CDN/ClubChinois/logo/bdi.jpg',
                     'web_url': 'https://bdi.cs-campus.fr/presentation/'
                 },
                 {
-                    'img_url': 'https://scontent-cdg2-1.xx.fbcdn.net/v/t1.6435-9/159314480_200291148381081_9193454809572634499_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=Vs53g9OgIGkAX8-TDzS&_nc_ht=scontent-cdg2-1.xx&oh=00_AT97e9kbof4SlPdcCt8yR2qnWSmnNDgZGAgFUueBwIE-Tg&oe=621CDF68',
+                    'img_url': 'https://cdn.jsdelivr.net/gh/LonelVino/CDN/ClubChinois/logo/pics.jpg',
                     'web_url': 'https://galerie.pics/'
                 },
                 {
@@ -110,11 +110,11 @@ export default {
                     'web_url': 'https://www.instagram.com/musics.cs/'
                 },
                 {
-                    'img_url': 'https://scontent-cdg2-1.xx.fbcdn.net/v/t1.6435-9/196003299_172813721516245_5479862419403837671_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=LUnFRaq779QAX-w94kO&_nc_ht=scontent-cdg2-1.xx&oh=00_AT-H8k0v6TRqrTVZgZSaKS17nEzlR9uvo_AgTbteC6vUIw&oe=61F9D4D0',
+                    'img_url': 'https://cdn.jsdelivr.net/gh/LonelVino/CDN/ClubChinois/logo/lyrics.jpg',
                     'web_url': 'https://www.facebook.com/LyricsCentraleSupelec'
                 },
                 {
-                    'img_url': 'https://scontent-cdt1-1.xx.fbcdn.net/v/t1.18169-9/28378418_1758470410884502_5141690599409433106_n.png?_nc_cat=106&ccb=1-5&_nc_sid=973b4a&_nc_ohc=4zLaNwzzpe4AX-M5UWB&_nc_ht=scontent-cdt1-1.xx&oh=00_AT_luPR30SARMTjw_9WdxB8l1gIOJ2Kju_hz3jyR-wDtEg&oe=61FAB029',
+                    'img_url': 'https://cdn.jsdelivr.net/gh/LonelVino/CDN/ClubChinois/logo/LdC.png',
                     'web_url': 'https://www.facebook.com/litdecamp/'
                 }
                 
